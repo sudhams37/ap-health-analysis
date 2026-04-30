@@ -257,6 +257,16 @@ async function startApp() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: text })
             });
+            
+            if (!response.ok) {
+                if (response.status === 404) {
+                    addMessage("The AI Chat requires a Python backend which is not available on this static deployment (GitHub Pages). Please run the project locally to use this feature.", "bot");
+                } else {
+                    addMessage("Sorry, I'm having trouble connecting to my AI core right now.", "bot");
+                }
+                return;
+            }
+            
             const result = await response.json();
             
             // 1. Handle Map/Disease Switches

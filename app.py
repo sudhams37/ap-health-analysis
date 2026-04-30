@@ -8,7 +8,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from chatbot.engine import HealthChatbot
 
-app = Flask(__name__, static_folder='frontend', static_url_path='')
+app = Flask(__name__, static_folder='.', static_url_path='')
 CORS(app)
 
 # Initialize Chatbot
