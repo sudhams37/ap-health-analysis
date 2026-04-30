@@ -1,0 +1,625 @@
+disease,State,District,Year,Month,Population,Total_Cases,Confirmed_Cases,Recovered,Deaths,Active_Cases,Severe_Cases,Mild_Cases,Incidence_Rate,Death_Rate,Rainfall,Temperature
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Jan,3719110,192,186,175,2,9,9,177,0.5,0.011,25,25
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Feb,3719110,86,77,69,1,7,5,72,0.21,0.013,47,27
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Mar,3719110,125,113,106,0,7,12,101,0.3,0,21,33
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Apr,3719110,172,146,141,1,4,12,134,0.39,0.007,26,29
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,May,3719110,143,133,123,0,10,13,120,0.36,0,47,27
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Jun,3719110,260,229,216,2,11,23,206,0.62,0.009,155,28
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Jul,3719110,206,175,167,2,6,15,160,0.47,0.011,319,32
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Aug,3719110,478,424,393,3,28,56,368,1.14,0.007,266,36
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Sep,3719110,474,433,393,7,33,24,409,1.16,0.016,58,32
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Oct,3719110,356,311,280,5,26,37,274,0.84,0.016,212,27
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Nov,3719110,65,59,56,0,3,8,51,0.16,0,9,32
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2024,Dec,3719110,48,42,37,0,5,3,39,0.11,0,35,36
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Jan,3719110,122,107,100,1,6,15,92,0.29,0.009,3,25
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Feb,3719110,43,39,37,0,2,3,36,0.1,0,15,34
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Mar,3719110,72,64,58,1,5,6,58,0.17,0.016,32,28
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Apr,3719110,160,147,137,1,9,21,126,0.4,0.007,7,35
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,May,3719110,108,103,97,0,6,6,97,0.28,0,28,36
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Jun,3719110,314,273,262,3,8,35,238,0.73,0.011,280,25
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Jul,3719110,356,312,290,5,17,42,270,0.84,0.016,247,32
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Aug,3719110,408,367,336,2,29,30,337,0.99,0.005,209,32
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Sep,3719110,458,409,395,7,7,30,379,1.1,0.017,162,29
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Oct,3719110,324,314,288,6,20,28,286,0.84,0.019,273,25
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Nov,3719110,142,124,112,1,11,18,106,0.33,0.008,32,31
+dengue,Andhra Pradesh,Alluri Sitarama Raju,2025,Dec,3719110,93,79,73,0,6,10,69,0.21,0,5,28
+dengue,Andhra Pradesh,Anakapalli,2024,Jan,4268307,117,108,101,0,7,14,94,0.25,0,59,30
+dengue,Andhra Pradesh,Anakapalli,2024,Feb,4268307,113,107,98,0,9,12,95,0.25,0,19,28
+dengue,Andhra Pradesh,Anakapalli,2024,Mar,4268307,116,99,95,1,3,10,89,0.23,0.01,40,25
+dengue,Andhra Pradesh,Anakapalli,2024,Apr,4268307,48,42,38,0,4,5,37,0.1,0,35,31
+dengue,Andhra Pradesh,Anakapalli,2024,May,4268307,154,146,137,1,8,10,136,0.34,0.007,48,36
+dengue,Andhra Pradesh,Anakapalli,2024,Jun,4268307,492,471,444,4,23,39,432,1.1,0.008,257,27
+dengue,Andhra Pradesh,Anakapalli,2024,Jul,4268307,394,376,358,5,13,21,355,0.88,0.013,153,28
+dengue,Andhra Pradesh,Anakapalli,2024,Aug,4268307,322,277,262,1,14,18,259,0.65,0.004,243,30
+dengue,Andhra Pradesh,Anakapalli,2024,Sep,4268307,424,393,359,6,28,28,365,0.92,0.015,326,28
+dengue,Andhra Pradesh,Anakapalli,2024,Oct,4268307,354,332,315,3,14,34,298,0.78,0.009,71,30
+dengue,Andhra Pradesh,Anakapalli,2024,Nov,4268307,126,114,109,1,4,9,105,0.27,0.009,33,36
+dengue,Andhra Pradesh,Anakapalli,2024,Dec,4268307,128,116,105,1,10,9,107,0.27,0.009,35,25
+dengue,Andhra Pradesh,Anakapalli,2025,Jan,4268307,52,50,46,0,4,6,44,0.12,0,41,29
+dengue,Andhra Pradesh,Anakapalli,2025,Feb,4268307,58,51,47,0,4,7,44,0.12,0,52,37
+dengue,Andhra Pradesh,Anakapalli,2025,Mar,4268307,167,159,146,1,12,16,143,0.37,0.006,31,30
+dengue,Andhra Pradesh,Anakapalli,2025,Apr,4268307,85,81,73,0,8,9,72,0.19,0,23,26
+dengue,Andhra Pradesh,Anakapalli,2025,May,4268307,140,127,122,2,3,15,112,0.3,0.016,43,30
+dengue,Andhra Pradesh,Anakapalli,2025,Jun,4268307,450,412,379,4,29,31,381,0.97,0.01,62,36
+dengue,Andhra Pradesh,Anakapalli,2025,Jul,4268307,368,334,319,4,11,40,294,0.78,0.012,191,36
+dengue,Andhra Pradesh,Anakapalli,2025,Aug,4268307,328,292,270,1,21,31,261,0.68,0.003,100,33
+dengue,Andhra Pradesh,Anakapalli,2025,Sep,4268307,470,430,395,5,30,22,408,1.01,0.012,229,34
+dengue,Andhra Pradesh,Anakapalli,2025,Oct,4268307,238,210,196,2,12,27,183,0.49,0.01,109,36
+dengue,Andhra Pradesh,Anakapalli,2025,Nov,4268307,125,115,104,0,11,11,104,0.27,0,47,27
+dengue,Andhra Pradesh,Anakapalli,2025,Dec,4268307,83,71,64,1,6,8,63,0.17,0.014,19,25
+dengue,Andhra Pradesh,Anantapur,2024,Jan,3729084,135,119,110,0,9,6,113,0.32,0,53,31
+dengue,Andhra Pradesh,Anantapur,2024,Feb,3729084,140,130,120,0,10,8,122,0.35,0,34,30
+dengue,Andhra Pradesh,Anantapur,2024,Mar,3729084,77,67,64,0,3,6,61,0.18,0,5,30
+dengue,Andhra Pradesh,Anantapur,2024,Apr,3729084,113,101,92,1,8,12,89,0.27,0.01,57,37
+dengue,Andhra Pradesh,Anantapur,2024,May,3729084,94,80,73,1,6,5,75,0.21,0.013,16,34
+dengue,Andhra Pradesh,Anantapur,2024,Jun,3729084,450,426,393,5,28,48,378,1.14,0.012,299,34
+dengue,Andhra Pradesh,Anantapur,2024,Jul,3729084,236,225,206,1,18,32,193,0.6,0.004,145,25
+dengue,Andhra Pradesh,Anantapur,2024,Aug,3729084,236,219,206,4,9,31,188,0.59,0.018,209,35
+dengue,Andhra Pradesh,Anantapur,2024,Sep,3729084,266,244,226,3,15,23,221,0.65,0.012,228,35
+dengue,Andhra Pradesh,Anantapur,2024,Oct,3729084,300,277,265,4,8,19,258,0.74,0.014,334,37
+dengue,Andhra Pradesh,Anantapur,2024,Nov,3729084,48,41,36,0,5,4,37,0.11,0,17,34
+dengue,Andhra Pradesh,Anantapur,2024,Dec,3729084,45,40,37,0,3,3,37,0.11,0,7,28
+dengue,Andhra Pradesh,Anantapur,2025,Jan,3729084,85,79,74,1,4,9,70,0.21,0.013,21,37
+dengue,Andhra Pradesh,Anantapur,2025,Feb,3729084,170,148,140,2,6,22,126,0.4,0.014,48,28
+dengue,Andhra Pradesh,Anantapur,2025,Mar,3729084,116,103,99,1,3,9,94,0.28,0.01,13,31
+dengue,Andhra Pradesh,Anantapur,2025,Apr,3729084,118,101,97,1,3,13,88,0.27,0.01,22,37
+dengue,Andhra Pradesh,Anantapur,2025,May,3729084,188,162,146,3,13,21,141,0.43,0.019,9,31
+dengue,Andhra Pradesh,Anantapur,2025,Jun,3729084,154,148,143,2,3,16,132,0.4,0.014,118,27
+dengue,Andhra Pradesh,Anantapur,2025,Jul,3729084,378,336,318,5,13,43,293,0.9,0.015,106,31
+dengue,Andhra Pradesh,Anantapur,2025,Aug,3729084,316,303,293,6,4,16,287,0.81,0.02,212,31
+dengue,Andhra Pradesh,Anantapur,2025,Sep,3729084,248,214,194,3,17,23,191,0.57,0.014,302,30
+dengue,Andhra Pradesh,Anantapur,2025,Oct,3729084,112,100,91,1,8,13,87,0.27,0.01,243,29
+dengue,Andhra Pradesh,Anantapur,2025,Nov,3729084,62,53,51,0,2,4,49,0.14,0,52,25
+dengue,Andhra Pradesh,Anantapur,2025,Dec,3729084,96,92,87,0,5,5,87,0.25,0,44,30
+dengue,Andhra Pradesh,Annamayya,2024,Jan,3856330,172,154,148,1,5,15,139,0.4,0.006,13,26
+dengue,Andhra Pradesh,Annamayya,2024,Feb,3856330,140,119,108,0,11,13,106,0.31,0,1,27
+dengue,Andhra Pradesh,Annamayya,2024,Mar,3856330,112,108,100,1,7,14,94,0.28,0.009,38,29
+dengue,Andhra Pradesh,Annamayya,2024,Apr,3856330,146,138,133,1,4,11,127,0.36,0.007,16,30
+dengue,Andhra Pradesh,Annamayya,2024,May,3856330,170,155,150,1,4,17,138,0.4,0.006,14,25
+dengue,Andhra Pradesh,Annamayya,2024,Jun,3856330,332,309,286,4,19,43,266,0.8,0.013,273,32
+dengue,Andhra Pradesh,Annamayya,2024,Jul,3856330,302,273,257,2,14,18,255,0.71,0.007,139,32
+dengue,Andhra Pradesh,Annamayya,2024,Aug,3856330,470,412,378,4,30,31,381,1.07,0.01,194,33
+dengue,Andhra Pradesh,Annamayya,2024,Sep,3856330,420,377,355,3,19,23,354,0.98,0.008,84,37
+dengue,Andhra Pradesh,Annamayya,2024,Oct,3856330,366,352,334,4,14,32,320,0.91,0.011,335,26
+dengue,Andhra Pradesh,Annamayya,2024,Nov,3856330,126,109,101,1,7,10,99,0.28,0.009,47,25
+dengue,Andhra Pradesh,Annamayya,2024,Dec,3856330,48,44,40,0,4,5,39,0.11,0,13,25
+dengue,Andhra Pradesh,Annamayya,2025,Jan,3856330,117,99,90,0,9,5,94,0.26,0,28,25
+dengue,Andhra Pradesh,Annamayya,2025,Feb,3856330,196,190,184,2,4,24,166,0.49,0.011,37,34
+dengue,Andhra Pradesh,Annamayya,2025,Mar,3856330,105,92,85,0,7,13,79,0.24,0,13,28
+dengue,Andhra Pradesh,Annamayya,2025,Apr,3856330,191,182,173,1,8,13,169,0.47,0.005,39,34
+dengue,Andhra Pradesh,Annamayya,2025,May,3856330,168,152,145,1,6,20,132,0.39,0.007,44,29
+dengue,Andhra Pradesh,Annamayya,2025,Jun,3856330,212,195,182,2,11,25,170,0.51,0.01,115,35
+dengue,Andhra Pradesh,Annamayya,2025,Jul,3856330,456,437,412,8,17,48,389,1.13,0.018,335,35
+dengue,Andhra Pradesh,Annamayya,2025,Aug,3856330,456,437,403,5,29,56,381,1.13,0.011,79,31
+dengue,Andhra Pradesh,Annamayya,2025,Sep,3856330,310,295,285,2,8,42,253,0.76,0.007,322,36
+dengue,Andhra Pradesh,Annamayya,2025,Oct,3856330,266,240,232,2,6,19,221,0.62,0.008,284,35
+dengue,Andhra Pradesh,Annamayya,2025,Nov,3856330,131,119,110,1,8,10,109,0.31,0.008,16,32
+dengue,Andhra Pradesh,Annamayya,2025,Dec,3856330,144,125,115,2,8,12,113,0.32,0.016,29,26
+dengue,Andhra Pradesh,Bapatla,2024,Jan,3192743,88,76,68,0,8,5,71,0.24,0,22,29
+dengue,Andhra Pradesh,Bapatla,2024,Feb,3192743,95,82,76,0,6,7,75,0.26,0,14,34
+dengue,Andhra Pradesh,Bapatla,2024,Mar,3192743,75,66,59,0,7,7,59,0.21,0,56,35
+dengue,Andhra Pradesh,Bapatla,2024,Apr,3192743,89,79,71,1,7,4,75,0.25,0.013,35,37
+dengue,Andhra Pradesh,Bapatla,2024,May,3192743,183,160,148,1,11,17,143,0.5,0.006,23,32
+dengue,Andhra Pradesh,Bapatla,2024,Jun,3192743,358,336,303,2,31,40,296,1.05,0.006,160,31
+dengue,Andhra Pradesh,Bapatla,2024,Jul,3192743,312,285,258,3,24,29,256,0.89,0.011,64,33
+dengue,Andhra Pradesh,Bapatla,2024,Aug,3192743,336,300,270,2,28,21,279,0.94,0.007,175,36
+dengue,Andhra Pradesh,Bapatla,2024,Sep,3192743,148,141,132,2,7,18,123,0.44,0.014,158,26
+dengue,Andhra Pradesh,Bapatla,2024,Oct,3192743,320,294,279,3,12,31,263,0.92,0.01,285,27
+dengue,Andhra Pradesh,Bapatla,2024,Nov,3192743,72,63,58,0,5,6,57,0.2,0,56,35
+dengue,Andhra Pradesh,Bapatla,2024,Dec,3192743,126,112,108,0,4,8,104,0.35,0,6,31
+dengue,Andhra Pradesh,Bapatla,2025,Jan,3192743,128,111,101,1,9,7,104,0.35,0.009,55,33
+dengue,Andhra Pradesh,Bapatla,2025,Feb,3192743,144,131,121,2,8,8,123,0.41,0.015,2,28
+dengue,Andhra Pradesh,Bapatla,2025,Mar,3192743,99,94,89,0,5,6,88,0.29,0,51,33
+dengue,Andhra Pradesh,Bapatla,2025,Apr,3192743,194,177,166,1,10,22,155,0.55,0.006,6,34
+dengue,Andhra Pradesh,Bapatla,2025,May,3192743,133,124,113,1,10,12,112,0.39,0.008,1,34
+dengue,Andhra Pradesh,Bapatla,2025,Jun,3192743,382,337,317,2,18,33,304,1.06,0.006,308,25
+dengue,Andhra Pradesh,Bapatla,2025,Jul,3192743,366,325,295,1,29,48,277,1.02,0.003,62,32
+dengue,Andhra Pradesh,Bapatla,2025,Aug,3192743,358,308,280,1,27,18,290,0.96,0.003,87,31
+dengue,Andhra Pradesh,Bapatla,2025,Sep,3192743,424,378,364,6,8,55,323,1.18,0.016,186,26
+dengue,Andhra Pradesh,Bapatla,2025,Oct,3192743,250,223,215,3,5,12,211,0.7,0.013,316,33
+dengue,Andhra Pradesh,Bapatla,2025,Nov,3192743,50,47,45,0,2,3,44,0.15,0,14,34
+dengue,Andhra Pradesh,Bapatla,2025,Dec,3192743,88,78,74,0,4,10,68,0.24,0,39,32
+dengue,Andhra Pradesh,Chittoor,2024,Jan,1610268,50,47,44,0,3,4,43,0.29,0,33,33
+dengue,Andhra Pradesh,Chittoor,2024,Feb,1610268,155,148,137,1,10,20,128,0.92,0.007,51,31
+dengue,Andhra Pradesh,Chittoor,2024,Mar,1610268,182,164,151,2,11,19,145,1.02,0.012,52,37
+dengue,Andhra Pradesh,Chittoor,2024,Apr,1610268,65,59,56,0,3,3,56,0.37,0,33,37
+dengue,Andhra Pradesh,Chittoor,2024,May,1610268,163,153,138,2,13,19,134,0.95,0.013,59,34
+dengue,Andhra Pradesh,Chittoor,2024,Jun,1610268,292,251,235,2,14,24,227,1.56,0.008,233,37
+dengue,Andhra Pradesh,Chittoor,2024,Jul,1610268,370,321,294,5,22,39,282,1.99,0.016,144,27
+dengue,Andhra Pradesh,Chittoor,2024,Aug,1610268,426,389,356,3,30,26,363,2.42,0.008,87,30
+dengue,Andhra Pradesh,Chittoor,2024,Sep,1610268,498,448,412,6,30,63,385,2.78,0.013,153,26
+dengue,Andhra Pradesh,Chittoor,2024,Oct,1610268,320,299,281,1,17,42,257,1.86,0.003,182,32
+dengue,Andhra Pradesh,Chittoor,2024,Nov,1610268,68,63,57,0,6,6,57,0.39,0,54,27
+dengue,Andhra Pradesh,Chittoor,2024,Dec,1610268,62,53,50,0,3,3,50,0.33,0,37,29
+dengue,Andhra Pradesh,Chittoor,2025,Jan,1610268,111,105,95,1,9,14,91,0.65,0.01,55,27
+dengue,Andhra Pradesh,Chittoor,2025,Feb,1610268,173,159,147,2,10,11,148,0.99,0.013,57,29
+dengue,Andhra Pradesh,Chittoor,2025,Mar,1610268,162,144,133,1,10,20,124,0.89,0.007,2,31
+dengue,Andhra Pradesh,Chittoor,2025,Apr,1610268,168,161,151,0,10,22,139,1,0,54,32
+dengue,Andhra Pradesh,Chittoor,2025,May,1610268,59,53,49,0,4,4,49,0.33,0,43,30
+dengue,Andhra Pradesh,Chittoor,2025,Jun,1610268,406,345,326,2,17,50,295,2.14,0.006,226,28
+dengue,Andhra Pradesh,Chittoor,2025,Jul,1610268,334,318,298,2,18,25,293,1.97,0.006,273,37
+dengue,Andhra Pradesh,Chittoor,2025,Aug,1610268,456,399,384,3,12,27,372,2.48,0.008,335,32
+dengue,Andhra Pradesh,Chittoor,2025,Sep,1610268,136,116,110,1,5,11,105,0.72,0.009,162,26
+dengue,Andhra Pradesh,Chittoor,2025,Oct,1610268,430,404,366,4,34,23,381,2.51,0.01,180,34
+dengue,Andhra Pradesh,Chittoor,2025,Nov,1610268,127,115,109,2,4,15,100,0.71,0.017,7,37
+dengue,Andhra Pradesh,Chittoor,2025,Dec,1610268,45,38,34,0,4,4,34,0.24,0,8,30
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Jan,2232180,92,87,81,1,5,11,76,0.39,0.011,24,32
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Feb,2232180,76,72,66,1,5,5,67,0.32,0.014,31,31
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Mar,2232180,180,154,145,2,7,20,134,0.69,0.013,48,37
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Apr,2232180,156,143,132,2,9,18,125,0.64,0.014,20,35
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,May,2232180,143,127,114,2,11,10,117,0.57,0.016,30,33
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Jun,2232180,204,180,173,2,5,11,169,0.81,0.011,251,32
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Jul,2232180,216,206,196,2,8,10,196,0.92,0.01,63,33
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Aug,2232180,178,166,154,1,11,19,147,0.74,0.006,53,34
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Sep,2232180,470,450,426,6,18,59,391,2.02,0.013,177,29
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Oct,2232180,182,167,153,2,12,19,148,0.75,0.012,125,31
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Nov,2232180,132,112,101,2,9,15,97,0.5,0.018,40,26
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Dec,2232180,48,44,41,0,3,5,39,0.2,0,21,36
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Jan,2232180,191,174,157,1,16,21,153,0.78,0.006,51,29
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Feb,2232180,68,64,57,1,6,5,59,0.29,0.016,36,25
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Mar,2232180,188,166,155,2,9,19,147,0.74,0.012,54,30
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Apr,2232180,94,85,78,1,6,5,80,0.38,0.012,52,35
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,May,2232180,104,94,88,0,6,11,83,0.42,0,53,33
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Jun,2232180,178,166,155,2,9,15,151,0.74,0.012,88,27
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Jul,2232180,360,309,278,6,25,15,294,1.38,0.019,61,27
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Aug,2232180,300,258,248,1,9,37,221,1.16,0.004,61,32
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Sep,2232180,264,247,236,3,8,29,218,1.11,0.012,247,32
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Oct,2232180,148,141,133,2,6,7,134,0.63,0.014,75,34
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Nov,2232180,52,49,44,0,5,6,43,0.22,0,14,29
+dengue,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Dec,2232180,44,38,36,0,2,5,33,0.17,0,18,28
+dengue,Andhra Pradesh,East Godavari,2024,Jan,4700614,172,155,145,2,8,17,138,0.33,0.013,24,27
+dengue,Andhra Pradesh,East Godavari,2024,Feb,4700614,125,108,97,1,10,9,99,0.23,0.009,55,31
+dengue,Andhra Pradesh,East Godavari,2024,Mar,4700614,125,114,109,1,4,13,101,0.24,0.009,13,26
+dengue,Andhra Pradesh,East Godavari,2024,Apr,4700614,168,160,150,1,9,8,152,0.34,0.006,42,26
+dengue,Andhra Pradesh,East Godavari,2024,May,4700614,165,140,127,1,12,20,120,0.3,0.007,59,31
+dengue,Andhra Pradesh,East Godavari,2024,Jun,4700614,190,169,161,1,7,16,153,0.36,0.006,234,32
+dengue,Andhra Pradesh,East Godavari,2024,Jul,4700614,340,320,297,3,20,39,281,0.68,0.009,226,27
+dengue,Andhra Pradesh,East Godavari,2024,Aug,4700614,444,396,364,3,29,29,367,0.84,0.008,202,25
+dengue,Andhra Pradesh,East Godavari,2024,Sep,4700614,460,445,413,4,28,52,393,0.95,0.009,189,35
+dengue,Andhra Pradesh,East Godavari,2024,Oct,4700614,172,162,146,1,15,22,140,0.34,0.006,60,37
+dengue,Andhra Pradesh,East Godavari,2024,Nov,4700614,161,151,136,1,14,20,131,0.32,0.007,54,29
+dengue,Andhra Pradesh,East Godavari,2024,Dec,4700614,127,111,101,0,10,7,104,0.24,0,3,32
+dengue,Andhra Pradesh,East Godavari,2025,Jan,4700614,44,41,38,0,3,4,37,0.09,0,20,34
+dengue,Andhra Pradesh,East Godavari,2025,Feb,4700614,88,77,72,0,5,11,66,0.16,0,3,27
+dengue,Andhra Pradesh,East Godavari,2025,Mar,4700614,49,42,39,0,3,4,38,0.09,0,34,35
+dengue,Andhra Pradesh,East Godavari,2025,Apr,4700614,123,110,101,1,8,5,105,0.23,0.009,34,36
+dengue,Andhra Pradesh,East Godavari,2025,May,4700614,175,165,156,2,7,9,156,0.35,0.012,24,36
+dengue,Andhra Pradesh,East Godavari,2025,Jun,4700614,174,153,145,1,7,8,145,0.33,0.007,225,37
+dengue,Andhra Pradesh,East Godavari,2025,Jul,4700614,154,132,126,1,5,12,120,0.28,0.008,164,34
+dengue,Andhra Pradesh,East Godavari,2025,Aug,4700614,232,206,195,2,9,15,191,0.44,0.01,311,32
+dengue,Andhra Pradesh,East Godavari,2025,Sep,4700614,392,374,343,2,29,24,350,0.8,0.005,318,35
+dengue,Andhra Pradesh,East Godavari,2025,Oct,4700614,188,175,165,2,8,21,154,0.37,0.011,56,29
+dengue,Andhra Pradesh,East Godavari,2025,Nov,4700614,75,71,64,1,6,4,67,0.15,0.014,43,29
+dengue,Andhra Pradesh,East Godavari,2025,Dec,4700614,165,158,142,2,14,19,139,0.34,0.013,12,31
+dengue,Andhra Pradesh,Eluru,2024,Jan,3734489,194,171,161,3,7,19,152,0.46,0.018,31,26
+dengue,Andhra Pradesh,Eluru,2024,Feb,3734489,189,160,153,1,6,12,148,0.43,0.006,7,34
+dengue,Andhra Pradesh,Eluru,2024,Mar,3734489,89,79,72,1,6,10,69,0.21,0.013,20,28
+dengue,Andhra Pradesh,Eluru,2024,Apr,3734489,93,82,77,0,5,8,74,0.22,0,1,30
+dengue,Andhra Pradesh,Eluru,2024,May,3734489,135,115,110,2,3,16,99,0.31,0.017,36,35
+dengue,Andhra Pradesh,Eluru,2024,Jun,3734489,458,430,387,2,41,35,395,1.15,0.005,128,27
+dengue,Andhra Pradesh,Eluru,2024,Jul,3734489,214,181,164,2,15,26,155,0.48,0.011,148,37
+dengue,Andhra Pradesh,Eluru,2024,Aug,3734489,176,160,153,1,6,21,139,0.43,0.006,224,28
+dengue,Andhra Pradesh,Eluru,2024,Sep,3734489,142,122,117,2,3,6,116,0.33,0.016,70,29
+dengue,Andhra Pradesh,Eluru,2024,Oct,3734489,472,455,433,5,17,36,419,1.22,0.011,107,36
+dengue,Andhra Pradesh,Eluru,2024,Nov,3734489,172,150,137,0,13,17,133,0.4,0,12,26
+dengue,Andhra Pradesh,Eluru,2024,Dec,3734489,51,46,43,0,3,3,43,0.12,0,29,29
+dengue,Andhra Pradesh,Eluru,2025,Jan,3734489,45,42,40,0,2,4,38,0.11,0,44,29
+dengue,Andhra Pradesh,Eluru,2025,Feb,3734489,58,55,51,0,4,5,50,0.15,0,14,31
+dengue,Andhra Pradesh,Eluru,2025,Mar,3734489,52,47,43,0,4,3,44,0.13,0,22,30
+dengue,Andhra Pradesh,Eluru,2025,Apr,3734489,132,121,112,2,7,7,114,0.32,0.017,21,26
+dengue,Andhra Pradesh,Eluru,2025,May,3734489,90,80,77,1,2,9,71,0.21,0.013,25,25
+dengue,Andhra Pradesh,Eluru,2025,Jun,3734489,302,289,274,4,11,18,271,0.77,0.014,125,33
+dengue,Andhra Pradesh,Eluru,2025,Jul,3734489,190,164,153,2,9,19,145,0.44,0.012,251,32
+dengue,Andhra Pradesh,Eluru,2025,Aug,3734489,418,402,363,5,34,55,347,1.08,0.012,126,28
+dengue,Andhra Pradesh,Eluru,2025,Sep,3734489,406,364,330,4,30,43,321,0.97,0.011,192,26
+dengue,Andhra Pradesh,Eluru,2025,Oct,3734489,310,269,244,3,22,32,237,0.72,0.011,58,30
+dengue,Andhra Pradesh,Eluru,2025,Nov,3734489,97,83,77,1,5,11,72,0.22,0.012,50,36
+dengue,Andhra Pradesh,Eluru,2025,Dec,3734489,88,83,78,1,4,9,74,0.22,0.012,16,28
+dengue,Andhra Pradesh,Guntur,2024,Jan,4597042,146,138,128,2,8,14,124,0.3,0.014,42,35
+dengue,Andhra Pradesh,Guntur,2024,Feb,4597042,48,42,38,0,4,3,39,0.09,0,55,28
+dengue,Andhra Pradesh,Guntur,2024,Mar,4597042,177,154,147,2,5,15,139,0.33,0.013,18,30
+dengue,Andhra Pradesh,Guntur,2024,Apr,4597042,156,144,132,1,11,14,130,0.31,0.007,28,34
+dengue,Andhra Pradesh,Guntur,2024,May,4597042,67,58,53,0,5,7,51,0.13,0,49,29
+dengue,Andhra Pradesh,Guntur,2024,Jun,4597042,416,374,358,5,11,46,328,0.81,0.013,69,36
+dengue,Andhra Pradesh,Guntur,2024,Jul,4597042,402,367,343,5,19,19,348,0.8,0.014,277,26
+dengue,Andhra Pradesh,Guntur,2024,Aug,4597042,256,245,227,2,16,26,219,0.53,0.008,295,37
+dengue,Andhra Pradesh,Guntur,2024,Sep,4597042,122,109,101,1,7,8,101,0.24,0.009,331,32
+dengue,Andhra Pradesh,Guntur,2024,Oct,4597042,298,285,260,2,23,41,244,0.62,0.007,342,29
+dengue,Andhra Pradesh,Guntur,2024,Nov,4597042,172,156,143,2,11,14,142,0.34,0.013,56,31
+dengue,Andhra Pradesh,Guntur,2024,Dec,4597042,106,97,88,1,8,14,83,0.21,0.01,2,27
+dengue,Andhra Pradesh,Guntur,2025,Jan,4597042,43,38,36,0,2,5,33,0.08,0,47,35
+dengue,Andhra Pradesh,Guntur,2025,Feb,4597042,47,40,36,0,4,3,37,0.09,0,30,33
+dengue,Andhra Pradesh,Guntur,2025,Mar,4597042,40,36,33,0,3,2,34,0.08,0,54,28
+dengue,Andhra Pradesh,Guntur,2025,Apr,4597042,61,52,49,0,3,5,47,0.11,0,49,32
+dengue,Andhra Pradesh,Guntur,2025,May,4597042,74,66,63,0,3,6,60,0.14,0,20,26
+dengue,Andhra Pradesh,Guntur,2025,Jun,4597042,254,217,203,4,10,11,206,0.47,0.018,168,27
+dengue,Andhra Pradesh,Guntur,2025,Jul,4597042,494,430,389,2,39,46,384,0.94,0.005,61,34
+dengue,Andhra Pradesh,Guntur,2025,Aug,4597042,138,133,128,0,5,19,114,0.29,0,334,33
+dengue,Andhra Pradesh,Guntur,2025,Sep,4597042,176,159,148,1,10,18,141,0.35,0.006,200,37
+dengue,Andhra Pradesh,Guntur,2025,Oct,4597042,202,188,171,2,15,27,161,0.41,0.011,178,31
+dengue,Andhra Pradesh,Guntur,2025,Nov,4597042,45,39,35,0,4,2,37,0.08,0,1,31
+dengue,Andhra Pradesh,Guntur,2025,Dec,4597042,134,129,122,1,6,14,115,0.28,0.008,8,32
+dengue,Andhra Pradesh,Kakinada,2024,Jan,3070006,129,110,106,1,3,12,98,0.36,0.009,19,29
+dengue,Andhra Pradesh,Kakinada,2024,Feb,3070006,77,71,64,1,6,10,61,0.23,0.014,6,33
+dengue,Andhra Pradesh,Kakinada,2024,Mar,3070006,168,151,145,2,4,16,135,0.49,0.013,41,35
+dengue,Andhra Pradesh,Kakinada,2024,Apr,3070006,93,86,82,1,3,8,78,0.28,0.012,34,26
+dengue,Andhra Pradesh,Kakinada,2024,May,3070006,152,143,133,2,8,8,135,0.47,0.014,54,31
+dengue,Andhra Pradesh,Kakinada,2024,Jun,3070006,276,245,231,3,11,26,219,0.8,0.012,142,33
+dengue,Andhra Pradesh,Kakinada,2024,Jul,3070006,420,368,340,3,25,21,347,1.2,0.008,159,34
+dengue,Andhra Pradesh,Kakinada,2024,Aug,3070006,486,440,407,7,26,44,396,1.43,0.016,166,37
+dengue,Andhra Pradesh,Kakinada,2024,Sep,3070006,406,350,318,4,28,26,324,1.14,0.011,277,35
+dengue,Andhra Pradesh,Kakinada,2024,Oct,3070006,450,412,392,6,14,42,370,1.34,0.015,70,31
+dengue,Andhra Pradesh,Kakinada,2024,Nov,3070006,124,105,99,1,5,7,98,0.34,0.01,11,27
+dengue,Andhra Pradesh,Kakinada,2024,Dec,3070006,51,44,41,0,3,2,42,0.14,0,4,29
+dengue,Andhra Pradesh,Kakinada,2025,Jan,3070006,80,74,71,0,3,7,67,0.24,0,42,28
+dengue,Andhra Pradesh,Kakinada,2025,Feb,3070006,165,154,141,1,12,9,145,0.5,0.006,11,31
+dengue,Andhra Pradesh,Kakinada,2025,Mar,3070006,115,109,104,0,5,8,101,0.36,0,49,34
+dengue,Andhra Pradesh,Kakinada,2025,Apr,3070006,190,167,161,2,4,21,146,0.54,0.012,1,36
+dengue,Andhra Pradesh,Kakinada,2025,May,3070006,135,123,111,0,12,13,110,0.4,0,21,30
+dengue,Andhra Pradesh,Kakinada,2025,Jun,3070006,372,351,331,2,18,30,321,1.14,0.006,219,32
+dengue,Andhra Pradesh,Kakinada,2025,Jul,3070006,402,358,328,5,25,27,331,1.17,0.014,68,28
+dengue,Andhra Pradesh,Kakinada,2025,Aug,3070006,218,202,193,3,6,13,189,0.66,0.015,291,29
+dengue,Andhra Pradesh,Kakinada,2025,Sep,3070006,448,393,377,4,12,40,353,1.28,0.01,199,29
+dengue,Andhra Pradesh,Kakinada,2025,Oct,3070006,384,337,308,4,25,25,312,1.1,0.012,126,37
+dengue,Andhra Pradesh,Kakinada,2025,Nov,3070006,187,170,164,1,5,20,150,0.55,0.006,3,34
+dengue,Andhra Pradesh,Kakinada,2025,Dec,3070006,133,120,114,0,6,10,110,0.39,0,46,27
+dengue,Andhra Pradesh,Krishna,2024,Jan,3503274,93,87,81,0,6,5,82,0.25,0,40,29
+dengue,Andhra Pradesh,Krishna,2024,Feb,3503274,116,106,98,1,7,8,98,0.3,0.009,39,28
+dengue,Andhra Pradesh,Krishna,2024,Mar,3503274,49,44,39,0,5,3,41,0.13,0,21,32
+dengue,Andhra Pradesh,Krishna,2024,Apr,3503274,199,184,172,1,11,15,169,0.53,0.005,6,26
+dengue,Andhra Pradesh,Krishna,2024,May,3503274,176,163,153,2,8,15,148,0.47,0.012,8,30
+dengue,Andhra Pradesh,Krishna,2024,Jun,3503274,186,160,154,2,4,20,140,0.46,0.013,257,34
+dengue,Andhra Pradesh,Krishna,2024,Jul,3503274,478,430,411,2,17,34,396,1.23,0.005,185,28
+dengue,Andhra Pradesh,Krishna,2024,Aug,3503274,104,99,90,1,8,6,93,0.28,0.01,54,28
+dengue,Andhra Pradesh,Krishna,2024,Sep,3503274,306,288,264,4,20,17,271,0.82,0.014,280,25
+dengue,Andhra Pradesh,Krishna,2024,Oct,3503274,130,118,107,0,11,7,111,0.34,0,200,26
+dengue,Andhra Pradesh,Krishna,2024,Nov,3503274,92,82,75,0,7,8,74,0.23,0,3,28
+dengue,Andhra Pradesh,Krishna,2024,Dec,3503274,191,172,162,2,8,24,148,0.49,0.012,43,30
+dengue,Andhra Pradesh,Krishna,2025,Jan,3503274,87,82,74,1,7,5,77,0.23,0.012,18,37
+dengue,Andhra Pradesh,Krishna,2025,Feb,3503274,67,62,58,0,4,3,59,0.18,0,7,28
+dengue,Andhra Pradesh,Krishna,2025,Mar,3503274,50,42,38,0,4,5,37,0.12,0,18,28
+dengue,Andhra Pradesh,Krishna,2025,Apr,3503274,47,44,40,0,4,6,38,0.13,0,14,25
+dengue,Andhra Pradesh,Krishna,2025,May,3503274,127,121,115,1,5,17,104,0.35,0.008,6,33
+dengue,Andhra Pradesh,Krishna,2025,Jun,3503274,380,339,306,1,32,21,318,0.97,0.003,117,37
+dengue,Andhra Pradesh,Krishna,2025,Jul,3503274,474,447,406,6,35,64,383,1.28,0.013,69,26
+dengue,Andhra Pradesh,Krishna,2025,Aug,3503274,218,207,186,1,20,22,185,0.59,0.005,200,27
+dengue,Andhra Pradesh,Krishna,2025,Sep,3503274,160,137,130,1,6,7,130,0.39,0.007,316,26
+dengue,Andhra Pradesh,Krishna,2025,Oct,3503274,416,388,375,3,10,24,364,1.11,0.008,205,27
+dengue,Andhra Pradesh,Krishna,2025,Nov,3503274,44,41,37,0,4,6,35,0.12,0,17,29
+dengue,Andhra Pradesh,Krishna,2025,Dec,3503274,121,106,96,1,9,14,92,0.3,0.009,50,29
+dengue,Andhra Pradesh,Kurnool,2024,Jan,2636074,132,118,111,1,6,12,106,0.45,0.008,22,31
+dengue,Andhra Pradesh,Kurnool,2024,Feb,2636074,108,104,95,0,9,9,95,0.39,0,38,29
+dengue,Andhra Pradesh,Kurnool,2024,Mar,2636074,149,138,126,1,11,11,127,0.52,0.007,26,26
+dengue,Andhra Pradesh,Kurnool,2024,Apr,2636074,184,174,168,2,4,10,164,0.66,0.011,11,29
+dengue,Andhra Pradesh,Kurnool,2024,May,2636074,80,70,63,0,7,9,61,0.27,0,48,36
+dengue,Andhra Pradesh,Kurnool,2024,Jun,2636074,262,237,219,2,16,22,215,0.9,0.008,70,34
+dengue,Andhra Pradesh,Kurnool,2024,Jul,2636074,380,329,298,4,27,47,282,1.25,0.012,179,36
+dengue,Andhra Pradesh,Kurnool,2024,Aug,2636074,194,170,163,0,7,23,147,0.64,0,326,36
+dengue,Andhra Pradesh,Kurnool,2024,Sep,2636074,166,148,137,1,10,20,128,0.56,0.007,222,27
+dengue,Andhra Pradesh,Kurnool,2024,Oct,2636074,236,221,206,3,12,11,210,0.84,0.014,136,35
+dengue,Andhra Pradesh,Kurnool,2024,Nov,2636074,142,121,109,0,12,17,104,0.46,0,21,32
+dengue,Andhra Pradesh,Kurnool,2024,Dec,2636074,85,76,73,1,2,10,66,0.29,0.013,51,36
+dengue,Andhra Pradesh,Kurnool,2025,Jan,2636074,80,69,62,1,6,8,61,0.26,0.014,10,30
+dengue,Andhra Pradesh,Kurnool,2025,Feb,2636074,128,110,106,1,3,13,97,0.42,0.009,25,33
+dengue,Andhra Pradesh,Kurnool,2025,Mar,2636074,194,180,162,1,17,13,167,0.68,0.006,41,33
+dengue,Andhra Pradesh,Kurnool,2025,Apr,2636074,136,123,118,1,4,7,116,0.47,0.008,27,32
+dengue,Andhra Pradesh,Kurnool,2025,May,2636074,40,36,33,0,3,4,32,0.14,0,34,35
+dengue,Andhra Pradesh,Kurnool,2025,Jun,2636074,118,105,101,0,4,9,96,0.4,0,173,34
+dengue,Andhra Pradesh,Kurnool,2025,Jul,2636074,326,313,286,2,25,21,292,1.19,0.006,223,25
+dengue,Andhra Pradesh,Kurnool,2025,Aug,2636074,338,327,309,3,15,45,282,1.24,0.009,317,33
+dengue,Andhra Pradesh,Kurnool,2025,Sep,2636074,448,394,375,4,15,52,342,1.49,0.01,287,31
+dengue,Andhra Pradesh,Kurnool,2025,Oct,2636074,400,371,338,4,29,55,316,1.41,0.011,71,36
+dengue,Andhra Pradesh,Kurnool,2025,Nov,2636074,62,58,52,0,6,3,55,0.22,0,50,27
+dengue,Andhra Pradesh,Kurnool,2025,Dec,2636074,160,152,144,1,7,16,136,0.58,0.007,56,27
+dengue,Andhra Pradesh,Nandyal,2024,Jan,4509908,192,165,150,1,14,17,148,0.37,0.006,25,29
+dengue,Andhra Pradesh,Nandyal,2024,Feb,4509908,128,111,104,1,6,13,98,0.25,0.009,3,25
+dengue,Andhra Pradesh,Nandyal,2024,Mar,4509908,144,124,115,2,7,8,116,0.27,0.016,10,29
+dengue,Andhra Pradesh,Nandyal,2024,Apr,4509908,141,133,125,2,6,11,122,0.29,0.015,9,28
+dengue,Andhra Pradesh,Nandyal,2024,May,4509908,170,144,137,0,7,17,127,0.32,0,14,33
+dengue,Andhra Pradesh,Nandyal,2024,Jun,4509908,422,397,376,6,15,53,344,0.88,0.015,119,32
+dengue,Andhra Pradesh,Nandyal,2024,Jul,4509908,300,259,240,3,16,33,226,0.57,0.012,276,34
+dengue,Andhra Pradesh,Nandyal,2024,Aug,4509908,172,159,143,1,15,8,151,0.35,0.006,309,36
+dengue,Andhra Pradesh,Nandyal,2024,Sep,4509908,212,190,176,3,11,19,171,0.42,0.016,52,32
+dengue,Andhra Pradesh,Nandyal,2024,Oct,4509908,258,226,214,1,11,22,204,0.5,0.004,207,26
+dengue,Andhra Pradesh,Nandyal,2024,Nov,4509908,156,137,131,1,5,7,130,0.3,0.007,22,32
+dengue,Andhra Pradesh,Nandyal,2024,Dec,4509908,126,118,114,0,4,15,103,0.26,0,19,37
+dengue,Andhra Pradesh,Nandyal,2025,Jan,4509908,114,101,93,0,8,7,94,0.22,0,59,36
+dengue,Andhra Pradesh,Nandyal,2025,Feb,4509908,76,73,70,1,2,6,67,0.16,0.014,4,28
+dengue,Andhra Pradesh,Nandyal,2025,Mar,4509908,76,65,60,1,4,5,60,0.14,0.015,9,34
+dengue,Andhra Pradesh,Nandyal,2025,Apr,4509908,154,134,125,2,7,8,126,0.3,0.015,43,25
+dengue,Andhra Pradesh,Nandyal,2025,May,4509908,114,108,99,1,8,8,100,0.24,0.009,53,27
+dengue,Andhra Pradesh,Nandyal,2025,Jun,4509908,438,417,381,4,32,40,377,0.92,0.01,98,29
+dengue,Andhra Pradesh,Nandyal,2025,Jul,4509908,246,236,224,3,9,12,224,0.52,0.013,344,26
+dengue,Andhra Pradesh,Nandyal,2025,Aug,4509908,424,382,363,6,13,25,357,0.85,0.016,237,33
+dengue,Andhra Pradesh,Nandyal,2025,Sep,4509908,160,153,142,0,11,11,142,0.34,0,155,30
+dengue,Andhra Pradesh,Nandyal,2025,Oct,4509908,368,323,311,2,10,24,299,0.72,0.006,231,34
+dengue,Andhra Pradesh,Nandyal,2025,Nov,4509908,95,81,75,0,6,4,77,0.18,0,58,35
+dengue,Andhra Pradesh,Nandyal,2025,Dec,4509908,187,166,153,2,11,9,157,0.37,0.012,15,26
+dengue,Andhra Pradesh,NTR,2024,Jan,3772355,167,155,149,2,4,22,133,0.41,0.013,42,34
+dengue,Andhra Pradesh,NTR,2024,Feb,3772355,135,118,112,2,4,8,110,0.31,0.017,3,31
+dengue,Andhra Pradesh,NTR,2024,Mar,3772355,171,156,145,3,8,17,139,0.41,0.019,57,37
+dengue,Andhra Pradesh,NTR,2024,Apr,3772355,174,148,140,1,7,8,140,0.39,0.007,22,31
+dengue,Andhra Pradesh,NTR,2024,May,3772355,65,59,53,1,5,7,52,0.16,0.017,41,31
+dengue,Andhra Pradesh,NTR,2024,Jun,3772355,270,247,232,2,13,33,214,0.65,0.008,54,26
+dengue,Andhra Pradesh,NTR,2024,Jul,3772355,142,135,127,1,7,12,123,0.36,0.007,174,31
+dengue,Andhra Pradesh,NTR,2024,Aug,3772355,270,238,227,1,10,20,218,0.63,0.004,148,27
+dengue,Andhra Pradesh,NTR,2024,Sep,3772355,224,203,187,3,13,21,182,0.54,0.015,117,28
+dengue,Andhra Pradesh,NTR,2024,Oct,3772355,384,335,322,6,7,45,290,0.89,0.018,217,34
+dengue,Andhra Pradesh,NTR,2024,Nov,3772355,61,57,51,0,6,5,52,0.15,0,8,36
+dengue,Andhra Pradesh,NTR,2024,Dec,3772355,116,104,99,1,4,9,95,0.28,0.01,59,26
+dengue,Andhra Pradesh,NTR,2025,Jan,3772355,176,165,159,1,5,16,149,0.44,0.006,24,36
+dengue,Andhra Pradesh,NTR,2025,Feb,3772355,72,66,62,1,3,5,61,0.17,0.015,48,32
+dengue,Andhra Pradesh,NTR,2025,Mar,3772355,72,65,61,0,4,7,58,0.17,0,45,27
+dengue,Andhra Pradesh,NTR,2025,Apr,3772355,60,52,50,0,2,3,49,0.14,0,8,29
+dengue,Andhra Pradesh,NTR,2025,May,3772355,167,155,141,1,13,17,138,0.41,0.006,54,27
+dengue,Andhra Pradesh,NTR,2025,Jun,3772355,162,139,132,1,6,20,119,0.37,0.007,158,31
+dengue,Andhra Pradesh,NTR,2025,Jul,3772355,140,131,120,2,9,19,112,0.35,0.015,108,31
+dengue,Andhra Pradesh,NTR,2025,Aug,3772355,354,301,282,3,16,36,265,0.8,0.01,203,29
+dengue,Andhra Pradesh,NTR,2025,Sep,3772355,476,423,389,7,27,25,398,1.12,0.017,109,36
+dengue,Andhra Pradesh,NTR,2025,Oct,3772355,340,308,294,3,11,26,282,0.82,0.01,275,30
+dengue,Andhra Pradesh,NTR,2025,Nov,3772355,144,137,128,1,8,8,129,0.36,0.007,26,25
+dengue,Andhra Pradesh,NTR,2025,Dec,3772355,169,146,134,1,11,18,128,0.39,0.007,57,31
+dengue,Andhra Pradesh,Palnadu,2024,Jan,2739911,180,165,157,2,6,22,143,0.6,0.012,27,27
+dengue,Andhra Pradesh,Palnadu,2024,Feb,2739911,65,56,53,0,3,6,50,0.2,0,28,31
+dengue,Andhra Pradesh,Palnadu,2024,Mar,2739911,197,187,171,3,13,14,173,0.68,0.016,3,28
+dengue,Andhra Pradesh,Palnadu,2024,Apr,2739911,188,171,157,1,13,9,162,0.62,0.006,53,29
+dengue,Andhra Pradesh,Palnadu,2024,May,2739911,76,71,68,0,3,9,62,0.26,0,13,26
+dengue,Andhra Pradesh,Palnadu,2024,Jun,2739911,328,314,297,4,13,19,295,1.15,0.013,95,30
+dengue,Andhra Pradesh,Palnadu,2024,Jul,2739911,382,364,341,3,20,53,311,1.33,0.008,133,25
+dengue,Andhra Pradesh,Palnadu,2024,Aug,2739911,148,133,119,2,12,8,125,0.49,0.015,132,27
+dengue,Andhra Pradesh,Palnadu,2024,Sep,2739911,360,338,323,1,14,49,289,1.23,0.003,112,33
+dengue,Andhra Pradesh,Palnadu,2024,Oct,2739911,346,328,301,5,22,20,308,1.2,0.015,213,32
+dengue,Andhra Pradesh,Palnadu,2024,Nov,2739911,63,53,49,0,4,7,46,0.19,0,53,27
+dengue,Andhra Pradesh,Palnadu,2024,Dec,2739911,188,176,165,1,10,24,152,0.64,0.006,2,33
+dengue,Andhra Pradesh,Palnadu,2025,Jan,2739911,139,128,123,0,5,7,121,0.47,0,29,25
+dengue,Andhra Pradesh,Palnadu,2025,Feb,2739911,180,153,143,3,7,20,133,0.56,0.02,21,29
+dengue,Andhra Pradesh,Palnadu,2025,Mar,2739911,77,73,68,0,5,4,69,0.27,0,9,28
+dengue,Andhra Pradesh,Palnadu,2025,Apr,2739911,67,63,60,0,3,6,57,0.23,0,47,32
+dengue,Andhra Pradesh,Palnadu,2025,May,2739911,100,95,88,0,7,7,88,0.35,0,52,37
+dengue,Andhra Pradesh,Palnadu,2025,Jun,2739911,398,367,346,5,16,44,323,1.34,0.014,181,31
+dengue,Andhra Pradesh,Palnadu,2025,Jul,2739911,496,429,393,7,29,63,366,1.57,0.016,243,32
+dengue,Andhra Pradesh,Palnadu,2025,Aug,2739911,422,382,370,3,9,34,348,1.39,0.008,263,33
+dengue,Andhra Pradesh,Palnadu,2025,Sep,2739911,388,331,311,6,14,24,307,1.21,0.018,142,37
+dengue,Andhra Pradesh,Palnadu,2025,Oct,2739911,296,258,243,2,13,18,240,0.94,0.008,190,37
+dengue,Andhra Pradesh,Palnadu,2025,Nov,2739911,78,66,60,0,6,4,62,0.24,0,26,31
+dengue,Andhra Pradesh,Palnadu,2025,Dec,2739911,107,96,87,1,8,5,91,0.35,0.01,41,33
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Jan,1778167,109,93,87,0,6,7,86,0.52,0,39,31
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Feb,1778167,72,61,57,0,4,5,56,0.34,0,46,37
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Mar,1778167,40,35,33,0,2,4,31,0.2,0,45,36
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Apr,1778167,190,168,160,3,5,22,146,0.94,0.018,8,33
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,May,1778167,112,95,90,1,4,5,90,0.53,0.011,20,26
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Jun,1778167,390,336,311,3,22,29,307,1.89,0.009,196,36
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Jul,1778167,434,408,369,2,37,34,374,2.29,0.005,307,37
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Aug,1778167,308,285,274,3,8,28,257,1.6,0.011,100,30
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Sep,1778167,340,295,269,4,22,36,259,1.66,0.014,142,30
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Oct,1778167,360,329,299,1,29,30,299,1.85,0.003,284,25
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Nov,1778167,83,76,68,0,8,8,68,0.43,0,31,33
+dengue,Andhra Pradesh,Parvathipuram Manyam,2024,Dec,1778167,57,54,48,0,6,7,47,0.3,0,36,27
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Jan,1778167,177,156,143,2,11,14,142,0.88,0.013,34,27
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Feb,1778167,195,185,178,2,5,15,170,1.04,0.011,48,34
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Mar,1778167,84,71,65,0,6,7,64,0.4,0,28,29
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Apr,1778167,44,38,36,0,2,2,36,0.21,0,29,34
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,May,1778167,189,169,152,1,16,21,148,0.95,0.006,11,25
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Jun,1778167,324,301,283,3,15,21,280,1.69,0.01,253,30
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Jul,1778167,228,196,178,3,15,14,182,1.1,0.015,116,35
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Aug,1778167,188,168,151,0,17,14,154,0.94,0,283,27
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Sep,1778167,198,175,159,2,14,11,164,0.98,0.011,171,37
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Oct,1778167,172,165,152,3,10,18,147,0.93,0.018,250,25
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Nov,1778167,62,54,52,0,2,4,50,0.3,0,48,30
+dengue,Andhra Pradesh,Parvathipuram Manyam,2025,Dec,1778167,93,89,83,1,5,5,84,0.5,0.011,53,35
+dengue,Andhra Pradesh,Prakasam,2024,Jan,3638242,108,97,89,0,8,6,91,0.27,0,49,29
+dengue,Andhra Pradesh,Prakasam,2024,Feb,3638242,178,165,151,2,12,17,148,0.45,0.012,1,36
+dengue,Andhra Pradesh,Prakasam,2024,Mar,3638242,192,166,154,2,10,16,150,0.46,0.012,51,37
+dengue,Andhra Pradesh,Prakasam,2024,Apr,3638242,52,48,44,0,4,6,42,0.13,0,19,29
+dengue,Andhra Pradesh,Prakasam,2024,May,3638242,107,92,88,1,3,12,80,0.25,0.011,27,29
+dengue,Andhra Pradesh,Prakasam,2024,Jun,3638242,294,275,257,4,14,17,258,0.76,0.015,54,25
+dengue,Andhra Pradesh,Prakasam,2024,Jul,3638242,466,411,395,7,9,26,385,1.13,0.017,196,34
+dengue,Andhra Pradesh,Prakasam,2024,Aug,3638242,194,167,159,2,6,13,154,0.46,0.012,277,30
+dengue,Andhra Pradesh,Prakasam,2024,Sep,3638242,248,216,205,2,9,21,195,0.59,0.009,298,27
+dengue,Andhra Pradesh,Prakasam,2024,Oct,3638242,456,436,406,5,25,48,388,1.2,0.011,288,28
+dengue,Andhra Pradesh,Prakasam,2024,Nov,3638242,147,141,128,0,13,19,122,0.39,0,17,25
+dengue,Andhra Pradesh,Prakasam,2024,Dec,3638242,129,114,104,1,9,8,106,0.31,0.009,5,37
+dengue,Andhra Pradesh,Prakasam,2025,Jan,3638242,179,165,159,0,6,16,149,0.45,0,29,30
+dengue,Andhra Pradesh,Prakasam,2025,Feb,3638242,176,168,157,2,9,19,149,0.46,0.012,12,26
+dengue,Andhra Pradesh,Prakasam,2025,Mar,3638242,174,153,139,2,12,7,146,0.42,0.013,19,26
+dengue,Andhra Pradesh,Prakasam,2025,Apr,3638242,45,43,38,0,5,2,41,0.12,0,36,33
+dengue,Andhra Pradesh,Prakasam,2025,May,3638242,68,63,57,1,5,7,56,0.17,0.016,9,25
+dengue,Andhra Pradesh,Prakasam,2025,Jun,3638242,426,397,360,4,33,48,349,1.09,0.01,309,30
+dengue,Andhra Pradesh,Prakasam,2025,Jul,3638242,248,221,200,3,18,31,190,0.61,0.014,339,37
+dengue,Andhra Pradesh,Prakasam,2025,Aug,3638242,220,189,181,2,6,11,178,0.52,0.011,211,34
+dengue,Andhra Pradesh,Prakasam,2025,Sep,3638242,346,323,291,1,31,29,294,0.89,0.003,160,36
+dengue,Andhra Pradesh,Prakasam,2025,Oct,3638242,166,146,139,2,5,13,133,0.4,0.014,76,30
+dengue,Andhra Pradesh,Prakasam,2025,Nov,3638242,81,77,72,0,5,4,73,0.21,0,19,29
+dengue,Andhra Pradesh,Prakasam,2025,Dec,3638242,54,50,45,0,5,5,45,0.14,0,10,34
+dengue,Andhra Pradesh,SPSR Nellore,2024,Jan,1829365,199,182,171,2,9,17,165,0.99,0.011,46,28
+dengue,Andhra Pradesh,SPSR Nellore,2024,Feb,1829365,81,76,71,0,5,4,72,0.42,0,23,32
+dengue,Andhra Pradesh,SPSR Nellore,2024,Mar,1829365,48,43,39,0,4,4,39,0.24,0,11,33
+dengue,Andhra Pradesh,SPSR Nellore,2024,Apr,1829365,78,69,62,0,7,3,66,0.38,0,32,30
+dengue,Andhra Pradesh,SPSR Nellore,2024,May,1829365,69,66,62,0,4,5,61,0.36,0,44,33
+dengue,Andhra Pradesh,SPSR Nellore,2024,Jun,1829365,226,200,181,2,17,15,185,1.09,0.01,211,36
+dengue,Andhra Pradesh,SPSR Nellore,2024,Jul,1829365,490,462,444,5,13,65,397,2.53,0.011,161,32
+dengue,Andhra Pradesh,SPSR Nellore,2024,Aug,1829365,456,392,371,4,17,34,358,2.14,0.01,266,32
+dengue,Andhra Pradesh,SPSR Nellore,2024,Sep,1829365,464,394,359,6,29,45,349,2.15,0.015,73,36
+dengue,Andhra Pradesh,SPSR Nellore,2024,Oct,1829365,120,115,109,1,5,6,109,0.63,0.009,260,36
+dengue,Andhra Pradesh,SPSR Nellore,2024,Nov,1829365,68,58,53,1,4,5,53,0.32,0.017,41,27
+dengue,Andhra Pradesh,SPSR Nellore,2024,Dec,1829365,76,65,61,1,3,3,62,0.36,0.015,7,33
+dengue,Andhra Pradesh,SPSR Nellore,2025,Jan,1829365,49,44,42,0,2,3,41,0.24,0,9,30
+dengue,Andhra Pradesh,SPSR Nellore,2025,Feb,1829365,82,78,71,1,6,8,70,0.43,0.013,34,33
+dengue,Andhra Pradesh,SPSR Nellore,2025,Mar,1829365,45,41,39,0,2,4,37,0.22,0,21,36
+dengue,Andhra Pradesh,SPSR Nellore,2025,Apr,1829365,82,71,68,0,3,6,65,0.39,0,57,25
+dengue,Andhra Pradesh,SPSR Nellore,2025,May,1829365,133,125,117,0,8,14,111,0.68,0,13,29
+dengue,Andhra Pradesh,SPSR Nellore,2025,Jun,1829365,302,268,241,1,26,24,244,1.46,0.004,160,30
+dengue,Andhra Pradesh,SPSR Nellore,2025,Jul,1829365,132,126,115,1,10,17,109,0.69,0.008,237,34
+dengue,Andhra Pradesh,SPSR Nellore,2025,Aug,1829365,228,202,192,3,7,20,182,1.1,0.015,235,36
+dengue,Andhra Pradesh,SPSR Nellore,2025,Sep,1829365,152,139,125,1,13,12,127,0.76,0.007,183,31
+dengue,Andhra Pradesh,SPSR Nellore,2025,Oct,1829365,404,380,355,3,22,33,347,2.08,0.008,65,35
+dengue,Andhra Pradesh,SPSR Nellore,2025,Nov,1829365,132,122,118,2,2,6,116,0.67,0.016,11,32
+dengue,Andhra Pradesh,SPSR Nellore,2025,Dec,1829365,199,174,158,3,13,21,153,0.95,0.017,29,26
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Jan,4710548,164,148,133,2,13,16,132,0.31,0.014,40,33
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Feb,4710548,134,126,122,1,3,18,108,0.27,0.008,28,30
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Mar,4710548,52,45,41,0,4,5,40,0.1,0,10,35
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Apr,4710548,75,66,63,0,3,9,57,0.14,0,31,36
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,May,4710548,91,81,78,0,3,7,74,0.17,0,47,33
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Jun,4710548,446,382,347,1,34,43,339,0.81,0.003,297,30
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Jul,4710548,420,405,379,3,23,40,365,0.86,0.007,326,29
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Aug,4710548,366,323,308,3,12,33,290,0.69,0.009,272,27
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Sep,4710548,110,99,90,0,9,13,86,0.21,0,289,35
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Oct,4710548,252,230,213,3,14,14,216,0.49,0.013,117,27
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Nov,4710548,77,69,66,0,3,4,65,0.15,0,37,33
+dengue,Andhra Pradesh,Sri Sathya Sai,2024,Dec,4710548,53,48,43,0,5,7,41,0.1,0,4,36
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Jan,4710548,131,122,112,1,9,10,112,0.26,0.008,16,26
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Feb,4710548,168,158,143,1,14,19,139,0.34,0.006,47,25
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Mar,4710548,176,163,148,2,13,20,143,0.35,0.012,22,36
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Apr,4710548,148,140,133,1,6,14,126,0.3,0.007,43,29
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,May,4710548,175,155,148,2,5,9,146,0.33,0.013,37,35
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Jun,4710548,340,305,293,1,11,42,263,0.65,0.003,297,31
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Jul,4710548,408,393,367,4,22,38,355,0.83,0.01,166,27
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Aug,4710548,296,285,268,2,15,36,249,0.61,0.007,165,37
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Sep,4710548,460,410,387,3,20,28,382,0.87,0.007,165,31
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Oct,4710548,118,112,106,0,6,16,96,0.24,0,327,26
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Nov,4710548,174,167,157,1,9,18,149,0.35,0.006,35,36
+dengue,Andhra Pradesh,Sri Sathya Sai,2025,Dec,4710548,60,57,51,0,6,8,49,0.12,0,26,32
+dengue,Andhra Pradesh,Srikakulam,2024,Jan,2287201,145,130,124,1,5,12,118,0.57,0.008,52,37
+dengue,Andhra Pradesh,Srikakulam,2024,Feb,2287201,148,129,119,2,8,9,120,0.56,0.016,57,35
+dengue,Andhra Pradesh,Srikakulam,2024,Mar,2287201,93,82,78,0,4,4,78,0.36,0,27,32
+dengue,Andhra Pradesh,Srikakulam,2024,Apr,2287201,192,170,161,2,7,19,151,0.74,0.012,3,26
+dengue,Andhra Pradesh,Srikakulam,2024,May,2287201,187,169,152,1,16,24,145,0.74,0.006,31,29
+dengue,Andhra Pradesh,Srikakulam,2024,Jun,2287201,222,202,190,1,11,17,185,0.88,0.005,187,32
+dengue,Andhra Pradesh,Srikakulam,2024,Jul,2287201,368,321,289,3,29,44,277,1.4,0.009,87,27
+dengue,Andhra Pradesh,Srikakulam,2024,Aug,2287201,426,400,383,4,13,32,368,1.75,0.01,239,29
+dengue,Andhra Pradesh,Srikakulam,2024,Sep,2287201,148,130,119,0,11,10,120,0.57,0,96,30
+dengue,Andhra Pradesh,Srikakulam,2024,Oct,2287201,176,154,146,2,6,10,144,0.67,0.013,321,35
+dengue,Andhra Pradesh,Srikakulam,2024,Nov,2287201,64,60,54,0,6,6,54,0.26,0,17,35
+dengue,Andhra Pradesh,Srikakulam,2024,Dec,2287201,47,42,38,0,4,4,38,0.18,0,59,29
+dengue,Andhra Pradesh,Srikakulam,2025,Jan,2287201,120,103,96,1,6,8,95,0.45,0.01,41,32
+dengue,Andhra Pradesh,Srikakulam,2025,Feb,2287201,194,181,171,2,8,25,156,0.79,0.011,23,34
+dengue,Andhra Pradesh,Srikakulam,2025,Mar,2287201,172,163,150,0,13,8,155,0.71,0,9,37
+dengue,Andhra Pradesh,Srikakulam,2025,Apr,2287201,95,84,81,1,2,10,74,0.37,0.012,12,37
+dengue,Andhra Pradesh,Srikakulam,2025,May,2287201,185,169,155,2,12,17,152,0.74,0.012,32,28
+dengue,Andhra Pradesh,Srikakulam,2025,Jun,2287201,390,332,316,2,14,43,289,1.45,0.006,338,26
+dengue,Andhra Pradesh,Srikakulam,2025,Jul,2287201,476,410,385,5,20,49,361,1.79,0.012,217,27
+dengue,Andhra Pradesh,Srikakulam,2025,Aug,2287201,484,429,400,2,27,62,367,1.88,0.005,196,36
+dengue,Andhra Pradesh,Srikakulam,2025,Sep,2287201,258,223,214,1,8,18,205,0.97,0.004,200,26
+dengue,Andhra Pradesh,Srikakulam,2025,Oct,2287201,338,320,299,1,20,26,294,1.4,0.003,163,31
+dengue,Andhra Pradesh,Srikakulam,2025,Nov,2287201,105,97,88,0,9,6,91,0.42,0,12,29
+dengue,Andhra Pradesh,Srikakulam,2025,Dec,2287201,99,86,79,1,6,8,78,0.38,0.012,28,29
+dengue,Andhra Pradesh,Tirupati,2024,Jan,2870455,133,116,107,0,9,9,107,0.4,0,22,29
+dengue,Andhra Pradesh,Tirupati,2024,Feb,2870455,137,117,108,2,7,13,104,0.41,0.017,54,31
+dengue,Andhra Pradesh,Tirupati,2024,Mar,2870455,102,88,84,1,3,9,79,0.31,0.011,20,37
+dengue,Andhra Pradesh,Tirupati,2024,Apr,2870455,58,51,47,1,3,2,49,0.18,0.02,29,34
+dengue,Andhra Pradesh,Tirupati,2024,May,2870455,52,44,41,0,3,4,40,0.15,0,18,34
+dengue,Andhra Pradesh,Tirupati,2024,Jun,2870455,436,381,356,2,23,42,339,1.33,0.005,147,33
+dengue,Andhra Pradesh,Tirupati,2024,Jul,2870455,168,148,136,2,10,21,127,0.52,0.014,344,35
+dengue,Andhra Pradesh,Tirupati,2024,Aug,2870455,412,395,357,4,34,47,348,1.38,0.01,133,27
+dengue,Andhra Pradesh,Tirupati,2024,Sep,2870455,320,293,276,4,13,25,268,1.02,0.014,332,34
+dengue,Andhra Pradesh,Tirupati,2024,Oct,2870455,244,228,214,2,12,17,211,0.79,0.009,307,37
+dengue,Andhra Pradesh,Tirupati,2024,Nov,2870455,196,188,170,1,17,27,161,0.65,0.005,22,27
+dengue,Andhra Pradesh,Tirupati,2024,Dec,2870455,77,65,62,0,3,5,60,0.23,0,45,36
+dengue,Andhra Pradesh,Tirupati,2025,Jan,2870455,193,164,154,1,9,15,149,0.57,0.006,1,34
+dengue,Andhra Pradesh,Tirupati,2025,Feb,2870455,170,159,149,2,8,11,148,0.55,0.013,38,25
+dengue,Andhra Pradesh,Tirupati,2025,Mar,2870455,98,83,77,0,6,10,73,0.29,0,25,36
+dengue,Andhra Pradesh,Tirupati,2025,Apr,2870455,128,112,104,1,7,5,107,0.39,0.009,56,36
+dengue,Andhra Pradesh,Tirupati,2025,May,2870455,52,47,44,0,3,3,44,0.16,0,39,25
+dengue,Andhra Pradesh,Tirupati,2025,Jun,2870455,400,342,329,1,12,29,313,1.19,0.003,118,35
+dengue,Andhra Pradesh,Tirupati,2025,Jul,2870455,450,431,398,4,29,30,401,1.5,0.009,210,35
+dengue,Andhra Pradesh,Tirupati,2025,Aug,2870455,130,111,107,1,3,14,97,0.39,0.009,324,28
+dengue,Andhra Pradesh,Tirupati,2025,Sep,2870455,472,417,398,4,15,42,375,1.45,0.01,140,32
+dengue,Andhra Pradesh,Tirupati,2025,Oct,2870455,456,429,398,3,28,55,374,1.49,0.007,344,25
+dengue,Andhra Pradesh,Tirupati,2025,Nov,2870455,189,169,162,2,5,21,148,0.59,0.012,21,26
+dengue,Andhra Pradesh,Tirupati,2025,Dec,2870455,190,181,170,3,8,18,163,0.63,0.017,50,36
+dengue,Andhra Pradesh,Visakhapatnam,2024,Jan,3266891,124,119,107,2,10,9,110,0.36,0.017,11,34
+dengue,Andhra Pradesh,Visakhapatnam,2024,Feb,3266891,187,163,153,1,9,15,148,0.5,0.006,24,28
+dengue,Andhra Pradesh,Visakhapatnam,2024,Mar,3266891,142,133,123,1,9,10,123,0.41,0.008,38,29
+dengue,Andhra Pradesh,Visakhapatnam,2024,Apr,3266891,164,140,127,2,11,19,121,0.43,0.014,45,28
+dengue,Andhra Pradesh,Visakhapatnam,2024,May,3266891,105,90,82,0,8,6,84,0.28,0,56,34
+dengue,Andhra Pradesh,Visakhapatnam,2024,Jun,3266891,144,126,119,0,7,17,109,0.39,0,286,31
+dengue,Andhra Pradesh,Visakhapatnam,2024,Jul,3266891,190,182,175,1,6,15,167,0.56,0.005,344,25
+dengue,Andhra Pradesh,Visakhapatnam,2024,Aug,3266891,324,279,258,3,18,27,252,0.85,0.011,199,33
+dengue,Andhra Pradesh,Visakhapatnam,2024,Sep,3266891,334,315,303,3,9,30,285,0.96,0.01,263,33
+dengue,Andhra Pradesh,Visakhapatnam,2024,Oct,3266891,156,141,130,2,9,12,129,0.43,0.014,161,31
+dengue,Andhra Pradesh,Visakhapatnam,2024,Nov,3266891,75,65,58,1,6,8,57,0.2,0.015,18,30
+dengue,Andhra Pradesh,Visakhapatnam,2024,Dec,3266891,65,57,52,0,5,7,50,0.17,0,58,34
+dengue,Andhra Pradesh,Visakhapatnam,2025,Jan,3266891,131,114,106,1,7,8,106,0.35,0.009,55,30
+dengue,Andhra Pradesh,Visakhapatnam,2025,Feb,3266891,140,122,111,2,9,13,109,0.37,0.016,9,25
+dengue,Andhra Pradesh,Visakhapatnam,2025,Mar,3266891,191,182,172,2,8,22,160,0.56,0.011,29,26
+dengue,Andhra Pradesh,Visakhapatnam,2025,Apr,3266891,117,105,100,1,4,10,95,0.32,0.01,13,25
+dengue,Andhra Pradesh,Visakhapatnam,2025,May,3266891,90,86,80,1,5,8,78,0.26,0.012,13,29
+dengue,Andhra Pradesh,Visakhapatnam,2025,Jun,3266891,150,143,130,1,12,13,130,0.44,0.007,290,25
+dengue,Andhra Pradesh,Visakhapatnam,2025,Jul,3266891,440,377,351,5,21,42,335,1.15,0.013,331,36
+dengue,Andhra Pradesh,Visakhapatnam,2025,Aug,3266891,386,328,311,4,13,43,285,1,0.012,135,33
+dengue,Andhra Pradesh,Visakhapatnam,2025,Sep,3266891,314,279,266,3,10,19,260,0.85,0.011,320,27
+dengue,Andhra Pradesh,Visakhapatnam,2025,Oct,3266891,376,323,299,5,19,45,278,0.99,0.015,97,26
+dengue,Andhra Pradesh,Visakhapatnam,2025,Nov,3266891,148,141,130,1,10,20,121,0.43,0.007,28,28
+dengue,Andhra Pradesh,Visakhapatnam,2025,Dec,3266891,84,81,75,1,5,12,69,0.25,0.012,20,37
+dengue,Andhra Pradesh,Vizianagaram,2024,Jan,1827069,137,117,108,0,9,14,103,0.64,0,40,35
+dengue,Andhra Pradesh,Vizianagaram,2024,Feb,1827069,185,165,153,2,10,19,146,0.9,0.012,43,35
+dengue,Andhra Pradesh,Vizianagaram,2024,Mar,1827069,165,144,136,1,7,7,137,0.79,0.007,34,37
+dengue,Andhra Pradesh,Vizianagaram,2024,Apr,1827069,77,66,62,0,4,8,58,0.36,0,45,31
+dengue,Andhra Pradesh,Vizianagaram,2024,May,1827069,85,79,71,0,8,9,70,0.43,0,59,31
+dengue,Andhra Pradesh,Vizianagaram,2024,Jun,1827069,282,246,236,3,7,34,212,1.35,0.012,264,27
+dengue,Andhra Pradesh,Vizianagaram,2024,Jul,1827069,140,129,124,1,4,14,115,0.71,0.008,219,37
+dengue,Andhra Pradesh,Vizianagaram,2024,Aug,1827069,124,116,107,1,8,7,109,0.63,0.009,286,35
+dengue,Andhra Pradesh,Vizianagaram,2024,Sep,1827069,358,322,310,4,8,22,300,1.76,0.012,130,34
+dengue,Andhra Pradesh,Vizianagaram,2024,Oct,1827069,102,88,81,1,6,12,76,0.48,0.011,111,30
+dengue,Andhra Pradesh,Vizianagaram,2024,Nov,1827069,195,187,176,1,10,14,173,1.02,0.005,28,29
+dengue,Andhra Pradesh,Vizianagaram,2024,Dec,1827069,136,120,113,2,5,6,114,0.66,0.017,53,28
+dengue,Andhra Pradesh,Vizianagaram,2025,Jan,1827069,57,55,52,0,3,6,49,0.3,0,33,36
+dengue,Andhra Pradesh,Vizianagaram,2025,Feb,1827069,148,126,115,0,11,17,109,0.69,0,35,29
+dengue,Andhra Pradesh,Vizianagaram,2025,Mar,1827069,87,74,70,0,4,10,64,0.41,0,59,32
+dengue,Andhra Pradesh,Vizianagaram,2025,Apr,1827069,164,147,139,0,8,18,129,0.8,0,33,30
+dengue,Andhra Pradesh,Vizianagaram,2025,May,1827069,139,119,107,2,10,9,110,0.65,0.017,31,35
+dengue,Andhra Pradesh,Vizianagaram,2025,Jun,1827069,220,209,202,1,6,11,198,1.14,0.005,302,37
+dengue,Andhra Pradesh,Vizianagaram,2025,Jul,1827069,324,312,300,5,7,28,284,1.71,0.016,340,30
+dengue,Andhra Pradesh,Vizianagaram,2025,Aug,1827069,430,366,352,5,9,29,337,2,0.014,232,35
+dengue,Andhra Pradesh,Vizianagaram,2025,Sep,1827069,470,431,406,7,18,46,385,2.36,0.016,74,28
+dengue,Andhra Pradesh,Vizianagaram,2025,Oct,1827069,220,203,193,3,7,12,191,1.11,0.015,202,28
+dengue,Andhra Pradesh,Vizianagaram,2025,Nov,1827069,77,70,67,1,2,5,65,0.38,0.014,5,35
+dengue,Andhra Pradesh,Vizianagaram,2025,Dec,1827069,145,140,135,2,3,18,122,0.77,0.014,20,30
+dengue,Andhra Pradesh,West Godavari,2024,Jan,3325573,161,146,141,2,3,12,134,0.44,0.014,54,26
+dengue,Andhra Pradesh,West Godavari,2024,Feb,3325573,135,130,118,1,11,15,115,0.39,0.008,25,33
+dengue,Andhra Pradesh,West Godavari,2024,Mar,3325573,184,162,147,2,13,17,145,0.49,0.012,15,32
+dengue,Andhra Pradesh,West Godavari,2024,Apr,3325573,159,143,135,2,6,9,134,0.43,0.014,20,26
+dengue,Andhra Pradesh,West Godavari,2024,May,3325573,128,109,99,1,9,10,99,0.33,0.009,20,30
+dengue,Andhra Pradesh,West Godavari,2024,Jun,3325573,360,333,321,6,6,36,297,1,0.018,279,26
+dengue,Andhra Pradesh,West Godavari,2024,Jul,3325573,170,146,138,0,8,15,131,0.44,0,197,32
+dengue,Andhra Pradesh,West Godavari,2024,Aug,3325573,156,140,126,1,13,19,121,0.42,0.007,193,35
+dengue,Andhra Pradesh,West Godavari,2024,Sep,3325573,112,101,97,1,3,8,93,0.3,0.01,264,32
+dengue,Andhra Pradesh,West Godavari,2024,Oct,3325573,244,236,212,4,20,26,210,0.71,0.017,168,33
+dengue,Andhra Pradesh,West Godavari,2024,Nov,3325573,45,43,41,0,2,3,40,0.13,0,53,31
+dengue,Andhra Pradesh,West Godavari,2024,Dec,3325573,48,45,43,0,2,2,43,0.14,0,11,26
+dengue,Andhra Pradesh,West Godavari,2025,Jan,3325573,181,162,147,1,14,8,154,0.49,0.006,24,34
+dengue,Andhra Pradesh,West Godavari,2025,Feb,3325573,167,145,131,2,12,18,127,0.44,0.014,40,32
+dengue,Andhra Pradesh,West Godavari,2025,Mar,3325573,71,60,54,0,6,6,54,0.18,0,29,32
+dengue,Andhra Pradesh,West Godavari,2025,Apr,3325573,87,82,75,0,7,6,76,0.25,0,36,29
+dengue,Andhra Pradesh,West Godavari,2025,May,3325573,60,56,50,0,6,7,49,0.17,0,56,31
+dengue,Andhra Pradesh,West Godavari,2025,Jun,3325573,142,128,117,1,10,16,112,0.38,0.008,241,30
+dengue,Andhra Pradesh,West Godavari,2025,Jul,3325573,118,107,97,1,9,8,99,0.32,0.009,194,25
+dengue,Andhra Pradesh,West Godavari,2025,Aug,3325573,212,198,182,2,14,13,185,0.6,0.01,138,26
+dengue,Andhra Pradesh,West Godavari,2025,Sep,3325573,328,317,300,2,15,17,300,0.95,0.006,216,37
+dengue,Andhra Pradesh,West Godavari,2025,Oct,3325573,260,244,235,1,8,24,220,0.73,0.004,257,33
+dengue,Andhra Pradesh,West Godavari,2025,Nov,3325573,192,176,166,2,8,10,166,0.53,0.011,48,26
+dengue,Andhra Pradesh,West Godavari,2025,Dec,3325573,154,136,126,2,8,8,128,0.41,0.015,13,37
+dengue,Andhra Pradesh,YSR Kadapa,2024,Jan,4844769,104,98,91,1,6,9,89,0.2,0.01,14,30
+dengue,Andhra Pradesh,YSR Kadapa,2024,Feb,4844769,144,139,134,2,3,10,129,0.29,0.014,38,32
+dengue,Andhra Pradesh,YSR Kadapa,2024,Mar,4844769,81,71,64,0,7,9,62,0.15,0,22,37
+dengue,Andhra Pradesh,YSR Kadapa,2024,Apr,4844769,172,166,156,1,9,14,152,0.34,0.006,35,34
+dengue,Andhra Pradesh,YSR Kadapa,2024,May,4844769,144,137,126,2,9,14,123,0.28,0.015,5,28
+dengue,Andhra Pradesh,YSR Kadapa,2024,Jun,4844769,276,235,215,3,17,24,211,0.49,0.013,62,37
+dengue,Andhra Pradesh,YSR Kadapa,2024,Jul,4844769,352,324,292,3,29,23,301,0.67,0.009,322,32
+dengue,Andhra Pradesh,YSR Kadapa,2024,Aug,4844769,214,187,180,3,4,20,167,0.39,0.016,160,35
+dengue,Andhra Pradesh,YSR Kadapa,2024,Sep,4844769,124,112,104,1,7,7,105,0.23,0.009,51,30
+dengue,Andhra Pradesh,YSR Kadapa,2024,Oct,4844769,388,362,349,3,10,43,319,0.75,0.008,318,35
+dengue,Andhra Pradesh,YSR Kadapa,2024,Nov,4844769,114,99,91,1,7,11,88,0.2,0.01,9,28
+dengue,Andhra Pradesh,YSR Kadapa,2024,Dec,4844769,125,113,102,0,11,11,102,0.23,0,52,33
+dengue,Andhra Pradesh,YSR Kadapa,2025,Jan,4844769,184,178,170,2,6,12,166,0.37,0.011,32,36
+dengue,Andhra Pradesh,YSR Kadapa,2025,Feb,4844769,187,163,157,2,4,18,145,0.34,0.012,42,27
+dengue,Andhra Pradesh,YSR Kadapa,2025,Mar,4844769,150,137,129,1,7,14,123,0.28,0.007,21,29
+dengue,Andhra Pradesh,YSR Kadapa,2025,Apr,4844769,173,166,153,0,13,8,158,0.34,0,51,30
+dengue,Andhra Pradesh,YSR Kadapa,2025,May,4844769,199,187,171,1,15,9,178,0.39,0.005,51,26
+dengue,Andhra Pradesh,YSR Kadapa,2025,Jun,4844769,224,191,180,2,9,22,169,0.39,0.01,233,30
+dengue,Andhra Pradesh,YSR Kadapa,2025,Jul,4844769,154,146,141,2,3,18,128,0.3,0.014,267,25
+dengue,Andhra Pradesh,YSR Kadapa,2025,Aug,4844769,184,163,151,2,10,17,146,0.34,0.012,277,31
+dengue,Andhra Pradesh,YSR Kadapa,2025,Sep,4844769,474,459,423,4,32,26,433,0.95,0.009,333,25
+dengue,Andhra Pradesh,YSR Kadapa,2025,Oct,4844769,438,390,373,7,10,26,364,0.8,0.018,257,26
+dengue,Andhra Pradesh,YSR Kadapa,2025,Nov,4844769,144,125,113,1,11,15,110,0.26,0.008,31,32
+dengue,Andhra Pradesh,YSR Kadapa,2025,Dec,4844769,134,129,120,1,8,9,120,0.27,0.008,54,34

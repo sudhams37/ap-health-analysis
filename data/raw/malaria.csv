@@ -1,0 +1,625 @@
+disease,State,District,Year,Month,Population,Total_Cases,Confirmed_Cases,Recovered,Deaths,Active_Cases,Pf_Cases,Pv_Cases,Incidence_Rate,Death_Rate,Rainfall,Temperature
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Jan,3719110,271,257,234,5,18,103,154,0.69,0.019,25,25
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Feb,3719110,298,265,228,4,33,125,140,0.71,0.015,47,38
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Mar,3719110,130,111,105,2,4,63,48,0.3,0.018,7,29
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Apr,3719110,152,123,116,3,4,69,54,0.33,0.024,9,34
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,May,3719110,132,110,96,2,12,57,53,0.3,0.018,8,39
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Jun,3719110,171,160,140,3,17,73,87,0.43,0.019,58,34
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Jul,3719110,124,102,96,2,4,59,43,0.27,0.02,274,39
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Aug,3719110,190,161,146,3,12,95,66,0.43,0.019,217,37
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Sep,3719110,241,212,192,6,14,110,102,0.57,0.028,45,37
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Oct,3719110,94,77,65,1,11,36,41,0.21,0.013,8,32
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Nov,3719110,142,130,119,3,8,72,58,0.35,0.023,5,34
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2024,Dec,3719110,120,112,104,2,6,46,66,0.3,0.018,23,38
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Jan,3719110,295,265,240,4,21,135,130,0.71,0.015,35,29
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Feb,3719110,254,230,212,4,14,127,103,0.62,0.017,39,35
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Mar,3719110,216,195,167,3,25,85,110,0.52,0.015,32,31
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Apr,3719110,131,115,105,1,9,59,56,0.31,0.009,15,35
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,May,3719110,108,90,77,1,12,38,52,0.24,0.011,2,34
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Jun,3719110,186,157,135,3,19,69,88,0.42,0.019,290,38
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Jul,3719110,231,196,168,3,25,113,83,0.53,0.015,287,38
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Aug,3719110,300,276,258,2,16,138,138,0.74,0.007,141,38
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Sep,3719110,366,330,289,4,37,143,187,0.89,0.012,164,32
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Oct,3719110,259,221,209,6,6,99,122,0.59,0.027,2,27
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Nov,3719110,192,157,149,2,6,93,64,0.42,0.013,28,30
+malaria,Andhra Pradesh,Alluri Sitarama Raju,2025,Dec,3719110,166,139,130,2,7,59,80,0.37,0.014,44,34
+malaria,Andhra Pradesh,Anakapalli,2024,Jan,4268307,239,211,191,2,18,99,112,0.49,0.009,17,39
+malaria,Andhra Pradesh,Anakapalli,2024,Feb,4268307,117,100,91,2,7,50,50,0.23,0.02,48,25
+malaria,Andhra Pradesh,Anakapalli,2024,Mar,4268307,280,237,205,2,30,122,115,0.56,0.008,36,27
+malaria,Andhra Pradesh,Anakapalli,2024,Apr,4268307,169,148,129,3,16,64,84,0.35,0.02,33,32
+malaria,Andhra Pradesh,Anakapalli,2024,May,4268307,207,181,169,4,8,99,82,0.42,0.022,23,39
+malaria,Andhra Pradesh,Anakapalli,2024,Jun,4268307,181,151,138,3,10,77,74,0.35,0.02,64,25
+malaria,Andhra Pradesh,Anakapalli,2024,Jul,4268307,121,114,107,2,5,65,49,0.27,0.018,13,33
+malaria,Andhra Pradesh,Anakapalli,2024,Aug,4268307,267,241,225,6,10,115,126,0.56,0.025,165,32
+malaria,Andhra Pradesh,Anakapalli,2024,Sep,4268307,292,237,205,6,26,123,114,0.56,0.025,231,38
+malaria,Andhra Pradesh,Anakapalli,2024,Oct,4268307,296,266,226,3,37,135,131,0.62,0.011,35,37
+malaria,Andhra Pradesh,Anakapalli,2024,Nov,4268307,248,204,173,4,27,88,116,0.48,0.02,8,31
+malaria,Andhra Pradesh,Anakapalli,2024,Dec,4268307,274,246,223,2,21,116,130,0.58,0.008,22,38
+malaria,Andhra Pradesh,Anakapalli,2025,Jan,4268307,237,224,199,6,19,117,107,0.52,0.027,34,29
+malaria,Andhra Pradesh,Anakapalli,2025,Feb,4268307,109,97,88,2,7,43,54,0.23,0.021,48,27
+malaria,Andhra Pradesh,Anakapalli,2025,Mar,4268307,83,66,60,0,6,38,28,0.15,0,29,38
+malaria,Andhra Pradesh,Anakapalli,2025,Apr,4268307,196,182,168,5,9,84,98,0.43,0.027,46,29
+malaria,Andhra Pradesh,Anakapalli,2025,May,4268307,174,164,153,2,9,78,86,0.38,0.012,23,25
+malaria,Andhra Pradesh,Anakapalli,2025,Jun,4268307,219,180,163,5,12,97,83,0.42,0.028,178,32
+malaria,Andhra Pradesh,Anakapalli,2025,Jul,4268307,289,257,243,3,11,129,128,0.6,0.012,277,32
+malaria,Andhra Pradesh,Anakapalli,2025,Aug,4268307,360,295,271,6,18,135,160,0.69,0.02,30,27
+malaria,Andhra Pradesh,Anakapalli,2025,Sep,4268307,193,179,168,3,8,89,90,0.42,0.017,177,28
+malaria,Andhra Pradesh,Anakapalli,2025,Oct,4268307,144,116,103,1,12,66,50,0.27,0.009,15,36
+malaria,Andhra Pradesh,Anakapalli,2025,Nov,4268307,177,144,130,1,13,71,73,0.34,0.007,22,34
+malaria,Andhra Pradesh,Anakapalli,2025,Dec,4268307,137,110,93,2,15,51,59,0.26,0.018,37,25
+malaria,Andhra Pradesh,Anantapur,2024,Jan,3729084,87,79,68,1,10,32,47,0.21,0.013,45,28
+malaria,Andhra Pradesh,Anantapur,2024,Feb,3729084,173,152,138,3,11,90,62,0.41,0.02,42,38
+malaria,Andhra Pradesh,Anantapur,2024,Mar,3729084,226,207,181,3,23,86,121,0.56,0.014,37,34
+malaria,Andhra Pradesh,Anantapur,2024,Apr,3729084,196,159,141,3,15,65,94,0.43,0.019,1,39
+malaria,Andhra Pradesh,Anantapur,2024,May,3729084,113,94,80,1,13,55,39,0.25,0.011,1,37
+malaria,Andhra Pradesh,Anantapur,2024,Jun,3729084,406,358,326,6,26,160,198,0.96,0.017,148,27
+malaria,Andhra Pradesh,Anantapur,2024,Jul,3729084,247,198,170,2,26,80,118,0.53,0.01,242,38
+malaria,Andhra Pradesh,Anantapur,2024,Aug,3729084,414,360,309,7,44,178,182,0.97,0.019,293,38
+malaria,Andhra Pradesh,Anantapur,2024,Sep,3729084,270,232,211,5,16,94,138,0.62,0.022,227,34
+malaria,Andhra Pradesh,Anantapur,2024,Oct,3729084,226,197,184,4,9,85,112,0.53,0.02,24,31
+malaria,Andhra Pradesh,Anantapur,2024,Nov,3729084,81,65,59,1,5,33,32,0.17,0.015,35,36
+malaria,Andhra Pradesh,Anantapur,2024,Dec,3729084,112,97,87,2,8,46,51,0.26,0.021,33,32
+malaria,Andhra Pradesh,Anantapur,2025,Jan,3729084,153,127,111,1,15,60,67,0.34,0.008,35,31
+malaria,Andhra Pradesh,Anantapur,2025,Feb,3729084,160,143,127,3,13,66,77,0.38,0.021,41,31
+malaria,Andhra Pradesh,Anantapur,2025,Mar,3729084,275,248,219,7,22,101,147,0.67,0.028,25,29
+malaria,Andhra Pradesh,Anantapur,2025,Apr,3729084,243,200,185,5,10,119,81,0.54,0.025,48,28
+malaria,Andhra Pradesh,Anantapur,2025,May,3729084,289,242,219,6,17,123,119,0.65,0.025,12,25
+malaria,Andhra Pradesh,Anantapur,2025,Jun,3729084,393,358,331,4,23,207,151,0.96,0.011,66,28
+malaria,Andhra Pradesh,Anantapur,2025,Jul,3729084,286,245,215,2,28,100,145,0.66,0.008,237,27
+malaria,Andhra Pradesh,Anantapur,2025,Aug,3729084,232,197,186,4,7,97,100,0.53,0.02,148,29
+malaria,Andhra Pradesh,Anantapur,2025,Sep,3729084,222,187,165,4,18,102,85,0.5,0.021,155,33
+malaria,Andhra Pradesh,Anantapur,2025,Oct,3729084,118,96,86,1,9,48,48,0.26,0.01,5,27
+malaria,Andhra Pradesh,Anantapur,2025,Nov,3729084,294,259,238,7,14,139,120,0.69,0.027,44,25
+malaria,Andhra Pradesh,Anantapur,2025,Dec,3729084,86,74,64,1,9,42,32,0.2,0.014,2,29
+malaria,Andhra Pradesh,Annamayya,2024,Jan,3856330,108,87,82,1,4,41,46,0.23,0.011,17,39
+malaria,Andhra Pradesh,Annamayya,2024,Feb,3856330,150,142,131,2,9,59,83,0.37,0.014,44,30
+malaria,Andhra Pradesh,Annamayya,2024,Mar,3856330,246,212,199,2,11,105,107,0.55,0.009,13,26
+malaria,Andhra Pradesh,Annamayya,2024,Apr,3856330,299,264,243,6,15,149,115,0.68,0.023,39,25
+malaria,Andhra Pradesh,Annamayya,2024,May,3856330,210,186,175,3,8,85,101,0.48,0.016,33,30
+malaria,Andhra Pradesh,Annamayya,2024,Jun,3856330,294,277,235,8,34,113,164,0.72,0.029,153,30
+malaria,Andhra Pradesh,Annamayya,2024,Jul,3856330,438,415,355,8,52,246,169,1.08,0.019,51,33
+malaria,Andhra Pradesh,Annamayya,2024,Aug,3856330,192,173,154,3,16,89,84,0.45,0.017,148,31
+malaria,Andhra Pradesh,Annamayya,2024,Sep,3856330,396,371,350,4,17,177,194,0.96,0.011,160,29
+malaria,Andhra Pradesh,Annamayya,2024,Oct,3856330,87,71,64,1,6,31,40,0.18,0.014,28,36
+malaria,Andhra Pradesh,Annamayya,2024,Nov,3856330,180,170,161,4,5,86,84,0.44,0.024,33,29
+malaria,Andhra Pradesh,Annamayya,2024,Dec,3856330,291,259,227,3,29,107,152,0.67,0.012,6,26
+malaria,Andhra Pradesh,Annamayya,2025,Jan,3856330,194,176,160,3,13,103,73,0.46,0.017,45,29
+malaria,Andhra Pradesh,Annamayya,2025,Feb,3856330,198,170,157,3,10,101,69,0.44,0.018,11,29
+malaria,Andhra Pradesh,Annamayya,2025,Mar,3856330,105,89,84,2,3,50,39,0.23,0.022,34,33
+malaria,Andhra Pradesh,Annamayya,2025,Apr,3856330,178,145,123,1,21,78,67,0.38,0.007,5,39
+malaria,Andhra Pradesh,Annamayya,2025,May,3856330,212,201,182,5,14,118,83,0.52,0.025,10,27
+malaria,Andhra Pradesh,Annamayya,2025,Jun,3856330,336,280,243,4,33,127,153,0.73,0.014,264,38
+malaria,Andhra Pradesh,Annamayya,2025,Jul,3856330,408,367,334,6,27,155,212,0.95,0.016,158,34
+malaria,Andhra Pradesh,Annamayya,2025,Aug,3856330,361,314,293,5,16,176,138,0.81,0.016,240,29
+malaria,Andhra Pradesh,Annamayya,2025,Sep,3856330,204,181,162,3,16,100,81,0.47,0.017,70,35
+malaria,Andhra Pradesh,Annamayya,2025,Oct,3856330,258,241,219,7,15,125,116,0.62,0.029,18,38
+malaria,Andhra Pradesh,Annamayya,2025,Nov,3856330,158,136,127,2,7,68,68,0.35,0.015,24,39
+malaria,Andhra Pradesh,Annamayya,2025,Dec,3856330,109,97,90,2,5,41,56,0.25,0.021,17,34
+malaria,Andhra Pradesh,Bapatla,2024,Jan,3192743,96,80,71,2,7,39,41,0.25,0.025,13,38
+malaria,Andhra Pradesh,Bapatla,2024,Feb,3192743,122,101,86,1,14,42,59,0.32,0.01,31,35
+malaria,Andhra Pradesh,Bapatla,2024,Mar,3192743,197,178,154,4,20,85,93,0.56,0.022,32,27
+malaria,Andhra Pradesh,Bapatla,2024,Apr,3192743,234,210,182,2,26,85,125,0.66,0.01,5,26
+malaria,Andhra Pradesh,Bapatla,2024,May,3192743,171,145,123,3,19,73,72,0.45,0.021,12,34
+malaria,Andhra Pradesh,Bapatla,2024,Jun,3192743,187,159,143,3,13,64,95,0.5,0.019,253,39
+malaria,Andhra Pradesh,Bapatla,2024,Jul,3192743,300,270,243,3,24,128,142,0.85,0.011,30,28
+malaria,Andhra Pradesh,Bapatla,2024,Aug,3192743,120,97,88,2,7,49,48,0.3,0.021,60,30
+malaria,Andhra Pradesh,Bapatla,2024,Sep,3192743,139,124,109,2,13,68,56,0.39,0.016,18,35
+malaria,Andhra Pradesh,Bapatla,2024,Oct,3192743,135,110,101,2,7,60,50,0.34,0.018,45,26
+malaria,Andhra Pradesh,Bapatla,2024,Nov,3192743,117,102,89,1,12,48,54,0.32,0.01,10,31
+malaria,Andhra Pradesh,Bapatla,2024,Dec,3192743,264,244,209,5,30,108,136,0.76,0.02,13,28
+malaria,Andhra Pradesh,Bapatla,2025,Jan,3192743,104,93,86,1,6,38,55,0.29,0.011,47,30
+malaria,Andhra Pradesh,Bapatla,2025,Feb,3192743,113,99,89,2,8,47,52,0.31,0.02,37,30
+malaria,Andhra Pradesh,Bapatla,2025,Mar,3192743,259,232,210,3,19,138,94,0.73,0.013,37,33
+malaria,Andhra Pradesh,Bapatla,2025,Apr,3192743,112,89,77,1,11,44,45,0.28,0.011,30,35
+malaria,Andhra Pradesh,Bapatla,2025,May,3192743,269,226,196,6,24,94,132,0.71,0.027,31,32
+malaria,Andhra Pradesh,Bapatla,2025,Jun,3192743,172,163,153,3,7,95,68,0.51,0.018,138,30
+malaria,Andhra Pradesh,Bapatla,2025,Jul,3192743,288,251,231,6,14,136,115,0.79,0.024,207,32
+malaria,Andhra Pradesh,Bapatla,2025,Aug,3192743,157,132,122,1,9,61,71,0.41,0.008,279,28
+malaria,Andhra Pradesh,Bapatla,2025,Sep,3192743,148,123,105,2,16,56,67,0.39,0.016,297,38
+malaria,Andhra Pradesh,Bapatla,2025,Oct,3192743,218,204,179,4,21,96,108,0.64,0.02,10,29
+malaria,Andhra Pradesh,Bapatla,2025,Nov,3192743,230,202,175,4,23,84,118,0.63,0.02,37,33
+malaria,Andhra Pradesh,Bapatla,2025,Dec,3192743,96,78,69,1,8,43,35,0.24,0.013,31,25
+malaria,Andhra Pradesh,Chittoor,2024,Jan,1610268,148,136,128,1,7,74,62,0.84,0.007,9,26
+malaria,Andhra Pradesh,Chittoor,2024,Feb,1610268,155,132,124,3,5,54,78,0.82,0.023,29,32
+malaria,Andhra Pradesh,Chittoor,2024,Mar,1610268,90,82,71,1,10,35,47,0.51,0.012,5,27
+malaria,Andhra Pradesh,Chittoor,2024,Apr,1610268,202,180,169,2,9,93,87,1.12,0.011,18,32
+malaria,Andhra Pradesh,Chittoor,2024,May,1610268,151,130,115,2,13,59,71,0.81,0.015,23,39
+malaria,Andhra Pradesh,Chittoor,2024,Jun,1610268,333,295,261,5,29,149,146,1.83,0.017,108,32
+malaria,Andhra Pradesh,Chittoor,2024,Jul,1610268,387,341,304,5,32,186,155,2.12,0.015,46,28
+malaria,Andhra Pradesh,Chittoor,2024,Aug,1610268,141,131,117,3,11,67,64,0.81,0.023,161,30
+malaria,Andhra Pradesh,Chittoor,2024,Sep,1610268,396,335,293,8,34,136,199,2.08,0.024,90,26
+malaria,Andhra Pradesh,Chittoor,2024,Oct,1610268,89,77,71,0,6,39,38,0.48,0,47,28
+malaria,Andhra Pradesh,Chittoor,2024,Nov,1610268,188,153,136,3,14,65,88,0.95,0.02,47,28
+malaria,Andhra Pradesh,Chittoor,2024,Dec,1610268,155,141,120,3,18,72,69,0.88,0.021,26,35
+malaria,Andhra Pradesh,Chittoor,2025,Jan,1610268,106,90,78,2,10,46,44,0.56,0.022,8,31
+malaria,Andhra Pradesh,Chittoor,2025,Feb,1610268,126,106,96,2,8,45,61,0.66,0.019,18,33
+malaria,Andhra Pradesh,Chittoor,2025,Mar,1610268,190,172,156,2,14,100,72,1.07,0.012,5,32
+malaria,Andhra Pradesh,Chittoor,2025,Apr,1610268,116,105,90,2,13,54,51,0.65,0.019,29,38
+malaria,Andhra Pradesh,Chittoor,2025,May,1610268,119,110,103,1,6,49,61,0.68,0.009,26,38
+malaria,Andhra Pradesh,Chittoor,2025,Jun,1610268,364,298,280,8,10,150,148,1.85,0.027,153,39
+malaria,Andhra Pradesh,Chittoor,2025,Jul,1610268,420,382,332,9,41,198,184,2.37,0.024,295,39
+malaria,Andhra Pradesh,Chittoor,2025,Aug,1610268,156,145,136,2,7,71,74,0.9,0.014,21,35
+malaria,Andhra Pradesh,Chittoor,2025,Sep,1610268,399,346,298,4,44,172,174,2.15,0.012,202,29
+malaria,Andhra Pradesh,Chittoor,2025,Oct,1610268,167,141,130,2,9,62,79,0.88,0.014,21,25
+malaria,Andhra Pradesh,Chittoor,2025,Nov,1610268,278,263,235,5,23,150,113,1.63,0.019,40,25
+malaria,Andhra Pradesh,Chittoor,2025,Dec,1610268,150,133,113,3,17,58,75,0.83,0.023,19,38
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Jan,2232180,111,96,87,1,8,54,42,0.43,0.01,19,26
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Feb,2232180,80,73,65,1,7,35,38,0.33,0.014,30,30
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Mar,2232180,258,212,184,5,23,124,88,0.95,0.024,32,34
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Apr,2232180,281,262,236,6,20,156,106,1.17,0.023,32,26
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,May,2232180,214,192,163,2,27,85,107,0.86,0.01,8,30
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Jun,2232180,219,204,184,4,16,114,90,0.91,0.02,92,38
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Jul,2232180,166,154,143,2,9,82,72,0.69,0.013,227,31
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Aug,2232180,382,310,283,7,20,176,134,1.39,0.023,116,37
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Sep,2232180,339,300,267,8,25,169,131,1.34,0.027,15,34
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Oct,2232180,209,178,151,4,23,83,95,0.8,0.022,30,33
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Nov,2232180,132,111,104,2,5,47,64,0.5,0.018,10,38
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2024,Dec,2232180,199,188,168,2,18,93,95,0.84,0.011,17,38
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Jan,2232180,88,77,70,1,6,32,45,0.34,0.013,43,38
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Feb,2232180,83,68,63,1,4,36,32,0.3,0.015,6,26
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Mar,2232180,207,169,153,2,14,86,83,0.76,0.012,25,30
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Apr,2232180,201,182,156,2,24,82,100,0.82,0.011,31,30
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,May,2232180,298,265,241,6,18,115,150,1.19,0.023,45,25
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Jun,2232180,349,300,278,5,17,141,159,1.34,0.017,197,27
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Jul,2232180,390,347,303,6,38,158,189,1.55,0.017,168,25
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Aug,2232180,399,336,304,6,26,178,158,1.51,0.018,250,30
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Sep,2232180,222,193,169,4,20,83,110,0.86,0.021,248,35
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Oct,2232180,160,139,126,2,11,77,62,0.62,0.014,9,33
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Nov,2232180,119,108,97,2,9,52,56,0.48,0.019,39,27
+malaria,Andhra Pradesh,Dr. B.R. Ambedkar Konaseema,2025,Dec,2232180,210,170,144,4,22,68,102,0.76,0.024,12,27
+malaria,Andhra Pradesh,East Godavari,2024,Jan,4700614,180,146,137,1,8,86,60,0.31,0.007,49,39
+malaria,Andhra Pradesh,East Godavari,2024,Feb,4700614,91,80,74,1,5,44,36,0.17,0.013,23,29
+malaria,Andhra Pradesh,East Godavari,2024,Mar,4700614,197,176,166,4,6,93,83,0.37,0.023,26,33
+malaria,Andhra Pradesh,East Godavari,2024,Apr,4700614,188,169,144,3,22,101,68,0.36,0.018,26,29
+malaria,Andhra Pradesh,East Godavari,2024,May,4700614,165,154,131,3,20,70,84,0.33,0.019,48,32
+malaria,Andhra Pradesh,East Godavari,2024,Jun,4700614,207,194,174,5,15,110,84,0.41,0.026,107,25
+malaria,Andhra Pradesh,East Godavari,2024,Jul,4700614,139,123,107,1,15,51,72,0.26,0.008,297,35
+malaria,Andhra Pradesh,East Godavari,2024,Aug,4700614,370,320,284,6,30,179,141,0.68,0.019,8,37
+malaria,Andhra Pradesh,East Godavari,2024,Sep,4700614,439,372,339,10,23,194,178,0.79,0.027,231,34
+malaria,Andhra Pradesh,East Godavari,2024,Oct,4700614,113,90,84,1,5,52,38,0.19,0.011,35,35
+malaria,Andhra Pradesh,East Godavari,2024,Nov,4700614,118,94,80,1,13,38,56,0.2,0.011,44,33
+malaria,Andhra Pradesh,East Godavari,2024,Dec,4700614,95,88,83,2,3,42,46,0.19,0.023,39,28
+malaria,Andhra Pradesh,East Godavari,2025,Jan,4700614,212,192,163,3,26,88,104,0.41,0.016,4,26
+malaria,Andhra Pradesh,East Godavari,2025,Feb,4700614,269,238,208,6,24,97,141,0.51,0.025,15,25
+malaria,Andhra Pradesh,East Godavari,2025,Mar,4700614,200,180,156,5,19,100,80,0.38,0.028,43,36
+malaria,Andhra Pradesh,East Godavari,2025,Apr,4700614,277,262,245,5,12,152,110,0.56,0.019,34,33
+malaria,Andhra Pradesh,East Godavari,2025,May,4700614,278,263,229,7,27,139,124,0.56,0.027,45,38
+malaria,Andhra Pradesh,East Godavari,2025,Jun,4700614,229,184,163,1,20,108,76,0.39,0.005,266,29
+malaria,Andhra Pradesh,East Godavari,2025,Jul,4700614,126,112,97,2,13,58,54,0.24,0.018,245,37
+malaria,Andhra Pradesh,East Godavari,2025,Aug,4700614,303,260,240,6,14,112,148,0.55,0.023,164,27
+malaria,Andhra Pradesh,East Godavari,2025,Sep,4700614,138,115,103,2,10,59,56,0.24,0.017,102,35
+malaria,Andhra Pradesh,East Godavari,2025,Oct,4700614,184,157,137,3,17,64,93,0.33,0.019,34,36
+malaria,Andhra Pradesh,East Godavari,2025,Nov,4700614,249,229,209,4,16,95,134,0.49,0.017,24,36
+malaria,Andhra Pradesh,East Godavari,2025,Dec,4700614,286,229,210,2,17,115,114,0.49,0.009,37,36
+malaria,Andhra Pradesh,Eluru,2024,Jan,3734489,255,230,197,6,27,114,116,0.62,0.026,32,38
+malaria,Andhra Pradesh,Eluru,2024,Feb,3734489,172,160,145,3,12,81,79,0.43,0.019,13,37
+malaria,Andhra Pradesh,Eluru,2024,Mar,3734489,112,104,96,2,6,59,45,0.28,0.019,48,33
+malaria,Andhra Pradesh,Eluru,2024,Apr,3734489,92,85,78,2,5,44,41,0.23,0.024,38,36
+malaria,Andhra Pradesh,Eluru,2024,May,3734489,86,80,75,1,4,46,34,0.21,0.013,42,34
+malaria,Andhra Pradesh,Eluru,2024,Jun,3734489,358,304,281,4,19,171,133,0.81,0.013,210,37
+malaria,Andhra Pradesh,Eluru,2024,Jul,3734489,136,108,94,2,12,64,44,0.29,0.019,21,32
+malaria,Andhra Pradesh,Eluru,2024,Aug,3734489,265,237,214,6,17,99,138,0.63,0.025,78,33
+malaria,Andhra Pradesh,Eluru,2024,Sep,3734489,213,182,157,4,21,101,81,0.49,0.022,246,28
+malaria,Andhra Pradesh,Eluru,2024,Oct,3734489,298,245,227,5,13,121,124,0.66,0.02,22,34
+malaria,Andhra Pradesh,Eluru,2024,Nov,3734489,199,160,149,4,7,95,65,0.43,0.025,36,35
+malaria,Andhra Pradesh,Eluru,2024,Dec,3734489,259,236,201,2,33,109,127,0.63,0.008,15,27
+malaria,Andhra Pradesh,Eluru,2025,Jan,3734489,282,254,227,3,24,152,102,0.68,0.012,17,27
+malaria,Andhra Pradesh,Eluru,2025,Feb,3734489,220,204,184,5,15,93,111,0.55,0.025,32,26
+malaria,Andhra Pradesh,Eluru,2025,Mar,3734489,254,229,209,3,17,135,94,0.61,0.013,44,32
+malaria,Andhra Pradesh,Eluru,2025,Apr,3734489,171,155,145,4,6,91,64,0.42,0.026,19,33
+malaria,Andhra Pradesh,Eluru,2025,May,3734489,276,261,232,7,22,116,145,0.7,0.027,35,25
+malaria,Andhra Pradesh,Eluru,2025,Jun,3734489,156,141,127,2,12,71,70,0.38,0.014,64,38
+malaria,Andhra Pradesh,Eluru,2025,Jul,3734489,444,413,383,10,20,234,179,1.11,0.024,203,27
+malaria,Andhra Pradesh,Eluru,2025,Aug,3734489,258,211,180,5,26,110,101,0.57,0.024,50,39
+malaria,Andhra Pradesh,Eluru,2025,Sep,3734489,348,278,252,6,20,124,154,0.74,0.022,13,30
+malaria,Andhra Pradesh,Eluru,2025,Oct,3734489,255,222,190,4,28,100,122,0.59,0.018,24,32
+malaria,Andhra Pradesh,Eluru,2025,Nov,3734489,218,206,178,3,25,110,96,0.55,0.015,18,38
+malaria,Andhra Pradesh,Eluru,2025,Dec,3734489,174,158,144,3,11,93,65,0.42,0.019,41,32
+malaria,Andhra Pradesh,Guntur,2024,Jan,4597042,90,78,67,1,10,46,32,0.17,0.013,32,39
+malaria,Andhra Pradesh,Guntur,2024,Feb,4597042,159,138,120,2,16,76,62,0.3,0.014,33,26
+malaria,Andhra Pradesh,Guntur,2024,Mar,4597042,112,104,89,2,13,49,55,0.23,0.019,39,26
+malaria,Andhra Pradesh,Guntur,2024,Apr,4597042,245,216,198,5,13,95,121,0.47,0.023,44,25
+malaria,Andhra Pradesh,Guntur,2024,May,4597042,183,163,150,1,12,95,68,0.35,0.006,39,39
+malaria,Andhra Pradesh,Guntur,2024,Jun,4597042,358,302,284,8,10,158,144,0.66,0.026,88,38
+malaria,Andhra Pradesh,Guntur,2024,Jul,4597042,285,262,224,7,31,133,129,0.57,0.027,26,34
+malaria,Andhra Pradesh,Guntur,2024,Aug,4597042,309,277,250,6,21,115,162,0.6,0.022,16,31
+malaria,Andhra Pradesh,Guntur,2024,Sep,4597042,136,112,104,1,7,66,46,0.24,0.009,177,32
+malaria,Andhra Pradesh,Guntur,2024,Oct,4597042,198,171,146,2,23,69,102,0.37,0.012,19,30
+malaria,Andhra Pradesh,Guntur,2024,Nov,4597042,116,110,104,2,4,48,62,0.24,0.018,35,37
+malaria,Andhra Pradesh,Guntur,2024,Dec,4597042,172,148,128,3,17,64,84,0.32,0.02,21,39
+malaria,Andhra Pradesh,Guntur,2025,Jan,4597042,265,241,215,4,22,114,127,0.52,0.017,20,36
+malaria,Andhra Pradesh,Guntur,2025,Feb,4597042,231,203,182,4,17,82,121,0.44,0.02,34,28
+malaria,Andhra Pradesh,Guntur,2025,Mar,4597042,145,129,119,2,8,77,52,0.28,0.016,12,27
+malaria,Andhra Pradesh,Guntur,2025,Apr,4597042,97,86,79,1,6,46,40,0.19,0.012,48,38
+malaria,Andhra Pradesh,Guntur,2025,May,4597042,166,148,131,2,15,71,77,0.32,0.014,38,37
+malaria,Andhra Pradesh,Guntur,2025,Jun,4597042,180,150,140,2,8,75,75,0.33,0.013,88,26
+malaria,Andhra Pradesh,Guntur,2025,Jul,4597042,223,200,176,3,21,114,86,0.44,0.015,265,39
+malaria,Andhra Pradesh,Guntur,2025,Aug,4597042,408,373,321,10,42,183,190,0.81,0.027,14,27
+malaria,Andhra Pradesh,Guntur,2025,Sep,4597042,295,243,219,4,20,137,106,0.53,0.016,261,29
+malaria,Andhra Pradesh,Guntur,2025,Oct,4597042,99,87,82,1,4,41,46,0.19,0.011,28,33
+malaria,Andhra Pradesh,Guntur,2025,Nov,4597042,186,169,154,3,12,96,73,0.37,0.018,44,32
+malaria,Andhra Pradesh,Guntur,2025,Dec,4597042,235,218,197,4,17,88,130,0.47,0.018,14,26
+malaria,Andhra Pradesh,Kakinada,2024,Jan,3070006,280,246,232,2,12,104,142,0.8,0.008,6,29
+malaria,Andhra Pradesh,Kakinada,2024,Feb,3070006,138,116,104,1,11,49,67,0.38,0.009,24,35
+malaria,Andhra Pradesh,Kakinada,2024,Mar,3070006,122,97,85,2,10,50,47,0.32,0.021,47,35
+malaria,Andhra Pradesh,Kakinada,2024,Apr,3070006,257,218,196,2,20,92,126,0.71,0.009,16,26
+malaria,Andhra Pradesh,Kakinada,2024,May,3070006,203,182,172,2,8,97,85,0.59,0.011,32,30
+malaria,Andhra Pradesh,Kakinada,2024,Jun,3070006,126,119,104,2,13,70,49,0.39,0.017,118,26
+malaria,Andhra Pradesh,Kakinada,2024,Jul,3070006,336,310,290,7,13,131,179,1.01,0.023,293,25
+malaria,Andhra Pradesh,Kakinada,2024,Aug,3070006,339,319,297,7,15,164,155,1.04,0.022,224,26
+malaria,Andhra Pradesh,Kakinada,2024,Sep,3070006,406,327,309,5,13,187,140,1.07,0.015,77,29
+malaria,Andhra Pradesh,Kakinada,2024,Oct,3070006,156,131,112,3,16,72,59,0.43,0.023,4,30
+malaria,Andhra Pradesh,Kakinada,2024,Nov,3070006,98,90,83,2,5,43,47,0.29,0.022,11,25
+malaria,Andhra Pradesh,Kakinada,2024,Dec,3070006,167,141,129,2,10,74,67,0.46,0.014,7,39
+malaria,Andhra Pradesh,Kakinada,2025,Jan,3070006,228,195,176,4,15,99,96,0.64,0.021,35,36
+malaria,Andhra Pradesh,Kakinada,2025,Feb,3070006,181,146,132,3,11,76,70,0.48,0.021,46,33
+malaria,Andhra Pradesh,Kakinada,2025,Mar,3070006,82,72,68,1,3,41,31,0.23,0.014,29,34
+malaria,Andhra Pradesh,Kakinada,2025,Apr,3070006,232,198,176,4,18,100,98,0.64,0.02,15,35
+malaria,Andhra Pradesh,Kakinada,2025,May,3070006,255,225,208,5,12,113,112,0.73,0.022,21,31
+malaria,Andhra Pradesh,Kakinada,2025,Jun,3070006,279,223,203,6,14,100,123,0.73,0.027,207,27
+malaria,Andhra Pradesh,Kakinada,2025,Jul,3070006,141,116,104,1,11,50,66,0.38,0.009,56,38
+malaria,Andhra Pradesh,Kakinada,2025,Aug,3070006,159,149,134,3,12,62,87,0.49,0.02,162,26
+malaria,Andhra Pradesh,Kakinada,2025,Sep,3070006,121,101,90,1,10,44,57,0.33,0.01,112,34
+malaria,Andhra Pradesh,Kakinada,2025,Oct,3070006,118,103,94,1,8,52,51,0.34,0.01,42,32
+malaria,Andhra Pradesh,Kakinada,2025,Nov,3070006,115,99,85,2,12,46,53,0.32,0.02,45,34
+malaria,Andhra Pradesh,Kakinada,2025,Dec,3070006,126,118,107,3,8,68,50,0.38,0.025,9,34
+malaria,Andhra Pradesh,Krishna,2024,Jan,3503274,88,78,67,1,10,45,33,0.22,0.013,24,25
+malaria,Andhra Pradesh,Krishna,2024,Feb,3503274,233,195,171,4,20,111,84,0.56,0.021,39,34
+malaria,Andhra Pradesh,Krishna,2024,Mar,3503274,168,136,124,2,10,70,66,0.39,0.015,47,25
+malaria,Andhra Pradesh,Krishna,2024,Apr,3503274,187,173,150,2,21,70,103,0.49,0.012,15,27
+malaria,Andhra Pradesh,Krishna,2024,May,3503274,299,248,226,3,19,130,118,0.71,0.012,25,26
+malaria,Andhra Pradesh,Krishna,2024,Jun,3503274,214,175,160,3,12,84,91,0.5,0.017,171,33
+malaria,Andhra Pradesh,Krishna,2024,Jul,3503274,423,401,345,4,52,218,183,1.14,0.01,46,31
+malaria,Andhra Pradesh,Krishna,2024,Aug,3503274,282,228,195,6,27,99,129,0.65,0.026,140,25
+malaria,Andhra Pradesh,Krishna,2024,Sep,3503274,303,258,235,4,19,146,112,0.74,0.016,9,36
+malaria,Andhra Pradesh,Krishna,2024,Oct,3503274,106,94,82,2,10,50,44,0.27,0.021,44,37
+malaria,Andhra Pradesh,Krishna,2024,Nov,3503274,137,116,106,3,7,61,55,0.33,0.026,17,27
+malaria,Andhra Pradesh,Krishna,2024,Dec,3503274,177,153,135,3,15,63,90,0.44,0.02,5,37
+malaria,Andhra Pradesh,Krishna,2025,Jan,3503274,110,100,86,1,13,48,52,0.29,0.01,16,36
+malaria,Andhra Pradesh,Krishna,2025,Feb,3503274,224,189,179,3,7,90,99,0.54,0.016,23,36
+malaria,Andhra Pradesh,Krishna,2025,Mar,3503274,194,159,150,4,5,80,79,0.45,0.025,30,29
+malaria,Andhra Pradesh,Krishna,2025,Apr,3503274,163,145,124,3,18,61,84,0.41,0.021,16,36
+malaria,Andhra Pradesh,Krishna,2025,May,3503274,117,96,82,1,13,42,54,0.27,0.01,45,26
+malaria,Andhra Pradesh,Krishna,2025,Jun,3503274,276,224,211,4,9,103,121,0.64,0.018,184,38
+malaria,Andhra Pradesh,Krishna,2025,Jul,3503274,345,324,303,4,17,180,144,0.92,0.012,147,30
+malaria,Andhra Pradesh,Krishna,2025,Aug,3503274,208,192,167,5,20,81,111,0.55,0.026,86,37
+malaria,Andhra Pradesh,Krishna,2025,Sep,3503274,171,154,139,3,12,65,89,0.44,0.019,11,28
+malaria,Andhra Pradesh,Krishna,2025,Oct,3503274,93,75,66,1,8,40,35,0.21,0.013,18,38
+malaria,Andhra Pradesh,Krishna,2025,Nov,3503274,99,87,82,1,4,43,44,0.25,0.011,33,28
+malaria,Andhra Pradesh,Krishna,2025,Dec,3503274,174,151,137,3,11,65,86,0.43,0.02,3,27
+malaria,Andhra Pradesh,Kurnool,2024,Jan,2636074,248,229,209,2,18,113,116,0.87,0.009,4,33
+malaria,Andhra Pradesh,Kurnool,2024,Feb,2636074,158,149,134,4,11,72,77,0.57,0.027,13,39
+malaria,Andhra Pradesh,Kurnool,2024,Mar,2636074,157,146,128,3,15,58,88,0.55,0.021,43,38
+malaria,Andhra Pradesh,Kurnool,2024,Apr,2636074,209,187,161,2,24,104,83,0.71,0.011,10,33
+malaria,Andhra Pradesh,Kurnool,2024,May,2636074,209,182,168,4,10,83,99,0.69,0.022,23,27
+malaria,Andhra Pradesh,Kurnool,2024,Jun,2636074,324,266,229,4,33,111,155,1.01,0.015,84,36
+malaria,Andhra Pradesh,Kurnool,2024,Jul,2636074,264,231,219,6,6,120,111,0.88,0.026,225,28
+malaria,Andhra Pradesh,Kurnool,2024,Aug,2636074,364,319,284,4,31,184,135,1.21,0.013,66,37
+malaria,Andhra Pradesh,Kurnool,2024,Sep,2636074,129,113,101,1,11,53,60,0.43,0.009,137,38
+malaria,Andhra Pradesh,Kurnool,2024,Oct,2636074,262,225,202,2,21,101,124,0.85,0.009,10,31
+malaria,Andhra Pradesh,Kurnool,2024,Nov,2636074,137,113,103,1,9,64,49,0.43,0.009,45,29
+malaria,Andhra Pradesh,Kurnool,2024,Dec,2636074,260,239,226,4,9,100,139,0.91,0.017,11,39
+malaria,Andhra Pradesh,Kurnool,2025,Jan,2636074,228,211,181,4,26,90,121,0.8,0.019,48,36
+malaria,Andhra Pradesh,Kurnool,2025,Feb,2636074,161,140,124,2,14,68,72,0.53,0.014,21,34
+malaria,Andhra Pradesh,Kurnool,2025,Mar,2636074,220,180,154,4,22,105,75,0.68,0.022,2,36
+malaria,Andhra Pradesh,Kurnool,2025,Apr,2636074,127,106,99,1,6,61,45,0.4,0.009,21,36
+malaria,Andhra Pradesh,Kurnool,2025,May,2636074,282,246,218,4,24,109,137,0.93,0.016,17,36
+malaria,Andhra Pradesh,Kurnool,2025,Jun,2636074,249,218,188,5,25,109,109,0.83,0.023,105,32
+malaria,Andhra Pradesh,Kurnool,2025,Jul,2636074,234,188,173,4,11,105,83,0.71,0.021,156,25
+malaria,Andhra Pradesh,Kurnool,2025,Aug,2636074,318,278,247,5,26,166,112,1.05,0.018,215,31
+malaria,Andhra Pradesh,Kurnool,2025,Sep,2636074,160,136,121,2,13,76,60,0.52,0.015,12,34
+malaria,Andhra Pradesh,Kurnool,2025,Oct,2636074,117,95,85,2,8,52,43,0.36,0.021,40,33
+malaria,Andhra Pradesh,Kurnool,2025,Nov,2636074,152,130,113,1,16,67,63,0.49,0.008,14,33
+malaria,Andhra Pradesh,Kurnool,2025,Dec,2636074,248,234,210,6,18,108,126,0.89,0.026,36,36
+malaria,Andhra Pradesh,Nandyal,2024,Jan,4509908,170,160,145,3,12,87,73,0.35,0.019,32,36
+malaria,Andhra Pradesh,Nandyal,2024,Feb,4509908,90,72,61,1,10,30,42,0.16,0.014,40,35
+malaria,Andhra Pradesh,Nandyal,2024,Mar,4509908,157,135,123,3,9,60,75,0.3,0.022,21,36
+malaria,Andhra Pradesh,Nandyal,2024,Apr,4509908,111,97,82,2,13,51,46,0.22,0.021,30,31
+malaria,Andhra Pradesh,Nandyal,2024,May,4509908,118,109,102,1,6,60,49,0.24,0.009,21,38
+malaria,Andhra Pradesh,Nandyal,2024,Jun,4509908,322,293,265,3,25,120,173,0.65,0.01,260,30
+malaria,Andhra Pradesh,Nandyal,2024,Jul,4509908,343,325,306,3,16,140,185,0.72,0.009,33,29
+malaria,Andhra Pradesh,Nandyal,2024,Aug,4509908,429,349,330,6,13,150,199,0.77,0.017,48,37
+malaria,Andhra Pradesh,Nandyal,2024,Sep,4509908,151,133,120,2,11,61,72,0.29,0.015,23,31
+malaria,Andhra Pradesh,Nandyal,2024,Oct,4509908,236,192,174,5,13,93,99,0.43,0.026,8,34
+malaria,Andhra Pradesh,Nandyal,2024,Nov,4509908,265,212,185,5,22,126,86,0.47,0.024,40,27
+malaria,Andhra Pradesh,Nandyal,2024,Dec,4509908,143,131,114,2,15,71,60,0.29,0.015,39,35
+malaria,Andhra Pradesh,Nandyal,2025,Jan,4509908,234,211,187,4,20,106,105,0.47,0.019,42,34
+malaria,Andhra Pradesh,Nandyal,2025,Feb,4509908,137,110,101,1,8,65,45,0.24,0.009,20,35
+malaria,Andhra Pradesh,Nandyal,2025,Mar,4509908,223,183,161,5,17,109,74,0.41,0.027,4,39
+malaria,Andhra Pradesh,Nandyal,2025,Apr,4509908,204,182,168,2,12,77,105,0.4,0.011,38,29
+malaria,Andhra Pradesh,Nandyal,2025,May,4509908,133,120,102,2,16,56,64,0.27,0.017,45,28
+malaria,Andhra Pradesh,Nandyal,2025,Jun,4509908,144,127,114,2,11,52,75,0.28,0.016,190,31
+malaria,Andhra Pradesh,Nandyal,2025,Jul,4509908,316,255,229,5,21,132,123,0.57,0.02,192,36
+malaria,Andhra Pradesh,Nandyal,2025,Aug,4509908,339,296,253,3,40,138,158,0.66,0.01,34,34
+malaria,Andhra Pradesh,Nandyal,2025,Sep,4509908,294,269,242,5,22,115,154,0.6,0.019,187,25
+malaria,Andhra Pradesh,Nandyal,2025,Oct,4509908,262,218,193,2,23,122,96,0.48,0.009,47,35
+malaria,Andhra Pradesh,Nandyal,2025,Nov,4509908,136,127,116,2,9,66,61,0.28,0.016,48,39
+malaria,Andhra Pradesh,Nandyal,2025,Dec,4509908,298,269,255,6,8,147,122,0.6,0.022,26,29
+malaria,Andhra Pradesh,NTR,2024,Jan,3772355,140,132,114,3,15,68,64,0.35,0.023,45,30
+malaria,Andhra Pradesh,NTR,2024,Feb,3772355,160,150,139,1,10,85,65,0.4,0.007,26,27
+malaria,Andhra Pradesh,NTR,2024,Mar,3772355,148,137,118,3,16,67,70,0.36,0.022,5,28
+malaria,Andhra Pradesh,NTR,2024,Apr,3772355,149,133,113,3,17,77,56,0.35,0.023,24,33
+malaria,Andhra Pradesh,NTR,2024,May,3772355,179,163,141,3,19,69,94,0.43,0.018,31,28
+malaria,Andhra Pradesh,NTR,2024,Jun,3772355,346,301,256,4,41,123,178,0.8,0.013,224,31
+malaria,Andhra Pradesh,NTR,2024,Jul,3772355,363,305,283,8,14,144,161,0.81,0.026,110,33
+malaria,Andhra Pradesh,NTR,2024,Aug,3772355,426,357,309,9,39,146,211,0.95,0.025,254,35
+malaria,Andhra Pradesh,NTR,2024,Sep,3772355,396,337,297,8,32,140,197,0.89,0.024,164,32
+malaria,Andhra Pradesh,NTR,2024,Oct,3772355,282,266,241,7,18,109,157,0.71,0.026,44,32
+malaria,Andhra Pradesh,NTR,2024,Nov,3772355,207,184,165,5,14,78,106,0.49,0.027,23,34
+malaria,Andhra Pradesh,NTR,2024,Dec,3772355,244,215,192,6,17,112,103,0.57,0.028,41,25
+malaria,Andhra Pradesh,NTR,2025,Jan,3772355,257,233,207,2,24,125,108,0.62,0.009,33,25
+malaria,Andhra Pradesh,NTR,2025,Feb,3772355,231,188,175,4,9,77,111,0.5,0.021,22,25
+malaria,Andhra Pradesh,NTR,2025,Mar,3772355,96,85,74,2,9,41,44,0.23,0.024,5,26
+malaria,Andhra Pradesh,NTR,2025,Apr,3772355,101,93,85,1,7,44,49,0.25,0.011,39,30
+malaria,Andhra Pradesh,NTR,2025,May,3772355,155,125,112,3,10,61,64,0.33,0.024,49,31
+malaria,Andhra Pradesh,NTR,2025,Jun,3772355,150,123,108,3,12,61,62,0.33,0.024,236,29
+malaria,Andhra Pradesh,NTR,2025,Jul,3772355,237,220,206,3,11,107,113,0.58,0.014,62,36
+malaria,Andhra Pradesh,NTR,2025,Aug,3772355,157,138,124,1,13,64,74,0.37,0.007,48,25
+malaria,Andhra Pradesh,NTR,2025,Sep,3772355,181,158,135,3,20,89,69,0.42,0.019,182,35
+malaria,Andhra Pradesh,NTR,2025,Oct,3772355,226,195,169,2,24,81,114,0.52,0.01,28,33
+malaria,Andhra Pradesh,NTR,2025,Nov,3772355,243,204,179,4,21,89,115,0.54,0.02,46,32
+malaria,Andhra Pradesh,NTR,2025,Dec,3772355,289,238,218,6,14,110,128,0.63,0.025,3,37
+malaria,Andhra Pradesh,Palnadu,2024,Jan,2739911,82,76,65,1,10,39,37,0.28,0.013,8,29
+malaria,Andhra Pradesh,Palnadu,2024,Feb,2739911,239,214,185,4,25,111,103,0.78,0.019,19,33
+malaria,Andhra Pradesh,Palnadu,2024,Mar,2739911,91,82,72,2,8,40,42,0.3,0.024,21,38
+malaria,Andhra Pradesh,Palnadu,2024,Apr,2739911,92,78,74,2,2,41,37,0.28,0.026,27,29
+malaria,Andhra Pradesh,Palnadu,2024,May,2739911,104,84,71,2,11,37,47,0.31,0.024,5,27
+malaria,Andhra Pradesh,Palnadu,2024,Jun,2739911,402,341,299,9,33,143,198,1.24,0.026,64,36
+malaria,Andhra Pradesh,Palnadu,2024,Jul,2739911,300,261,243,5,13,123,138,0.95,0.019,230,30
+malaria,Andhra Pradesh,Palnadu,2024,Aug,2739911,315,293,264,4,25,123,170,1.07,0.014,222,38
+malaria,Andhra Pradesh,Palnadu,2024,Sep,2739911,360,300,259,5,36,147,153,1.09,0.017,79,33
+malaria,Andhra Pradesh,Palnadu,2024,Oct,2739911,102,91,80,2,9,44,47,0.33,0.022,15,35
+malaria,Andhra Pradesh,Palnadu,2024,Nov,2739911,242,194,179,2,13,89,105,0.71,0.01,28,39
+malaria,Andhra Pradesh,Palnadu,2024,Dec,2739911,246,202,184,6,12,83,119,0.74,0.03,3,28
+malaria,Andhra Pradesh,Palnadu,2025,Jan,2739911,265,232,204,3,25,94,138,0.85,0.013,46,28
+malaria,Andhra Pradesh,Palnadu,2025,Feb,2739911,221,206,179,5,22,84,122,0.75,0.024,15,26
+malaria,Andhra Pradesh,Palnadu,2025,Mar,2739911,194,181,165,3,13,76,105,0.66,0.017,46,30
+malaria,Andhra Pradesh,Palnadu,2025,Apr,2739911,221,205,185,3,17,122,83,0.75,0.015,14,35
+malaria,Andhra Pradesh,Palnadu,2025,May,2739911,163,130,115,1,14,77,53,0.47,0.008,22,33
+malaria,Andhra Pradesh,Palnadu,2025,Jun,2739911,243,229,213,5,11,130,99,0.84,0.022,177,31
+malaria,Andhra Pradesh,Palnadu,2025,Jul,2739911,427,388,341,10,37,177,211,1.42,0.026,124,30
+malaria,Andhra Pradesh,Palnadu,2025,Aug,2739911,390,343,294,5,44,138,205,1.25,0.015,93,38
+malaria,Andhra Pradesh,Palnadu,2025,Sep,2739911,423,343,299,8,36,178,165,1.25,0.023,72,36
+malaria,Andhra Pradesh,Palnadu,2025,Oct,2739911,87,81,71,1,9,48,33,0.3,0.012,16,37
+malaria,Andhra Pradesh,Palnadu,2025,Nov,2739911,141,129,110,2,17,77,52,0.47,0.016,21,39
+malaria,Andhra Pradesh,Palnadu,2025,Dec,2739911,228,184,171,4,9,77,107,0.67,0.022,9,37
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Jan,1778167,216,194,180,5,9,99,95,1.09,0.026,45,31
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Feb,1778167,254,206,193,3,10,88,118,1.16,0.015,19,34
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Mar,1778167,131,113,102,2,9,58,55,0.64,0.018,29,27
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Apr,1778167,211,190,164,2,24,105,85,1.07,0.011,3,30
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,May,1778167,273,229,205,6,18,103,126,1.29,0.026,38,30
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Jun,1778167,439,367,325,7,35,150,217,2.06,0.019,140,27
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Jul,1778167,304,264,236,5,23,138,126,1.48,0.019,146,27
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Aug,1778167,382,321,279,6,36,128,193,1.81,0.019,194,32
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Sep,1778167,183,169,148,3,18,82,87,0.95,0.018,196,38
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Oct,1778167,185,156,147,2,7,65,91,0.88,0.013,41,25
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Nov,1778167,167,146,136,3,7,59,87,0.82,0.021,11,38
+malaria,Andhra Pradesh,Parvathipuram Manyam,2024,Dec,1778167,226,196,184,2,10,93,103,1.1,0.01,19,36
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Jan,1778167,151,141,129,3,9,65,76,0.79,0.021,45,34
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Feb,1778167,182,171,157,4,10,68,103,0.96,0.023,30,37
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Mar,1778167,254,205,186,4,15,86,119,1.15,0.02,30,25
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Apr,1778167,206,185,158,4,23,94,91,1.04,0.022,49,25
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,May,1778167,155,125,110,3,12,66,59,0.7,0.024,41,34
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Jun,1778167,409,381,346,7,28,162,219,2.14,0.018,205,33
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Jul,1778167,177,164,151,2,11,95,69,0.92,0.012,170,27
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Aug,1778167,334,316,294,7,15,160,156,1.78,0.022,239,25
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Sep,1778167,201,178,152,2,24,91,87,1,0.011,227,33
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Oct,1778167,102,94,80,1,13,53,41,0.53,0.011,36,27
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Nov,1778167,252,212,186,5,21,103,109,1.19,0.024,34,27
+malaria,Andhra Pradesh,Parvathipuram Manyam,2025,Dec,1778167,274,254,239,4,11,117,137,1.43,0.016,48,34
+malaria,Andhra Pradesh,Prakasam,2024,Jan,3638242,136,109,96,2,11,54,55,0.3,0.018,28,29
+malaria,Andhra Pradesh,Prakasam,2024,Feb,3638242,86,70,65,1,4,30,40,0.19,0.014,29,34
+malaria,Andhra Pradesh,Prakasam,2024,Mar,3638242,267,228,193,4,31,127,101,0.63,0.018,11,25
+malaria,Andhra Pradesh,Prakasam,2024,Apr,3638242,192,173,157,2,14,76,97,0.48,0.012,12,30
+malaria,Andhra Pradesh,Prakasam,2024,May,3638242,144,117,101,3,13,52,65,0.32,0.026,24,35
+malaria,Andhra Pradesh,Prakasam,2024,Jun,3638242,219,206,183,2,21,83,123,0.57,0.01,238,27
+malaria,Andhra Pradesh,Prakasam,2024,Jul,3638242,193,163,140,3,20,69,94,0.45,0.018,126,37
+malaria,Andhra Pradesh,Prakasam,2024,Aug,3638242,174,164,144,4,16,85,79,0.45,0.024,205,25
+malaria,Andhra Pradesh,Prakasam,2024,Sep,3638242,162,136,128,2,6,64,72,0.37,0.015,282,28
+malaria,Andhra Pradesh,Prakasam,2024,Oct,3638242,148,121,109,2,10,66,55,0.33,0.017,23,27
+malaria,Andhra Pradesh,Prakasam,2024,Nov,3638242,210,177,155,2,20,72,105,0.49,0.011,46,39
+malaria,Andhra Pradesh,Prakasam,2024,Dec,3638242,100,94,85,1,8,48,46,0.26,0.011,24,37
+malaria,Andhra Pradesh,Prakasam,2025,Jan,3638242,220,196,176,3,17,117,79,0.54,0.015,18,32
+malaria,Andhra Pradesh,Prakasam,2025,Feb,3638242,293,259,236,3,20,124,135,0.71,0.012,28,29
+malaria,Andhra Pradesh,Prakasam,2025,Mar,3638242,224,203,190,2,11,105,98,0.56,0.01,34,35
+malaria,Andhra Pradesh,Prakasam,2025,Apr,3638242,133,117,109,1,7,65,52,0.32,0.009,28,29
+malaria,Andhra Pradesh,Prakasam,2025,May,3638242,288,259,232,2,25,153,106,0.71,0.008,19,34
+malaria,Andhra Pradesh,Prakasam,2025,Jun,3638242,190,154,142,3,9,70,84,0.42,0.019,232,30
+malaria,Andhra Pradesh,Prakasam,2025,Jul,3638242,231,191,176,3,12,95,96,0.52,0.016,253,27
+malaria,Andhra Pradesh,Prakasam,2025,Aug,3638242,432,401,380,7,14,226,175,1.1,0.017,243,28
+malaria,Andhra Pradesh,Prakasam,2025,Sep,3638242,321,302,262,3,37,172,130,0.83,0.01,229,32
+malaria,Andhra Pradesh,Prakasam,2025,Oct,3638242,226,191,167,2,22,113,78,0.52,0.01,31,31
+malaria,Andhra Pradesh,Prakasam,2025,Nov,3638242,287,262,247,2,13,150,112,0.72,0.008,10,34
+malaria,Andhra Pradesh,Prakasam,2025,Dec,3638242,143,120,106,3,11,54,66,0.33,0.025,30,33
+malaria,Andhra Pradesh,SPSR Nellore,2024,Jan,1829365,126,119,103,3,13,49,70,0.65,0.025,30,31
+malaria,Andhra Pradesh,SPSR Nellore,2024,Feb,1829365,146,132,123,3,6,56,76,0.72,0.023,40,32
+malaria,Andhra Pradesh,SPSR Nellore,2024,Mar,1829365,212,195,181,5,9,105,90,1.07,0.026,40,31
+malaria,Andhra Pradesh,SPSR Nellore,2024,Apr,1829365,88,79,69,1,9,31,48,0.43,0.013,11,27
+malaria,Andhra Pradesh,SPSR Nellore,2024,May,1829365,151,123,114,3,6,50,73,0.67,0.024,19,35
+malaria,Andhra Pradesh,SPSR Nellore,2024,Jun,1829365,271,228,195,4,29,127,101,1.25,0.018,148,30
+malaria,Andhra Pradesh,SPSR Nellore,2024,Jul,1829365,400,328,302,7,19,145,183,1.79,0.021,294,31
+malaria,Andhra Pradesh,SPSR Nellore,2024,Aug,1829365,411,378,356,6,16,219,159,2.07,0.016,225,31
+malaria,Andhra Pradesh,SPSR Nellore,2024,Sep,1829365,198,183,165,2,16,74,109,1,0.011,57,27
+malaria,Andhra Pradesh,SPSR Nellore,2024,Oct,1829365,136,124,107,3,14,71,53,0.68,0.024,10,34
+malaria,Andhra Pradesh,SPSR Nellore,2024,Nov,1829365,279,246,224,5,17,121,125,1.34,0.02,46,28
+malaria,Andhra Pradesh,SPSR Nellore,2024,Dec,1829365,132,121,109,2,10,51,70,0.66,0.017,23,32
+malaria,Andhra Pradesh,SPSR Nellore,2025,Jan,1829365,289,248,214,6,28,140,108,1.36,0.024,11,33
+malaria,Andhra Pradesh,SPSR Nellore,2025,Feb,1829365,283,243,209,3,31,135,108,1.33,0.012,18,30
+malaria,Andhra Pradesh,SPSR Nellore,2025,Mar,1829365,117,109,99,2,8,51,58,0.6,0.018,44,33
+malaria,Andhra Pradesh,SPSR Nellore,2025,Apr,1829365,143,121,104,2,15,54,67,0.66,0.017,27,26
+malaria,Andhra Pradesh,SPSR Nellore,2025,May,1829365,251,222,208,6,8,107,115,1.21,0.027,6,32
+malaria,Andhra Pradesh,SPSR Nellore,2025,Jun,1829365,424,382,329,4,49,195,187,2.09,0.01,221,32
+malaria,Andhra Pradesh,SPSR Nellore,2025,Jul,1829365,393,314,272,7,35,167,147,1.72,0.022,28,36
+malaria,Andhra Pradesh,SPSR Nellore,2025,Aug,1829365,135,127,116,2,9,53,74,0.69,0.016,215,36
+malaria,Andhra Pradesh,SPSR Nellore,2025,Sep,1829365,174,140,124,4,12,70,70,0.77,0.029,45,27
+malaria,Andhra Pradesh,SPSR Nellore,2025,Oct,1829365,126,102,93,2,7,40,62,0.56,0.02,7,33
+malaria,Andhra Pradesh,SPSR Nellore,2025,Nov,1829365,92,79,73,2,4,34,45,0.43,0.025,9,30
+malaria,Andhra Pradesh,SPSR Nellore,2025,Dec,1829365,282,256,234,6,16,141,115,1.4,0.023,45,26
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Jan,4710548,216,177,161,4,12,81,96,0.38,0.023,44,36
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Feb,4710548,228,205,183,4,18,85,120,0.44,0.02,43,27
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Mar,4710548,92,74,63,1,10,33,41,0.16,0.014,10,38
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Apr,4710548,92,78,68,0,10,33,45,0.17,0,10,27
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,May,4710548,232,211,186,5,20,95,116,0.45,0.024,29,35
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Jun,4710548,348,328,295,7,26,151,177,0.7,0.021,160,39
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Jul,4710548,432,379,359,4,16,152,227,0.8,0.011,191,39
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Aug,4710548,361,298,266,4,28,139,159,0.63,0.013,59,34
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Sep,4710548,129,109,96,1,12,50,59,0.23,0.009,139,28
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Oct,4710548,190,171,154,4,13,89,82,0.36,0.023,8,37
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Nov,4710548,293,241,226,5,10,141,100,0.51,0.021,34,36
+malaria,Andhra Pradesh,Sri Sathya Sai,2024,Dec,4710548,284,259,232,2,25,153,106,0.55,0.008,9,31
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Jan,4710548,212,186,170,4,12,95,91,0.39,0.022,22,33
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Feb,4710548,96,80,69,1,10,41,39,0.17,0.013,10,35
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Mar,4710548,124,104,98,2,4,60,44,0.22,0.019,31,36
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Apr,4710548,282,236,208,6,22,108,128,0.5,0.025,47,39
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,May,4710548,253,204,176,2,26,107,97,0.43,0.01,11,32
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Jun,4710548,199,171,150,4,17,80,91,0.36,0.023,126,29
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Jul,4710548,187,151,132,3,16,74,77,0.32,0.02,206,38
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Aug,4710548,330,286,259,7,20,141,145,0.61,0.024,239,36
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Sep,4710548,360,295,280,6,9,141,154,0.63,0.02,74,33
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Oct,4710548,95,85,76,1,8,50,35,0.18,0.012,12,35
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Nov,4710548,180,155,140,1,14,81,74,0.33,0.006,26,30
+malaria,Andhra Pradesh,Sri Sathya Sai,2025,Dec,4710548,83,76,70,1,5,41,35,0.16,0.013,43,29
+malaria,Andhra Pradesh,Srikakulam,2024,Jan,2287201,159,150,138,1,11,74,76,0.66,0.007,32,28
+malaria,Andhra Pradesh,Srikakulam,2024,Feb,2287201,173,155,142,2,11,79,76,0.68,0.013,22,37
+malaria,Andhra Pradesh,Srikakulam,2024,Mar,2287201,165,146,136,3,7,69,77,0.64,0.021,28,34
+malaria,Andhra Pradesh,Srikakulam,2024,Apr,2287201,250,201,187,2,12,101,100,0.88,0.01,48,35
+malaria,Andhra Pradesh,Srikakulam,2024,May,2287201,101,87,74,1,12,46,41,0.38,0.011,10,28
+malaria,Andhra Pradesh,Srikakulam,2024,Jun,2287201,132,108,102,3,3,53,55,0.47,0.028,93,37
+malaria,Andhra Pradesh,Srikakulam,2024,Jul,2287201,225,192,170,4,18,112,80,0.84,0.021,117,31
+malaria,Andhra Pradesh,Srikakulam,2024,Aug,2287201,255,214,195,6,13,102,112,0.94,0.028,185,35
+malaria,Andhra Pradesh,Srikakulam,2024,Sep,2287201,241,216,188,2,26,126,90,0.94,0.009,120,31
+malaria,Andhra Pradesh,Srikakulam,2024,Oct,2287201,89,82,75,1,6,48,34,0.36,0.012,22,26
+malaria,Andhra Pradesh,Srikakulam,2024,Nov,2287201,248,233,211,4,18,120,113,1.02,0.017,35,36
+malaria,Andhra Pradesh,Srikakulam,2024,Dec,2287201,105,97,83,1,13,56,41,0.42,0.01,26,32
+malaria,Andhra Pradesh,Srikakulam,2025,Jan,2287201,212,182,168,3,11,90,92,0.8,0.016,45,37
+malaria,Andhra Pradesh,Srikakulam,2025,Feb,2287201,215,178,157,4,17,78,100,0.78,0.022,27,28
+malaria,Andhra Pradesh,Srikakulam,2025,Mar,2287201,201,189,170,3,16,106,83,0.83,0.016,40,39
+malaria,Andhra Pradesh,Srikakulam,2025,Apr,2287201,268,243,225,4,14,137,106,1.06,0.016,34,33
+malaria,Andhra Pradesh,Srikakulam,2025,May,2287201,256,225,197,4,24,91,134,0.98,0.018,41,33
+malaria,Andhra Pradesh,Srikakulam,2025,Jun,2287201,400,351,300,10,41,156,195,1.53,0.028,89,37
+malaria,Andhra Pradesh,Srikakulam,2025,Jul,2287201,436,363,308,8,47,215,148,1.59,0.022,42,27
+malaria,Andhra Pradesh,Srikakulam,2025,Aug,2287201,364,331,309,6,16,152,179,1.45,0.018,194,29
+malaria,Andhra Pradesh,Srikakulam,2025,Sep,2287201,156,130,114,1,15,60,70,0.57,0.008,51,30
+malaria,Andhra Pradesh,Srikakulam,2025,Oct,2287201,118,98,90,2,6,42,56,0.43,0.02,16,35
+malaria,Andhra Pradesh,Srikakulam,2025,Nov,2287201,110,100,85,1,14,50,50,0.44,0.01,17,35
+malaria,Andhra Pradesh,Srikakulam,2025,Dec,2287201,89,77,68,2,7,40,37,0.34,0.026,21,29
+malaria,Andhra Pradesh,Tirupati,2024,Jan,2870455,181,165,151,2,12,98,67,0.57,0.012,24,26
+malaria,Andhra Pradesh,Tirupati,2024,Feb,2870455,183,151,129,3,19,64,87,0.53,0.02,39,37
+malaria,Andhra Pradesh,Tirupati,2024,Mar,2870455,205,174,148,1,25,74,100,0.61,0.006,6,30
+malaria,Andhra Pradesh,Tirupati,2024,Apr,2870455,163,154,144,3,7,83,71,0.54,0.019,47,37
+malaria,Andhra Pradesh,Tirupati,2024,May,2870455,262,231,203,4,24,115,116,0.8,0.017,32,28
+malaria,Andhra Pradesh,Tirupati,2024,Jun,2870455,337,270,250,3,17,151,119,0.94,0.011,293,38
+malaria,Andhra Pradesh,Tirupati,2024,Jul,2870455,361,312,272,7,33,175,137,1.09,0.022,172,27
+malaria,Andhra Pradesh,Tirupati,2024,Aug,2870455,408,345,309,4,32,204,141,1.2,0.012,151,36
+malaria,Andhra Pradesh,Tirupati,2024,Sep,2870455,238,195,182,2,11,90,105,0.68,0.01,155,26
+malaria,Andhra Pradesh,Tirupati,2024,Oct,2870455,199,183,164,2,17,84,99,0.64,0.011,3,26
+malaria,Andhra Pradesh,Tirupati,2024,Nov,2870455,95,89,81,1,7,38,51,0.31,0.011,33,25
+malaria,Andhra Pradesh,Tirupati,2024,Dec,2870455,91,76,66,1,9,39,37,0.26,0.013,33,29
+malaria,Andhra Pradesh,Tirupati,2025,Jan,2870455,136,126,114,1,11,59,67,0.44,0.008,48,33
+malaria,Andhra Pradesh,Tirupati,2025,Feb,2870455,98,88,75,1,12,41,47,0.31,0.011,33,37
+malaria,Andhra Pradesh,Tirupati,2025,Mar,2870455,163,146,133,2,11,70,76,0.51,0.014,29,32
+malaria,Andhra Pradesh,Tirupati,2025,Apr,2870455,227,191,167,3,21,113,78,0.67,0.016,26,38
+malaria,Andhra Pradesh,Tirupati,2025,May,2870455,236,223,191,4,28,132,91,0.78,0.018,41,29
+malaria,Andhra Pradesh,Tirupati,2025,Jun,2870455,241,218,194,3,21,104,114,0.76,0.014,270,26
+malaria,Andhra Pradesh,Tirupati,2025,Jul,2870455,252,229,209,4,16,123,106,0.8,0.017,158,35
+malaria,Andhra Pradesh,Tirupati,2025,Aug,2870455,393,318,272,9,37,146,172,1.11,0.028,152,36
+malaria,Andhra Pradesh,Tirupati,2025,Sep,2870455,339,302,276,4,22,121,181,1.05,0.013,138,39
+malaria,Andhra Pradesh,Tirupati,2025,Oct,2870455,106,95,87,2,6,43,52,0.33,0.021,36,35
+malaria,Andhra Pradesh,Tirupati,2025,Nov,2870455,81,75,70,0,5,32,43,0.26,0,15,35
+malaria,Andhra Pradesh,Tirupati,2025,Dec,2870455,229,215,182,5,28,112,103,0.75,0.023,30,33
+malaria,Andhra Pradesh,Visakhapatnam,2024,Jan,3266891,107,95,84,2,9,48,47,0.29,0.021,19,25
+malaria,Andhra Pradesh,Visakhapatnam,2024,Feb,3266891,217,186,173,2,11,99,87,0.57,0.011,48,30
+malaria,Andhra Pradesh,Visakhapatnam,2024,Mar,3266891,224,195,180,3,12,112,83,0.6,0.015,21,39
+malaria,Andhra Pradesh,Visakhapatnam,2024,Apr,3266891,232,200,175,3,22,108,92,0.61,0.015,26,27
+malaria,Andhra Pradesh,Visakhapatnam,2024,May,3266891,171,152,138,2,12,82,70,0.47,0.013,40,31
+malaria,Andhra Pradesh,Visakhapatnam,2024,Jun,3266891,288,265,226,7,32,107,158,0.81,0.026,229,33
+malaria,Andhra Pradesh,Visakhapatnam,2024,Jul,3266891,283,237,207,2,28,116,121,0.73,0.008,165,35
+malaria,Andhra Pradesh,Visakhapatnam,2024,Aug,3266891,142,115,108,3,4,64,51,0.35,0.026,279,28
+malaria,Andhra Pradesh,Visakhapatnam,2024,Sep,3266891,399,336,312,6,18,168,168,1.03,0.018,95,38
+malaria,Andhra Pradesh,Visakhapatnam,2024,Oct,3266891,87,70,62,1,7,36,34,0.21,0.014,25,31
+malaria,Andhra Pradesh,Visakhapatnam,2024,Nov,3266891,192,178,167,4,7,72,106,0.54,0.022,21,26
+malaria,Andhra Pradesh,Visakhapatnam,2024,Dec,3266891,268,249,227,6,16,124,125,0.76,0.024,43,29
+malaria,Andhra Pradesh,Visakhapatnam,2025,Jan,3266891,158,127,118,2,7,62,65,0.39,0.016,13,28
+malaria,Andhra Pradesh,Visakhapatnam,2025,Feb,3266891,293,256,219,5,32,149,107,0.78,0.02,15,25
+malaria,Andhra Pradesh,Visakhapatnam,2025,Mar,3266891,134,121,102,2,17,70,51,0.37,0.017,21,37
+malaria,Andhra Pradesh,Visakhapatnam,2025,Apr,3266891,212,194,183,4,7,105,89,0.59,0.021,47,28
+malaria,Andhra Pradesh,Visakhapatnam,2025,May,3266891,162,132,116,2,14,59,73,0.4,0.015,42,31
+malaria,Andhra Pradesh,Visakhapatnam,2025,Jun,3266891,348,297,262,7,28,165,132,0.91,0.024,36,31
+malaria,Andhra Pradesh,Visakhapatnam,2025,Jul,3266891,262,240,219,4,17,109,131,0.73,0.017,101,25
+malaria,Andhra Pradesh,Visakhapatnam,2025,Aug,3266891,438,409,350,10,49,192,217,1.25,0.024,122,29
+malaria,Andhra Pradesh,Visakhapatnam,2025,Sep,3266891,373,347,306,6,35,167,180,1.06,0.017,218,33
+malaria,Andhra Pradesh,Visakhapatnam,2025,Oct,3266891,108,93,82,2,9,44,49,0.28,0.022,48,31
+malaria,Andhra Pradesh,Visakhapatnam,2025,Nov,3266891,124,102,86,2,14,55,47,0.31,0.02,18,38
+malaria,Andhra Pradesh,Visakhapatnam,2025,Dec,3266891,229,201,177,3,21,109,92,0.62,0.015,14,34
+malaria,Andhra Pradesh,Vizianagaram,2024,Jan,1827069,217,194,176,2,16,85,109,1.06,0.01,11,38
+malaria,Andhra Pradesh,Vizianagaram,2024,Feb,1827069,246,198,176,2,20,87,111,1.08,0.01,28,32
+malaria,Andhra Pradesh,Vizianagaram,2024,Mar,1827069,151,143,127,3,13,82,61,0.78,0.021,3,34
+malaria,Andhra Pradesh,Vizianagaram,2024,Apr,1827069,247,223,193,4,26,107,116,1.22,0.018,1,26
+malaria,Andhra Pradesh,Vizianagaram,2024,May,1827069,172,151,130,3,18,63,88,0.83,0.02,29,31
+malaria,Andhra Pradesh,Vizianagaram,2024,Jun,1827069,310,293,264,3,26,162,131,1.6,0.01,11,34
+malaria,Andhra Pradesh,Vizianagaram,2024,Jul,1827069,192,181,167,4,10,103,78,0.99,0.022,255,37
+malaria,Andhra Pradesh,Vizianagaram,2024,Aug,1827069,315,278,253,6,19,125,153,1.52,0.022,29,30
+malaria,Andhra Pradesh,Vizianagaram,2024,Sep,1827069,352,318,294,6,18,182,136,1.74,0.019,122,33
+malaria,Andhra Pradesh,Vizianagaram,2024,Oct,1827069,278,241,209,6,26,138,103,1.32,0.025,3,35
+malaria,Andhra Pradesh,Vizianagaram,2024,Nov,1827069,260,223,203,2,18,101,122,1.22,0.009,2,32
+malaria,Andhra Pradesh,Vizianagaram,2024,Dec,1827069,101,88,76,2,10,50,38,0.48,0.023,49,37
+malaria,Andhra Pradesh,Vizianagaram,2025,Jan,1827069,161,137,127,2,8,82,55,0.75,0.015,42,37
+malaria,Andhra Pradesh,Vizianagaram,2025,Feb,1827069,146,121,107,2,12,50,71,0.66,0.017,4,35
+malaria,Andhra Pradesh,Vizianagaram,2025,Mar,1827069,139,126,115,3,8,50,76,0.69,0.024,43,26
+malaria,Andhra Pradesh,Vizianagaram,2025,Apr,1827069,141,130,115,2,13,54,76,0.71,0.015,15,33
+malaria,Andhra Pradesh,Vizianagaram,2025,May,1827069,243,222,201,5,16,122,100,1.22,0.023,39,34
+malaria,Andhra Pradesh,Vizianagaram,2025,Jun,1827069,432,346,301,8,37,165,181,1.89,0.023,96,33
+malaria,Andhra Pradesh,Vizianagaram,2025,Jul,1827069,309,288,266,8,14,158,130,1.58,0.028,281,34
+malaria,Andhra Pradesh,Vizianagaram,2025,Aug,1827069,172,159,143,4,12,73,86,0.87,0.025,273,35
+malaria,Andhra Pradesh,Vizianagaram,2025,Sep,1827069,199,170,154,2,14,88,82,0.93,0.012,98,38
+malaria,Andhra Pradesh,Vizianagaram,2025,Oct,1827069,283,257,237,5,15,132,125,1.41,0.019,12,27
+malaria,Andhra Pradesh,Vizianagaram,2025,Nov,1827069,169,146,138,2,6,74,72,0.8,0.014,47,27
+malaria,Andhra Pradesh,Vizianagaram,2025,Dec,1827069,245,223,194,4,25,126,97,1.22,0.018,21,34
+malaria,Andhra Pradesh,West Godavari,2024,Jan,3325573,189,157,142,2,13,83,74,0.47,0.013,15,39
+malaria,Andhra Pradesh,West Godavari,2024,Feb,3325573,211,183,173,4,6,101,82,0.55,0.022,20,36
+malaria,Andhra Pradesh,West Godavari,2024,Mar,3325573,240,207,176,3,28,84,123,0.62,0.014,21,27
+malaria,Andhra Pradesh,West Godavari,2024,Apr,3325573,158,139,118,3,18,64,75,0.42,0.022,46,35
+malaria,Andhra Pradesh,West Godavari,2024,May,3325573,236,204,187,2,15,112,92,0.61,0.01,33,30
+malaria,Andhra Pradesh,West Godavari,2024,Jun,3325573,306,247,212,7,28,114,133,0.74,0.028,291,35
+malaria,Andhra Pradesh,West Godavari,2024,Jul,3325573,210,195,185,2,8,79,116,0.59,0.01,257,37
+malaria,Andhra Pradesh,West Godavari,2024,Aug,3325573,288,271,254,7,10,130,141,0.81,0.026,295,30
+malaria,Andhra Pradesh,West Godavari,2024,Sep,3325573,367,294,276,7,11,135,159,0.88,0.024,187,39
+malaria,Andhra Pradesh,West Godavari,2024,Oct,3325573,265,234,213,6,15,121,113,0.7,0.026,25,28
+malaria,Andhra Pradesh,West Godavari,2024,Nov,3325573,140,125,115,2,8,53,72,0.38,0.016,25,28
+malaria,Andhra Pradesh,West Godavari,2024,Dec,3325573,127,112,105,3,4,52,60,0.34,0.027,5,39
+malaria,Andhra Pradesh,West Godavari,2025,Jan,3325573,138,120,107,2,11,68,52,0.36,0.017,42,28
+malaria,Andhra Pradesh,West Godavari,2025,Feb,3325573,245,217,185,4,28,116,101,0.65,0.018,18,32
+malaria,Andhra Pradesh,West Godavari,2025,Mar,3325573,294,275,251,3,21,145,130,0.83,0.011,25,33
+malaria,Andhra Pradesh,West Godavari,2025,Apr,3325573,261,219,189,4,26,113,106,0.66,0.018,15,32
+malaria,Andhra Pradesh,West Godavari,2025,May,3325573,283,228,207,4,17,134,94,0.69,0.018,20,26
+malaria,Andhra Pradesh,West Godavari,2025,Jun,3325573,286,229,198,4,27,112,117,0.69,0.017,24,38
+malaria,Andhra Pradesh,West Godavari,2025,Jul,3325573,367,323,290,5,28,139,184,0.97,0.015,297,25
+malaria,Andhra Pradesh,West Godavari,2025,Aug,3325573,217,203,184,4,15,95,108,0.61,0.02,154,28
+malaria,Andhra Pradesh,West Godavari,2025,Sep,3325573,130,105,91,2,12,54,51,0.32,0.019,148,38
+malaria,Andhra Pradesh,West Godavari,2025,Oct,3325573,141,125,112,3,10,67,58,0.38,0.024,27,29
+malaria,Andhra Pradesh,West Godavari,2025,Nov,3325573,294,247,229,7,11,100,147,0.74,0.028,42,25
+malaria,Andhra Pradesh,West Godavari,2025,Dec,3325573,198,176,166,4,6,74,102,0.53,0.023,39,29
+malaria,Andhra Pradesh,YSR Kadapa,2024,Jan,4844769,198,170,155,4,11,78,92,0.35,0.024,46,35
+malaria,Andhra Pradesh,YSR Kadapa,2024,Feb,4844769,177,143,124,2,17,70,73,0.3,0.014,38,32
+malaria,Andhra Pradesh,YSR Kadapa,2024,Mar,4844769,217,176,157,3,16,105,71,0.36,0.017,40,32
+malaria,Andhra Pradesh,YSR Kadapa,2024,Apr,4844769,119,95,82,1,12,49,46,0.2,0.011,29,38
+malaria,Andhra Pradesh,YSR Kadapa,2024,May,4844769,135,110,96,1,13,58,52,0.23,0.009,32,28
+malaria,Andhra Pradesh,YSR Kadapa,2024,Jun,4844769,270,222,208,5,9,92,130,0.46,0.023,282,26
+malaria,Andhra Pradesh,YSR Kadapa,2024,Jul,4844769,165,139,125,3,11,59,80,0.29,0.022,270,32
+malaria,Andhra Pradesh,YSR Kadapa,2024,Aug,4844769,310,254,231,3,20,126,128,0.52,0.012,149,25
+malaria,Andhra Pradesh,YSR Kadapa,2024,Sep,4844769,204,185,162,3,20,81,104,0.38,0.016,93,26
+malaria,Andhra Pradesh,YSR Kadapa,2024,Oct,4844769,194,184,168,2,14,75,109,0.38,0.011,39,37
+malaria,Andhra Pradesh,YSR Kadapa,2024,Nov,4844769,160,146,137,1,8,73,73,0.3,0.007,13,33
+malaria,Andhra Pradesh,YSR Kadapa,2024,Dec,4844769,270,238,218,5,15,100,138,0.49,0.021,48,26
+malaria,Andhra Pradesh,YSR Kadapa,2025,Jan,4844769,223,189,169,4,16,80,109,0.39,0.021,13,37
+malaria,Andhra Pradesh,YSR Kadapa,2025,Feb,4844769,160,147,132,3,12,73,74,0.3,0.02,14,39
+malaria,Andhra Pradesh,YSR Kadapa,2025,Mar,4844769,133,110,99,1,10,58,52,0.23,0.009,38,39
+malaria,Andhra Pradesh,YSR Kadapa,2025,Apr,4844769,245,227,196,6,25,113,114,0.47,0.026,34,30
+malaria,Andhra Pradesh,YSR Kadapa,2025,May,4844769,175,164,155,3,6,70,94,0.34,0.018,14,27
+malaria,Andhra Pradesh,YSR Kadapa,2025,Jun,4844769,325,277,237,5,35,157,120,0.57,0.018,259,29
+malaria,Andhra Pradesh,YSR Kadapa,2025,Jul,4844769,403,382,325,5,52,192,190,0.79,0.013,88,31
+malaria,Andhra Pradesh,YSR Kadapa,2025,Aug,4844769,309,259,220,7,32,144,115,0.53,0.027,280,28
+malaria,Andhra Pradesh,YSR Kadapa,2025,Sep,4844769,426,355,311,7,37,156,199,0.73,0.02,62,32
+malaria,Andhra Pradesh,YSR Kadapa,2025,Oct,4844769,298,240,210,3,27,107,133,0.5,0.013,13,31
+malaria,Andhra Pradesh,YSR Kadapa,2025,Nov,4844769,235,214,185,4,25,104,110,0.44,0.019,17,38
+malaria,Andhra Pradesh,YSR Kadapa,2025,Dec,4844769,182,171,151,4,16,84,87,0.35,0.023,43,29
