@@ -37,6 +37,10 @@ def chat():
         result["treatment"] = chatbot.get_treatment(result["disease"])
     
     return jsonify(result)
+    
+@app.route('/api/predictive', methods=['GET'])
+def get_predictive():
+    return jsonify(chatbot.get_predictive_data())
 
 if __name__ == '__main__':
     print("[RUN] Starting Health AI Dashboard with Python Backend...")

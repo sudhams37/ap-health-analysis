@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Geo-Intelligence | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <h1>Geo-Intelligence Dashboard</h1>
+                <p>Health Surveillance & Predictive Analytics</p>
+            </div>
+            <nav class="header-nav">
+                <button onclick="location.href='about.html'" class="nav-btn">About</button>
+                <button onclick="location.href='index.html'" class="nav-btn">Home</button>
+                <button onclick="location.href='dashboard.html'" class="nav-btn active">Dashboard</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="dashboard-page" class="view-section active">
+            <div id="map-container">
+                <svg id="map"></svg>
+                
+                <!-- Floating Layers (Top Left) -->
+                <div class="floating-layers">
+                    <div class="layer-item">
+                        <input type="checkbox" id="hospital-toggle">
+                        <label for="hospital-toggle">Hospitals</label>
+                    </div>
+                    <div class="layer-item">
+                        <input type="checkbox" id="hotspot-toggle">
+                        <label for="hotspot-toggle">Hotspot Map</label>
+                    </div>
+                </div>
+
+                <!-- Intelligence Menu Toggles -->
+                <div class="intelligence-menu">
+                    <button class="intel-btn active" data-target="filters">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 3H2l8 9v6l4 2V12L22 3z"></path></svg>
+                        <span>Filters</span>
+                    </button>
+                    <button class="intel-btn" data-target="chat">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        <span>AI Chat</span>
+                    </button>
+                    <button class="intel-btn" data-target="forecast">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+                        <span>Forecast</span>
+                    </button>
+                    <button class="intel-btn" data-target="hotspot">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2"></path></svg>
+                        <span>Hotspot</span>
+                    </button>
+                </div>
+
+                <!-- Map Legends -->
+                <div class="legends-container">
+                    <div class="map-legend hotspot-legend" id="hotspot-legend" style="display: none; margin-bottom: 0.5rem; background: rgba(15, 23, 42, 0.9); color: white; border-color: rgba(255,255,255,0.2);">
+                        <div class="legend-title" style="color: #cbd5e1;">Hotspot Intensity (Risk)</div>
+                        <div class="legend-scale">
+                            <div class="legend-gradient" style="background: linear-gradient(to right, #0000ff, #a52a2a);"></div>
+                            <div class="legend-labels">
+                                <span class="legend-min" id="hotspot-min" style="color: white;">0</span>
+                                <span class="legend-max" id="hotspot-max" style="color: white;">100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map-legend">
+                        <div class="legend-title">Health Metric</div>
+                        <div class="legend-scale">
+                            <div class="legend-gradient"></div>
+                            <div class="legend-labels">
+                                <span class="legend-min">0</span>
+                                <span class="legend-max">1,000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button class="btn" id="zoom-in" title="Zoom In">+</button>
+                    <button class="btn" id="zoom-out" title="Zoom Out">-</button>
+                    <button class="btn" id="reset-zoom" title="Reset View">⟲</button>
+                </div>
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-content">
+                    <!-- Filters Module -->
+                    <div id="section-filters" class="sidebar-section active">
+                        <div class="sidebar-group-title">Data Filters</div>
+                        
+                        <div class="filter-group">
+                            <label>DISEASE</label>
+                            <select id="disease-select" class="select-input">
+                                <option value="data/raw/malaria.csv">Malaria</option>
+                                <option value="data/raw/dengue.csv">Dengue</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group" style="margin-top: 1rem;">
+                            <label>YEAR</label>
+                            <select id="year-select" class="select-input">
+                                <option value="all">All-Time (2024-25)</option>
+                                <option value="2024">2024 Data</option>
+                                <option value="2025">2025 Data</option>
+                            </select>
+                        </div>
+
+                        <div class="filter-group" style="margin-top: 1rem;">
+                            <label>METRICS</label>
+                            <select id="metric-select" class="select-input">
+                                <option value="Total_Cases">Total Cases</option>
+                                <option value="Confirmed_Cases">Confirmed Cases</option>
+                                <option value="Recovered_Cases">Recovered Cases</option>
+                                <option value="Death_Cases">Death Cases</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Hotspot Module -->
+                    <div id="section-hotspot" class="sidebar-section">
+                        <div class="sidebar-group-title">Hotspot Analysis</div>
+                        <div style="overflow-x: auto; flex: 1;">
+                            <table id="hotspot-data-table" style="width: 100%; border-collapse: collapse; font-size: 0.75rem;">
+                                <thead>
+                                    <tr style="border-bottom: 2px solid var(--border-color); text-align: left;">
+                                        <th style="padding: 8px 4px;">District</th>
+                                        <th style="padding: 8px 4px;">Cases</th>
+                                        <th style="padding: 8px 4px;">Incidence (%)</th>
+                                        <th style="padding: 8px 4px;">Death Rate (%)</th>
+                                        <th style="padding: 8px 4px;">Risk Rate</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="hotspot-table-body">
+                                    <!-- Rows will be injected here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Chat Module -->
+                    <div id="section-chat" class="sidebar-section">
+                        <div class="sidebar-group-title">AI Clinical Assistant</div>
+                        <div class="chat-messages" id="chat-box">
+                            <div class="message ai">Welcome. Describe symptoms or ask about specific district trends.</div>
+                        </div>
+                        <div class="chat-input-area">
+                            <input type="text" id="user-input" placeholder="e.g. malaria in guntur...">
+                            <button id="send-btn">Send</button>
+                        </div>
+                    </div>
+
+                    <!-- Forecast Module -->
+                    <div id="section-forecast" class="sidebar-section">
+                        <div class="sidebar-group-title">Predictive Forecast (2026)</div>
+                        <div id="forecast-data" class="forecast-container">
+                            <p style="font-size: 0.8rem; color: var(--text-secondary);">Select a disease to generate predictions...</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

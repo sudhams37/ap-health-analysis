@@ -23,13 +23,15 @@ async function startApp() {
         .attr("viewBox", [0, 0, width, height]);
 
     const g = svg.append("g");
+    const heatmapLayer = svg.append("g").attr("class", "heatmap-layer");
     const hospitalLayer = svg.append("g").attr("class", "hospital-layer");
+    const casesLayer = svg.append("g").attr("class", "cases-layer");
 
     const projection = d3.geoMercator();
     const path = d3.geoPath().projection(projection);
 
     const tooltip = d3.select("#tooltip");
-    const colorScale = d3.scaleSequential(d3.interpolateRgb("#00ff00", "#ff0000"));
+    const colorScale = d3.scaleSequential(d3.interpolateRgb("#10b981", "#ef4444")); // Emerald to Rose
 
     let geoData;
     let csvDataGlobal = [];
@@ -37,12 +39,148 @@ async function startApp() {
     let symptomDataset = [];
     let symptomWeights = {}; 
     let currentAggregatedData = {};
+    let currentPopulationData = {};
     let hospitalsPerDistrict = {};
     let focusedDistrict = null;
     let previousYearSelection = "all";
     let currentForecastMode = null;
 
     let chatState = { step: 'idle', disease: null, days: null, severity: null };
+
+    function initLocatorMap() {
+        console.log("📍 Initializing Dashboard Locator Map...");
+        const locatorMap = L.map('locator-map', { 
+            scrollWheelZoom: false,
+            zoomControl: false 
+        }).setView([15.9, 79.7], 6);
+        L.control.zoom({ position: 'bottomleft' }).addTo(locatorMap);
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: '© Esri'
+        }).addTo(locatorMap);
+
+        let markers = [];
+        let userMarker = null;
+
+        const hospitalIcon = L.divIcon({
+            className: 'custom-hospital-icon',
+            html: `
+                <div style="background: #ef4444; width: 30px; height: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border: 2px solid white;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                </div>`,
+            iconSize: [30, 30],
+            iconAnchor: [15, 15]
+        });
+
+        const userLocationIcon = L.divIcon({
+            className: 'user-location-icon',
+            html: `
+                <div style="width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="#3b82f6" stroke="white" stroke-width="2">
+                        <path d="M12 21.5c-4.5-4.5-7-8.5-7-11.5a7 7 0 1 1 14 0c0 3-2.5 7-7 11.5z"/>
+                        <circle cx="12" cy="10" r="3" fill="white"/>
+                    </svg>
+                </div>`,
+            iconSize: [32, 32],
+            iconAnchor: [16, 32]
+        });
+
+        function fetchHospitals(lat, lon) {
+            console.log("🏥 Fetching hospitals around:", lat, lon);
+            let query = `
+            [out:json];
+            (
+              node["amenity"="hospital"](around:5000, ${lat}, ${lon});
+              node["healthcare"="centre"](around:5000, ${lat}, ${lon});
+              node["amenity"="clinic"](around:5000, ${lat}, ${lon});
+            );
+            out;
+            `;
+            let url = "https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query);
+            fetch(url)
+              .then(res => res.json())
+              .then(data => showHospitals(data));
+        }
+
+        function showHospitals(data) {
+            // remove old markers
+            markers.forEach(m => locatorMap.removeLayer(m));
+            markers = [];
+
+            data.elements.forEach(place => {
+                let marker = L.marker([place.lat, place.lon], { icon: hospitalIcon })
+                  .addTo(locatorMap)
+                  .bindPopup(`<b>${place.tags.name || "Health Center"}</b><br>Type: ${place.tags.amenity || place.tags.healthcare || "Clinical"}`);
+                markers.push(marker);
+            });
+        }
+
+        locatorMap.on('click', function(e) {
+            let lat = e.latlng.lat;
+            let lon = e.latlng.lng;
+            console.log("Clicked:", lat, lon);
+            fetchHospitals(lat, lon);
+        });
+
+        // Geolocation Logic
+        function findUserNearby() {
+            if (navigator.geolocation) {
+                console.log("📍 Triggering manual nearby search...");
+                navigator.geolocation.getCurrentPosition(pos => {
+                    let lat = pos.coords.latitude;
+                    let lon = pos.coords.longitude;
+                    locatorMap.setView([lat, lon], 12);
+                    
+                    if (userMarker) locatorMap.removeLayer(userMarker);
+                    userMarker = L.marker([lat, lon], { icon: userLocationIcon }).addTo(locatorMap).bindPopup("<b>Your Location</b>");
+                    
+                    fetchHospitals(lat, lon);
+                }, () => console.log("Geolocation denied."));
+            }
+        }
+
+        d3.select("#trigger-nearby").on("click", findUserNearby);
+
+        // Home Sidebar Toggle
+        const toggleHomeSidebar = () => {
+            const sidebar = d3.select(".home-sidebar");
+            const isClosed = sidebar.classed("closed");
+            sidebar.classed("closed", !isClosed);
+            setTimeout(() => dashboardLocatorMap.invalidateSize(), 450);
+        };
+
+        d3.select("#toggle-home-sidebar").on("click", toggleHomeSidebar);
+        d3.select("#open-home-sidebar").on("click", toggleHomeSidebar);
+
+        // Initial Geolocation
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(pos => {
+                let lat = pos.coords.latitude;
+                let lon = pos.coords.longitude;
+                locatorMap.setView([lat, lon], 12);
+                
+                if (userMarker) locatorMap.removeLayer(userMarker);
+                userMarker = L.marker([lat, lon], { icon: userLocationIcon }).addTo(locatorMap).bindPopup("<b>Your Location</b>");
+                
+                fetchHospitals(lat, lon);
+            }, () => {
+                console.log("Geolocation permission denied. Showing default AP view.");
+                // Default fallback markers
+                const defaultHospitals = [
+                    { name: "Apollo Health City", coords: [17.4165, 78.4116], city: "Visakhapatnam" },
+                    { name: "Care Hospitals", coords: [17.7231, 83.3013], city: "Visakhapatnam" }
+                ];
+                defaultHospitals.forEach(h => {
+                    L.marker(h.coords, {icon: hospitalIcon}).addTo(locatorMap).bindPopup(`<b>${h.name}</b><br>${h.city}`);
+                });
+            });
+        }
+
+        // Trigger invalidateSize after a small delay to ensure the map renders correctly in the flex container
+        setTimeout(() => locatorMap.invalidateSize(), 500);
+        return locatorMap;
+    }
+
+    const dashboardLocatorMap = initLocatorMap();
 
     const treatmentKnowledge = {
         "Malaria": { meds: { morning: "Chloroquine Tablet (500mg)", afternoon: "Paracetamol (650mg)", night: "Chloroquine Tablet (500mg)" }, timing: { morning: "After Breakfast", afternoon: "After Lunch", night: "After Dinner" } },
@@ -66,6 +204,8 @@ async function startApp() {
         .on("zoom", (event) => {
             g.attr("transform", event.transform);
             hospitalLayer.attr("transform", event.transform);
+            heatmapLayer.attr("transform", event.transform);
+            casesLayer.attr("transform", event.transform);
         });
 
     svg.call(zoom);
@@ -118,7 +258,12 @@ async function startApp() {
         d3.select("#legend-title").text(label);
 
         const aggregatedData = {};
-        if (geoData) geoData.features.forEach(f => { const name = f.properties.district || f.properties.name; aggregatedData[name] = 0; });
+        const populationData = {};
+        if (geoData) geoData.features.forEach(f => { 
+            const name = f.properties.district || f.properties.name; 
+            aggregatedData[name] = 0; 
+            populationData[name] = 0;
+        });
         
         if (selectedYear.startsWith("forecast")) {
             const { growthRate, districtLatestYear, monthlyStateTotals, avgMonthlyState } = getForecastParams();
@@ -126,6 +271,11 @@ async function startApp() {
                 let name = f.properties.district || f.properties.name;
                 let csvName = name; for(let k in nameMapping) if(nameMapping[k] === name) csvName = k;
                 const lastYearTotal = districtLatestYear.get(csvName) || 10;
+                
+                // Also get population for forecast
+                const districtRow = csvDataGlobal.find(d => d.District === csvName);
+                if (districtRow) populationData[name] = parseInt(districtRow.Population) || 0;
+
                 const monthlyAvg = lastYearTotal / 12;
                 let val = 0;
                 if (currentForecastMode === "7day") val = (monthlyAvg * (1 + growthRate)) / 4;
@@ -135,10 +285,22 @@ async function startApp() {
                 aggregatedData[name] = Math.round(val);
             });
         } else {
-            csvDataGlobal.forEach(d => { if (selectedYear === "all" || d.Year === selectedYear) { let dist = d.District; if (nameMapping[dist]) dist = nameMapping[dist]; const value = parseInt(d[selectedMetric]) || 0; if (aggregatedData[dist] !== undefined) aggregatedData[dist] += value; } });
+            csvDataGlobal.forEach(d => { 
+                if (selectedYear === "all" || d.Year === selectedYear) { 
+                    let dist = d.District; 
+                    if (nameMapping[dist]) dist = nameMapping[dist]; 
+                    const value = parseInt(d[selectedMetric]) || 0; 
+                    if (aggregatedData[dist] !== undefined) {
+                        aggregatedData[dist] += value;
+                        // For population, we can take the value from any row for that district (assuming it doesn't change much)
+                        populationData[dist] = parseInt(d.Population) || 0;
+                    }
+                } 
+            });
         }
         
         currentAggregatedData = aggregatedData;
+        currentPopulationData = populationData;
         const values = Object.values(aggregatedData);
         const min = d3.min(values) || 0; const max = d3.max(values) || 1;
         
@@ -154,6 +316,73 @@ async function startApp() {
                 const val = currentAggregatedData[d.properties.district || d.properties.name] || 0;
                 return colorScale(val);
             });
+
+        if (d3.select("#show-heatmap").property("checked")) {
+            updateEpidemiologyHeatmap();
+        }
+    }
+
+    function updateEpidemiologyHeatmap() {
+        if (!geoData) return;
+        
+        heatmapLayer.selectAll("*").remove();
+        casesLayer.selectAll("*").remove();
+
+        const districtCentroids = geoData.features.map(f => {
+            const name = f.properties.district || f.properties.name;
+            const cases = currentAggregatedData[name] || 0;
+            const pop = currentPopulationData[name] || 1;
+            return {
+                name,
+                centroid: path.centroid(f),
+                cases,
+                population: pop,
+                intensity: (cases / pop) * 100000 // Cases per 100k
+            };
+        });
+
+        const maxIntensity = d3.max(districtCentroids, d => d.intensity) || 1;
+        const minIntensity = d3.min(districtCentroids, d => d.intensity) || 0;
+        const maxCases = d3.max(districtCentroids, d => d.cases) || 1;
+
+        // Update heatmap legend labels
+        d3.select("#min-rate-label").text(Math.round(minIntensity).toLocaleString());
+        d3.select("#max-rate-label").text(Math.round(maxIntensity).toLocaleString());
+
+        // Add blurred heat circles
+        heatmapLayer.selectAll(".heat-circle")
+            .data(districtCentroids)
+            .enter()
+            .append("circle")
+            .attr("class", "heat-circle")
+            .attr("cx", d => d.centroid[0])
+            .attr("cy", d => d.centroid[1])
+            .attr("r", d => 10 + (d.cases / maxCases) * 40)
+            .style("fill", d => d3.interpolateRgb("yellow", "blue")(d.intensity / maxIntensity))
+            .style("filter", "blur(15px)")
+            .style("opacity", 0.4);
+
+        // Add small core markers for better definition
+        casesLayer.selectAll(".case-core")
+            .data(districtCentroids)
+            .enter()
+            .append("circle")
+            .attr("class", "case-core")
+            .attr("cx", d => d.centroid[0])
+            .attr("cy", d => d.centroid[1])
+            .attr("r", 4)
+            .style("fill", d => d3.interpolateRgb("yellow", "blue")(d.intensity / maxIntensity))
+            .style("stroke", "#fff")
+            .style("stroke-width", "1px")
+            .on("mouseover", function(event, d) {
+                tooltip.style("opacity", 1).html(`
+                    <div style="font-weight: 700; color: var(--accent-color); margin-bottom: 4px;">${d.name}</div>
+                    <div style="font-size: 0.75rem;">Total Cases: ${d.cases.toLocaleString()}</div>
+                    <div style="font-size: 0.75rem;">Population: ${d.population.toLocaleString()}</div>
+                    <div style="font-size: 0.75rem; font-weight: 600; margin-top: 4px;">Rate: ${d.intensity.toFixed(2)} per 100k</div>
+                `).style("left", (event.pageX + 15) + "px").style("top", (event.pageY - 15) + "px");
+            })
+            .on("mouseout", () => tooltip.style("opacity", 0));
     }
 
     async function loadDiseaseData(file) { 
@@ -233,14 +462,97 @@ async function startApp() {
             if (focusedDistrict) hospitalLayer.selectAll(".hospital-marker").transition().duration(300).style("opacity", h => { let dist = h.District; if (nameMapping[dist]) dist = nameMapping[dist]; return (dist === focusedDistrict && checked) ? 1 : 0; });
             else hospitalLayer.selectAll(".hospital-marker").transition().duration(300).style("opacity", checked ? 1 : 0);
         });
+
+        d3.select("#show-heatmap").on("change", function() {
+            const checked = d3.select(this).property("checked");
+            if (checked) {
+                updateEpidemiologyHeatmap();
+                heatmapLayer.transition().duration(300).style("opacity", 0.6);
+                casesLayer.transition().duration(300).style("opacity", 1);
+                d3.select("#heatmap-legend").style("display", "block").transition().duration(300).style("opacity", 1);
+            } else {
+                heatmapLayer.transition().duration(300).style("opacity", 0);
+                casesLayer.transition().duration(300).style("opacity", 0);
+                d3.select("#heatmap-legend").transition().duration(300).style("opacity", 0).on("end", function() { d3.select(this).style("display", "none"); });
+            }
+        });
         d3.select("#zoom-in").on("click", () => svg.transition().call(zoom.scaleBy, 2));
         d3.select("#zoom-out").on("click", () => svg.transition().call(zoom.scaleBy, 0.5));
         d3.select("#reset-zoom").on("click", () => resetView());
         svg.on("click", (event) => { if (event.target.tagName === "svg") resetView(); });
     } catch (e) { console.error("❌ Critical Initialization Error:", e); }
 
-    d3.select("#toggle-sidebar").on("click", function() { document.body.classList.toggle("sidebar-open"); setTimeout(() => window.dispatchEvent(new Event('resize')), 450); });
-    d3.selectAll(".tab").on("click", function() { const tab = d3.select(this).attr("data-tab"); d3.selectAll(".tab").classed("active", false); d3.select(this).classed("active", true); d3.selectAll(".tab-section").classed("active", false); d3.select(`#${tab}-section`).classed("active", true); });
+    d3.selectAll(".intel-btn").on("click", function() {
+        const target = d3.select(this).attr("data-target");
+        const isActive = d3.select(this).classed("active");
+        
+        d3.selectAll(".intel-btn").classed("active", false);
+        d3.selectAll(".sidebar-section").classed("active", false);
+        
+        if (isActive) {
+            document.body.classList.remove("sidebar-open");
+        } else {
+            d3.select(this).classed("active", true);
+            d3.select(`#section-${target}`).classed("active", true);
+            document.body.classList.add("sidebar-open");
+            if (target === "analytics") loadPredictiveData();
+        }
+        setTimeout(() => window.dispatchEvent(new Event('resize')), 450);
+    });
+
+    d3.selectAll(".nav-btn").on("click", function() {
+        const text = d3.select(this).text().toLowerCase();
+        d3.selectAll(".nav-btn").classed("active", false);
+        d3.select(this).classed("active", true);
+        
+        d3.selectAll(".view-section").classed("active", false);
+        if (text === "home") {
+            d3.select("#home-page").classed("active", true);
+            document.body.classList.remove("sidebar-open");
+            if (dashboardLocatorMap) setTimeout(() => dashboardLocatorMap.invalidateSize(), 100);
+        } else if (text === "about") {
+            d3.select("#about-page").classed("active", true);
+            document.body.classList.remove("sidebar-open");
+        } else {
+            d3.select("#dashboard-page").classed("active", true);
+            setTimeout(() => window.dispatchEvent(new Event('resize')), 100);
+        }
+    });
+
+    d3.select("#go-to-dashboard").on("click", () => {
+        d3.selectAll(".nav-btn").classed("active", false);
+        d3.selectAll(".nav-btn").filter(function() { return d3.select(this).text() === "Dashboard"; }).classed("active", true);
+        d3.selectAll(".view-section").classed("active", false);
+        d3.select("#dashboard-page").classed("active", true);
+        setTimeout(() => window.dispatchEvent(new Event('resize')), 100);
+    });
+
+    window.goToDashboardModule = function(moduleName) {
+        // Switch to Dashboard View
+        d3.selectAll(".nav-btn").classed("active", false);
+        d3.selectAll(".nav-btn").filter(function() { return d3.select(this).text() === "Dashboard"; }).classed("active", true);
+        d3.selectAll(".view-section").classed("active", false);
+        d3.select("#dashboard-page").classed("active", true);
+        
+        // Open the specific sidebar module
+        d3.selectAll(".intel-btn").classed("active", false);
+        d3.selectAll(".sidebar-section").classed("active", false);
+        
+        const btn = d3.select(`.intel-btn[data-target="${moduleName}"]`);
+        btn.classed("active", true);
+        d3.select(`#section-${moduleName}`).classed("active", true);
+        document.body.classList.add("sidebar-open");
+        
+        if (moduleName === "analytics") loadPredictiveData();
+        
+        // Trigger resize for map
+        setTimeout(() => window.dispatchEvent(new Event('resize')), 100);
+    };
+
+    d3.select("#toggle-sidebar").on("click", function() {
+        document.body.classList.toggle("sidebar-open");
+        setTimeout(() => window.dispatchEvent(new Event('resize')), 450);
+    });
 
     const chatMessages = d3.select("#chat-messages");
     const chatInput = d3.select("#chat-input"); 
@@ -313,35 +625,47 @@ async function startApp() {
                 return;
             }
 
-            // 3. Handle Symptom Workflow (Multi-turn state managed here)
-            if (chatState.step === 'awaiting_days') { chatState.days = text; chatState.step = 'awaiting_severity'; addMessage(`I see. And what is the severity of your symptoms? (Low, Medium, or High)`, "bot"); return; }
+            // 3. Handle Diagnosis (New diagnosis takes priority over current workflow)
+            if (result.disease && result.confidence > 0.35) {
+                chatState.disease = result.disease; 
+                chatState.step = 'awaiting_days';
+                addMessage(`Based on your symptoms, the AI predicts you may be suffering from <strong>${result.disease}</strong>. How many days have you been experiencing these symptoms?`, "bot");
+                return;
+            }
+
+            // 4. Handle Symptom Workflow (Multi-turn state managed here)
+            if (chatState.step === 'awaiting_days') { 
+                chatState.days = text; 
+                chatState.step = 'awaiting_severity'; 
+                addMessage(`I see. And what is the severity of your symptoms? (Low, Medium, or High)`, "bot"); 
+                return; 
+            }
             if (chatState.step === 'awaiting_severity') {
                 chatState.severity = text;
                 const disease = chatState.disease;
-                const info = result.treatment || treatmentKnowledge["default"];
+                const info = result.treatment || treatmentKnowledge[disease] || treatmentKnowledge["default"];
                 let responseHtml = `<div style="margin-bottom:12px;"><strong style="color:var(--accent-color);">Personalized Care Plan for ${disease}</strong></div>`;
                 responseHtml += `<div style="margin-bottom:8px;"><strong>Diagnostic Tests:</strong><br/>• Full Blood Count<br/>• Antigen Screening</div>`;
                 responseHtml += `<div style="margin-bottom:8px;"><strong>Medication Schedule:</strong><br/><div style="margin-left:8px; border-left:2px solid #38bdf8; padding-left:8px; margin-top:4px;">• <strong>Morning:</strong> ${info.meds.morning}<br/><span style="font-size:0.8rem; color:var(--accent-color);">(${info.timing.morning})</span><br/>• <strong>Afternoon:</strong> ${info.meds.afternoon}<br/><span style="font-size:0.8rem; color:var(--accent-color);">(${info.timing.afternoon})</span><br/>• <strong>Night:</strong> ${info.meds.night}<br/><span style="font-size:0.8rem; color:var(--accent-color);">(${info.timing.night})</span></div></div>`;
                 responseHtml += `<div style="margin-bottom:8px;"><strong>Diet Plan:</strong><br/>• High fluid intake<br/>• Light protein rich food</div>`;
                 addMessage(responseHtml, "bot");
-                chatState = { step: 'idle', disease: null, days: null, severity: null }; return;
-            }
-
-            // 4. Handle Diagnosis
-            if (result.disease && result.confidence > 0.4) {
-                chatState.disease = result.disease; chatState.step = 'awaiting_days';
-                addMessage(`Based on your symptoms, the AI predicts you may be suffering from <strong>${result.disease}</strong>. How many days have you been experiencing these symptoms?`, "bot");
+                chatState = { step: 'idle', disease: null, days: null, severity: null }; 
                 return;
             }
 
-            // 5. Display Insights & Default Message
-            if (result.insights && result.insights.length > 0) {
-                result.insights.forEach(insight => addMessage(insight, "bot"));
+            // 5. Handle Low Confidence
+            if (result.disease && result.confidence > 0) {
+                addMessage(`I found some matches for <strong>${result.disease}</strong>, but I'm not very certain (confidence: ${Math.round(result.confidence * 100)}%). Could you please provide more details about your symptoms?`, "bot");
+                return;
             }
 
-            if (!result.disease && (!result.insights || result.insights.length === 0)) {
-                addMessage(result.message || "I'm here to help! Ask about cases, hospitals, or describe your symptoms.", "bot");
+            // 6. Display Insights & Default Message
+            if (result.insights && result.insights.length > 0) {
+                result.insights.forEach(insight => addMessage(insight, "bot"));
+                return;
             }
+
+            addMessage(result.message || "I'm here to help! Ask about cases, hospitals, or describe your symptoms.", "bot");
         } catch (error) {
             console.error("Chat API Error:", error);
             addMessage("Sorry, I'm having trouble connecting to my AI core right now.", "bot");
@@ -461,12 +785,95 @@ async function startApp() {
         }, 500); 
     });
 
+    async function loadPredictiveData() {
+        try {
+            const response = await fetch('/api/predictive');
+            if (!response.ok) return;
+            const data = await response.json();
+            
+            // 1. Update Heatmap & Cases
+            renderHeatmap(data.cases);
+            
+            // 2. Update Risk Gauge
+            const riskRate = data.summary.readmission_rate * 100;
+            d3.select("#risk-gauge-fill").style("width", `${riskRate}%`);
+            d3.select("#risk-value").text(`${riskRate.toFixed(1)}%`);
+            
+            // 3. Update Feature Importance
+            const fiContainer = d3.select("#feature-importance").html("");
+            Object.entries(data.metrics.feature_importance)
+                .sort((a, b) => b[1] - a[1])
+                .forEach(([feature, importance]) => {
+                    const row = fiContainer.append("div").style("margin-bottom", "8px");
+                    row.html(`
+                        <div style="display: flex; justify-content: space-between; font-size: 0.7rem; margin-bottom: 2px;">
+                            <span>${feature}</span>
+                            <span>${(importance * 100).toFixed(0)}%</span>
+                        </div>
+                        <div style="height: 6px; width: 100%; background: #e2e8f0; border-radius: 3px;">
+                            <div style="height: 100%; width: ${importance * 100}%; background: var(--accent-color); border-radius: 3px;"></div>
+                        </div>
+                    `);
+                });
+            
+            // 4. Update Model Performance
+            d3.select("#auc-score").text(data.metrics.auc.toFixed(3));
+            const cm = data.metrics.confusion_matrix;
+            d3.select("#cm-00").text(cm[0][0]);
+            d3.select("#cm-01").text(cm[0][1]);
+            d3.select("#cm-10").text(cm[1][0]);
+            d3.select("#cm-11").text(cm[1][1]);
+
+        } catch (e) { console.error("❌ Error loading predictive data:", e); }
+    }
+
+    function renderHeatmap(cases) {
+        // Clear existing
+        heatmapLayer.selectAll("*").remove();
+        casesLayer.selectAll("*").remove();
+        
+        // Heatmap: Circles with blur effect
+        heatmapLayer.selectAll(".heat-point").data(cases).enter()
+            .append("circle")
+            .attr("cx", d => projection([+d.Longitude, +d.Latitude])[0])
+            .attr("cy", d => projection([+d.Longitude, +d.Latitude])[1])
+            .attr("r", 15)
+            .style("fill", "var(--accent-color)")
+            .style("filter", "blur(10px)")
+            .style("opacity", 0.3);
+
+        // Case markers: Smaller, interactive
+        casesLayer.selectAll(".case-marker").data(cases).enter()
+            .append("circle")
+            .attr("class", "case-marker")
+            .attr("cx", d => projection([+d.Longitude, +d.Latitude])[0])
+            .attr("cy", d => projection([+d.Longitude, +d.Latitude])[1])
+            .attr("r", 3)
+            .style("fill", d => d.Readmission ? "#ef4444" : "#3b82f6")
+            .style("stroke", "#fff")
+            .style("stroke-width", "1px")
+            .on("mouseover", function(event, d) {
+                tooltip.style("opacity", 1).html(`
+                    <div style="font-weight: 700; color: ${d.Readmission ? '#ef4444' : '#3b82f6'}; margin-bottom: 4px;">Patient #${d.Patient_ID}</div>
+                    <div style="font-size: 0.75rem;">Age: ${d.Age} | Disease: ${d.Disease}</div>
+                    <div style="font-size: 0.75rem;">Symptoms: ${d.Symptoms}</div>
+                    <div style="font-size: 0.75rem; margin-top: 4px; font-weight: 600;">Readmission Risk: ${d.Readmission ? 'HIGH' : 'LOW'}</div>
+                `).style("left", (event.pageX + 15) + "px").style("top", (event.pageY - 15) + "px");
+            })
+            .on("mouseout", () => tooltip.style("opacity", 0));
+
+        heatmapLayer.style("opacity", d3.select("#show-heatmap").property("checked") ? 0.6 : 0);
+        casesLayer.style("opacity", d3.select("#show-heatmap").property("checked") ? 1 : 0);
+    }
+
     window.addEventListener('resize', () => { 
         width = container.clientWidth; height = container.clientHeight; 
         svg.attr("viewBox", [0, 0, width, height]); 
         projection.fitSize([width, height], geoData); 
         g.selectAll("path").attr("d", path); 
         hospitalLayer.selectAll(".hospital-marker").attr("cx", d => projection([+d.Longitude, +d.Latitude])[0]).attr("cy", d => projection([+d.Longitude, +d.Latitude])[1]); 
+        heatmapLayer.selectAll("circle").attr("cx", d => projection([+d.Longitude, +d.Latitude])[0]).attr("cy", d => projection([+d.Longitude, +d.Latitude])[1]);
+        casesLayer.selectAll("circle").attr("cx", d => projection([+d.Longitude, +d.Latitude])[0]).attr("cy", d => projection([+d.Longitude, +d.Latitude])[1]);
     });
 }
 
