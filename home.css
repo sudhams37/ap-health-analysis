@@ -27,7 +27,7 @@ header {
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
     padding: 1rem 2rem;
-    color: white;
+    color: rgb(11, 11, 11);
 }
 
 .header-content {
