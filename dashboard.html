@@ -63,12 +63,12 @@
                 <!-- Map Legends -->
                 <div class="legends-container">
                     <div class="map-legend hotspot-legend" id="hotspot-legend" style="display: none; margin-bottom: 0.5rem; background: rgba(15, 23, 42, 0.9); color: white; border-color: rgba(255,255,255,0.2);">
-                        <div class="legend-title" style="color: #cbd5e1;">Hotspot Intensity (Risk)</div>
+                        <div class="legend-title" style="color: #cbd5e1;">Incident Rate (%)</div>
                         <div class="legend-scale">
-                            <div class="legend-gradient" style="background: linear-gradient(to right, #0000ff, #a52a2a);"></div>
+                            <div class="legend-gradient" style="background: linear-gradient(to right, #22c55e, #3b82f6, #ef4444);"></div>
                             <div class="legend-labels">
                                 <span class="legend-min" id="hotspot-min" style="color: white;">0</span>
-                                <span class="legend-max" id="hotspot-max" style="color: white;">100</span>
+                                <span class="legend-max" id="hotspot-max" style="color: white;">1.5</span>
                             </div>
                         </div>
                     </div>
@@ -129,6 +129,20 @@
                     <!-- Hotspot Module -->
                     <div id="section-hotspot" class="sidebar-section">
                         <div class="sidebar-group-title">Hotspot Analysis</div>
+                        
+                        <!-- Hotspot Summary Card -->
+                        <div id="hotspot-summary" class="insight-card" style="margin-bottom: 1rem; display: none;">
+                            <div class="insight-header">
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12a10 10 0 1 0 20 0 10 10 0 0 0-20 0Z"></path>
+                                </svg>
+                                HOTSPOT INTELLIGENCE
+                            </div>
+                            <div id="hotspot-summary-content" style="font-size: 0.75rem; color: var(--text-primary);">
+                                <!-- Summary will be injected here -->
+                            </div>
+                        </div>
+
                         <div style="overflow-x: auto; flex: 1;">
                             <table id="hotspot-data-table" style="width: 100%; border-collapse: collapse; font-size: 0.75rem;">
                                 <thead>

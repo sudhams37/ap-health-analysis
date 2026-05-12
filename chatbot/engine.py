@@ -212,5 +212,13 @@ class HealthChatbot:
         
         return result
 
+    def get_predictive_data(self):
+        """Returns summarized statistical data for the predictive dashboard."""
+        return {
+            "stats": self.disease_stats,
+            "hospitals": self.hospital_stats,
+            "summary": "AI Forecasting Engine Active. Monitoring regional incidence rates for malaria and dengue."
+        }
+
 # Helper for district detection
 district_names = ["Alluri Sitarama Raju", "Anakapalli", "Anantapur", "Annamayya", "Bapatla", "Chittoor", "Dr. B.R. Ambedkar Konaseema", "East Godavari", "Eluru", "Guntur", "Kakinada", "Konaseema", "Krishna", "Kurnool", "Nandyal", "NTR", "Palnadu", "Parvathipuram Manyam", "Prakasam", "SPSR Nellore", "Sri Potti Sriramulu Nellore", "Sri Sathya Sai", "Srikakulam", "Tirupati", "Visakhapatnam", "Vizianagaram", "West Godavari", "YSR", "YSR Kadapa"]

@@ -30,6 +30,15 @@ header {
     color: rgb(11, 11, 11);
 }
 
+.header-left p {
+    font-size: 0.75rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+}
+
 .header-content {
     display: flex;
     justify-content: space-between;

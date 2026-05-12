@@ -242,6 +242,105 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => map.invalidateSize(), 500);
     });
 
+    const globalSearchInput = document.getElementById("global-hospital-search");
+    if (globalSearchInput) {
+        globalSearchInput.addEventListener("keypress", (e) => {
+            if (e.key === "Enter") {
+                performGlobalSearch(globalSearchInput.value);
+            }
+        });
+    }
+
+    async function performGlobalSearch(query) {
+        if (!query || query.length < 3) return;
+
+        const tableBody = document.getElementById("table-body");
+        const resultsCount = document.getElementById("results-count");
+        const tableTitle = document.getElementById("table-title");
+        const thead = document.querySelector("#results-table thead tr");
+
+        resultsCount.textContent = `Searching "${query}" across all regions...`;
+        tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:2rem; color:var(--text-secondary);">Scanning national health grid for matches...</td></tr>`;
+
+        // Update Table Headers
+        thead.innerHTML = `
+            <th>S.No</th>
+            <th>Hospital Name</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Action</th>
+        `;
+
+        try {
+            // Global search for all hospital branches by name or brand
+            const overpassQuery = `[out:json][timeout:90];
+                (
+                  node["amenity"="hospital"]["name"~"${query}",i];
+                  way["amenity"="hospital"]["name"~"${query}",i];
+                  node["healthcare"="hospital"]["name"~"${query}",i];
+                  way["healthcare"="hospital"]["name"~"${query}",i];
+                  node["brand"~"${query}",i];
+                  way["brand"~"${query}",i];
+                );
+                out center 200;`;
+            
+            const url = "https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(overpassQuery);
+            const res = await fetch(url);
+            const data = await res.json();
+
+            markers.forEach(m => map.removeLayer(m));
+            markers = [];
+            tableBody.innerHTML = "";
+
+            if (!data.elements || data.elements.length === 0) {
+                resultsCount.textContent = "No matches found";
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:2rem; color:#ef4444;">No hospitals matching "${query}" found across states.</td></tr>`;
+                return;
+            }
+
+            resultsCount.textContent = `Found ${data.elements.length} matches nationwide`;
+            tableTitle.textContent = `Global Registry matches for: ${query}`;
+            
+            const newBounds = L.latLngBounds();
+            let sno = 1;
+
+            data.elements.forEach(place => {
+                const pLat = place.lat || (place.center && place.center.lat);
+                const pLon = place.lon || (place.center && place.center.lon);
+                if (pLat && pLon) {
+                    const tags = place.tags || {};
+                    const name = tags.name || "Regional Hospital";
+                    const state = tags["addr:state"] || tags["is_in:state"] || "N/A";
+                    const city = tags["addr:city"] || tags["addr:district"] || tags["is_in:city"] || "N/A";
+
+                    const marker = L.marker([pLat, pLon], { icon: hospitalIcon }).addTo(map).bindPopup(`<b>${name}</b><br/>${city}, ${state}`);
+                    markers.push(marker);
+                    newBounds.extend([pLat, pLon]);
+
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td>${sno++}</td>
+                        <td class="result-title"><strong>${name}</strong></td>
+                        <td style="text-transform: uppercase; font-size: 0.7rem; font-weight: 700;">${state}</td>
+                        <td>${city}</td>
+                        <td><button class="table-action-btn">Focus</button></td>
+                    `;
+                    row.onclick = () => {
+                        map.setView([pLat, pLon], 16);
+                        marker.openPopup();
+                    };
+                    tableBody.appendChild(row);
+                }
+            });
+            if (markers.length > 0) map.fitBounds(newBounds.pad(0.1));
+        } catch (e) {
+            console.error("Global search error:", e);
+            resultsCount.textContent = "Audit failed";
+            tableBody.innerHTML = '<tr><td colspan="5" style="text-align:center; padding:2rem; color:#ef4444;">Database connection interrupted. Please try again.</td></tr>';
+        }
+    }
+
+    const interestBtn = document.getElementById("trigger-interest");
     const nearbyBtn = document.getElementById("trigger-nearby");
     const bloodBtn = document.getElementById("trigger-blood");
     const modal = document.getElementById("locator-modal");
@@ -256,6 +355,161 @@ document.addEventListener('DOMContentLoaded', () => {
             select.innerHTML += '<option value="hospitals">Hospitals</option><option value="centers">Centers</option><option value="clinics">Clinics</option>';
         } else if (type === 'healthcare') {
             select.innerHTML += '<option value="PHC">Primary Health Centers (PHC)</option><option value="AAM">Ayushman Arogya Mandir (AAM)</option><option value="UPHC">Urban Primary Health Centers (UPHC)</option><option value="DH">District Hospitals</option><option value="CHC">Community Health Centers (CHC)</option><option value="TH">Teaching Hospitals</option>';
+        }
+    }
+
+    const interestModal = document.getElementById("interest-modal");
+    const closeInterestModal = document.getElementById("close-interest-modal");
+
+    if (interestBtn) {
+        interestBtn.addEventListener("click", () => {
+            interestModal.classList.remove("hidden");
+        });
+    }
+
+    if (closeInterestModal) {
+        closeInterestModal.addEventListener("click", () => {
+            interestModal.classList.add("hidden");
+        });
+    }
+
+    const searchInterestBtn = document.getElementById("search-interest-state");
+    if (searchInterestBtn) {
+        searchInterestBtn.addEventListener("click", searchByState);
+    }
+
+    async function searchByState() {
+        const stateName = document.getElementById("interest-state").value.trim();
+        const selectedType = document.getElementById("interest-type").value;
+        const tableBody = document.getElementById("table-body");
+        const resultsCount = document.getElementById("results-count");
+        const tableTitle = document.getElementById("table-title");
+
+        if (!stateName) {
+            alert("Please enter a state name.");
+            return;
+        }
+
+        resultsCount.textContent = `Analyzing ${stateName} health grid...`;
+        tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:2rem; color:var(--text-secondary);">Initializing statewide health intelligence scan...</td></tr>`;
+        interestModal.classList.add("hidden");
+
+        try {
+            // Build filtered query based on selected type
+            let filter = '';
+            if (selectedType === 'all') {
+                filter = `
+                  node["amenity"="hospital"](area.a);
+                  node["amenity"="blood_bank"](area.a);
+                  node["healthcare"="centre"](area.a);
+                  node["amenity"="pharmacy"](area.a);
+                  way["amenity"="hospital"](area.a);
+                  way["healthcare"="centre"](area.a);
+                  way["amenity"="pharmacy"](area.a);
+                `;
+            } else if (selectedType === 'hospital') {
+                filter = `node["amenity"="hospital"](area.a); way["amenity"="hospital"](area.a);`;
+            } else if (selectedType === 'blood') {
+                filter = `node["amenity"="blood_bank"](area.a); node["healthcare"="blood_bank"](area.a);`;
+            } else if (selectedType === 'pharmacy') {
+                filter = `node["amenity"="pharmacy"](area.a); way["amenity"="pharmacy"](area.a);`;
+            } else if (selectedType === 'healthcare') {
+                filter = `node["healthcare"="centre"](area.a); way["healthcare"="centre"](area.a);`;
+            }
+
+            const query = `[out:json][timeout:90];
+                area["name"="${stateName}"]["admin_level"~"3|4"]->.a;
+                (
+                  ${filter}
+                );
+                out center 100;`;
+            
+            const url = "https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query);
+            const res = await fetch(url, { 
+                method: 'GET',
+                headers: { 'Accept': 'application/json' }
+            });
+            
+            if (!res.ok) throw new Error(`API Status: ${res.status}`);
+            
+            const data = await res.json();
+
+            // Clear previous markers safely
+            if (markers && markers.length > 0) {
+                markers.forEach(m => {
+                    try { if (m) map.removeLayer(m); } catch(err) {}
+                });
+            }
+            markers = [];
+            tableBody.innerHTML = "";
+
+            if (!data || !data.elements || data.elements.length === 0) {
+                resultsCount.textContent = "Area not discovered";
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:2rem; color:#ef4444;">No health facilities found in "${stateName}". Please check spelling or try another region.</td></tr>`;
+                return;
+            }
+
+            tableTitle.textContent = `Statewide Health Registry: ${stateName}`;
+            currentData = [];
+            
+            const bounds = L.latLngBounds();
+            let addedCount = 0;
+
+            data.elements.forEach(place => {
+                try {
+                    const pLat = parseFloat(place.lat || (place.center && place.center.lat));
+                    const pLon = parseFloat(place.lon || (place.center && place.center.lon));
+                    
+                    if (!isNaN(pLat) && !isNaN(pLon)) {
+                        const tags = place.tags || {};
+                        const name = tags.name || "Regional Health Center";
+                        const rawType = tags.amenity || tags.healthcare || "Facility";
+                        const type = rawType.toString().replace(/_/g, ' ').toUpperCase();
+                        
+                        // Add to map
+                        const marker = L.marker([pLat, pLon], { icon: hospitalIcon })
+                            .addTo(map)
+                            .bindPopup(`<b>${name}</b><br/>${type}`);
+                        markers.push(marker);
+                        bounds.extend([pLat, pLon]);
+
+                        // Add to table data
+                        currentData.push({ name, category: type, distance: "Statewide", status: 'Active' });
+
+                        // Add to table UI
+                        const row = document.createElement("tr");
+                        row.style.cursor = "pointer";
+                        row.innerHTML = `
+                            <td class="result-title"><strong>${name}</strong></td>
+                            <td><span class="status-badge" style="background:#f1f5f9; color:#475569;">${type}</span></td>
+                            <td>STATEWIDE</td>
+                            <td><span class="status-badge status-active">Active</span></td>
+                            <td><button class="table-action-btn">Focus</button></td>
+                        `;
+                        row.onclick = () => {
+                            map.setView([pLat, pLon], 15);
+                            marker.openPopup();
+                        };
+                        tableBody.appendChild(row);
+                        addedCount++;
+                    }
+                } catch (err) {
+                    console.warn("Entry error:", err);
+                }
+            });
+
+            resultsCount.textContent = `Showing ${addedCount} facilities in ${stateName}`;
+
+            if (addedCount > 0 && bounds.isValid()) {
+                map.fitBounds(bounds.pad(0.1));
+            } else if (addedCount === 0) {
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:2rem; color:#ef4444;">Could not parse facility locations for ${stateName}.</td></tr>`;
+            }
+
+        } catch (e) {
+            console.error("State search error:", e);
+            resultsCount.textContent = "Audit Error";
+            tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:2rem; color:#ef4444;"><strong>Grid Error:</strong> ${e.message}. Please try again.</td></tr>`;
         }
     }
 

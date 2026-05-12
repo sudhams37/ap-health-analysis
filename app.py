@@ -3,9 +3,6 @@ from flask_cors import CORS
 import os
 import sys
 
-# Add src to path
-sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
-
 from chatbot.engine import HealthChatbot
 
 app = Flask(__name__, static_folder='.', static_url_path='')
@@ -32,10 +29,6 @@ def chat():
         return jsonify({"error": "No message provided"}), 400
     
     result = chatbot.predict(user_message)
-    
-    if result["disease"] and result["confidence"] > 0.4:
-        result["treatment"] = chatbot.get_treatment(result["disease"])
-    
     return jsonify(result)
     
 @app.route('/api/predictive', methods=['GET'])

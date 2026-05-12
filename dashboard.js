@@ -21,9 +21,9 @@ async function startDashboard() {
         .range(["#22c55e", "#facc15", "#ef4444"])
         .interpolate(d3.interpolateHcl);
 
-    const hotspotColorScale = d3.scaleLinear()
-        .range(["#0000ff", "#a52a2a"])
-        .interpolate(d3.interpolateRgb);
+    const hotspotColorScale = d3.scaleThreshold()
+        .domain([0.5, 1.0])
+        .range(["#22c55e", "#3b82f6", "#ef4444"]);
 
     let csvDataGlobal = [];
     let geoData;
@@ -144,7 +144,7 @@ async function startDashboard() {
         const clockDiv = document.createElement("div");
         clockDiv.style.marginBottom = "1.5rem";
         clockDiv.style.padding = "1.25rem";
-        clockDiv.style.background = "rgba(14, 165, 233, 0.08)";
+        clockDiv.style.background = "#ffffff";
         clockDiv.style.borderRadius = "16px";
         clockDiv.style.border = "1px solid rgba(14, 165, 233, 0.15)";
         clockDiv.style.boxShadow = "0 10px 15px -3px rgba(14, 165, 233, 0.1)";
@@ -211,6 +211,8 @@ async function startDashboard() {
         
         if (!isEnabled) { 
             hotspotLegend.style("display", "none"); 
+            const summaryCard = document.getElementById("hotspot-summary");
+            if (summaryCard) summaryCard.style.display = "none";
             return; 
         }
         
@@ -243,22 +245,47 @@ async function startDashboard() {
             return { name, centroid: path.centroid(f), rate, cases, avgIncidence, avgDeath }; 
         });
 
-        const minRate = d3.min(centroids, d => d.rate) || 0; 
+        const minIncidence = d3.min(centroids, d => d.avgIncidence) || 0; 
+        const maxIncidence = d3.max(centroids, d => d.avgIncidence) || 1.5;
         const maxRate = d3.max(centroids, d => d.rate) || 1;
-        hotspotColorScale.domain([minRate, maxRate]);
-        d3.select("#hotspot-min").text(minRate.toFixed(1)); 
-        d3.select("#hotspot-max").text(maxRate.toFixed(1));
+        
+        d3.select("#hotspot-min").text(minIncidence.toFixed(2)); 
+        d3.select("#hotspot-max").text(maxIncidence.toFixed(2));
 
         // Update Table
         const tableBody = d3.select("#hotspot-table-body");
         tableBody.selectAll("*").remove();
         
         const sortedCentroids = [...centroids].sort((a, b) => b.rate - a.rate);
+        
+        // Update Summary Card
+        const summaryCard = document.getElementById("hotspot-summary");
+        const summaryContent = document.getElementById("hotspot-summary-content");
+        if (summaryCard && summaryContent) {
+            summaryCard.style.display = "block";
+            const top3 = sortedCentroids.slice(0, 3);
+            const highRiskCount = centroids.filter(c => c.rate > (maxRate * 0.7)).length;
+            const diseaseName = document.getElementById("disease-select").options[document.getElementById("disease-select").selectedIndex].text;
+            
+            summaryContent.innerHTML = `
+                <div style="margin-bottom: 8px;"><strong>${diseaseName}</strong> surveillance identifies <strong>${highRiskCount}</strong> districts at critical risk levels.</div>
+                <div style="font-size: 0.65rem; color: var(--text-secondary); text-transform: uppercase; font-weight: 800; margin-bottom: 4px;">Top High-Intensity Zones:</div>
+                <div style="display: flex; flex-direction: column; gap: 4px;">
+                    ${top3.map((d, i) => `
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 4px 8px; background: rgba(239, 68, 68, 0.1); border-radius: 4px; border-left: 3px solid #ef4444;">
+                            <span style="font-weight: 700;">${i+1}. ${d.name}</span>
+                            <span style="color: #ef4444; font-weight: 800;">${d.rate.toFixed(1)}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
+        }
+
         sortedCentroids.forEach(d => {
             const row = tableBody.append("tr").style("border-bottom", "1px solid var(--border-color)");
             row.append("td").style("padding", "8px 4px").style("font-weight", "600").text(d.name);
             row.append("td").style("padding", "8px 4px").text(d.cases.toLocaleString());
-            row.append("td").style("padding", "8px 4px").style("color", hotspotColorScale(d.rate)).style("font-weight", "700").text(d.avgIncidence.toFixed(2) + "%");
+            row.append("td").style("padding", "8px 4px").style("color", hotspotColorScale(d.avgIncidence)).style("font-weight", "700").text(d.avgIncidence.toFixed(2) + "%");
             row.append("td").style("padding", "8px 4px").style("color", "#ef4444").style("font-weight", "600").text(d.avgDeath.toFixed(3) + "%");
             row.append("td").style("padding", "8px 4px").style("font-weight", "700").text(d.rate.toFixed(1));
         });
@@ -271,7 +298,7 @@ async function startDashboard() {
             .attr("cx", d => d.centroid[0])
             .attr("cy", d => d.centroid[1])
             .attr("r", d => 5 + (d.rate / maxRate) * 40)
-            .style("fill", d => hotspotColorScale(d.rate))
+            .style("fill", d => hotspotColorScale(d.avgIncidence))
             .style("stroke", "white")
             .style("stroke-width", "2px")
             .style("filter", "blur(2px)")
@@ -367,6 +394,7 @@ async function startDashboard() {
     // Handle Deep Linking from other pages
     if (window.location.hash === "#chat") switchToTab("chat");
     if (window.location.hash === "#trends" || window.location.hash === "#forecast") switchToTab("forecast");
+    if (window.location.hash === "#hotspot") switchToTab("hotspot");
 
     const chatBox = document.getElementById("chat-box"); const userInput = document.getElementById("user-input"); const sendBtn = document.getElementById("send-btn");
     function appendMessage(role, text) { const msg = document.createElement("div"); msg.className = `message ${role}`; msg.innerHTML = text; chatBox.appendChild(msg); chatBox.scrollTop = chatBox.scrollHeight; }
