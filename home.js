@@ -272,37 +272,98 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
 
         try {
-            // Global search for all hospital branches by name or brand
+            const searchQuery = query.trim();
+            const resultsCount = document.getElementById("results-count");
+            const tableBody = document.getElementById("table-body");
+            
+            resultsCount.textContent = `Performing exhaustive national audit for all "${searchQuery}" branches...`;
+            
+            let data = { elements: [] };
+            const uniqueIds = new Set();
+
+            // 1. Primary: Nominatim (Quick check for top results)
+            try {
+                const nominatimUrl = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(searchQuery + " hospital India")}&format=json&addressdetails=1&limit=50`;
+                const nomRes = await fetch(nominatimUrl);
+                if (nomRes.ok) {
+                    const nomData = await nomRes.json();
+                    if (nomData) {
+                        nomData.forEach(item => {
+                            const id = `nom-${item.place_id}`;
+                            if (!uniqueIds.has(id)) {
+                                uniqueIds.add(id);
+                                data.elements.push({
+                                    lat: parseFloat(item.lat),
+                                    lon: parseFloat(item.lon),
+                                    tags: {
+                                        name: item.display_name.split(',')[0],
+                                        "addr:state": item.address.state || item.address.region || "N/A",
+                                        "addr:city": item.address.city || item.address.town || item.address.district || "N/A"
+                                    }
+                                });
+                            }
+                        });
+                    }
+                }
+            } catch (err) {}
+
+            // 2. Secondary: Overpass Deep Scan (No limits, ID-based de-duplication)
+            const keywords = searchQuery.split(/\s+/).filter(k => k.length > 2);
+            const searchPattern = keywords.length > 0 ? keywords.map(k => k.replace(/s$/i, '')).join('.*') : searchQuery;
+            
             const overpassQuery = `[out:json][timeout:90];
                 (
-                  node["amenity"="hospital"]["name"~"${query}",i];
-                  way["amenity"="hospital"]["name"~"${query}",i];
-                  node["healthcare"="hospital"]["name"~"${query}",i];
-                  way["healthcare"="hospital"]["name"~"${query}",i];
-                  node["brand"~"${query}",i];
-                  way["brand"~"${query}",i];
+                  nwr["name"~"${searchPattern}",i]["amenity"~"hospital|clinic",i](6,68,38,98);
+                  nwr["brand"~"${searchPattern}",i](6,68,38,98);
+                  nwr["operator"~"${searchPattern}",i](6,68,38,98);
                 );
-                out center 200;`;
+                out center;`;
             
-            const url = "https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(overpassQuery);
-            const res = await fetch(url);
-            const data = await res.json();
+            const servers = [
+                "https://overpass-api.de/api/interpreter",
+                "https://lz4.overpass-api.de/api/interpreter"
+            ];
 
-            markers.forEach(m => map.removeLayer(m));
+            for (const server of servers) {
+                try {
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 25000);
+                    const res = await fetch(`${server}?data=${encodeURIComponent(overpassQuery)}`, { signal: controller.signal });
+                    clearTimeout(timeoutId);
+                    
+                    if (res.ok) {
+                        const json = await res.json();
+                        if (json.elements && json.elements.length > 0) {
+                            json.elements.forEach(e => {
+                                if (!uniqueIds.has(e.id)) {
+                                    uniqueIds.add(e.id);
+                                    data.elements.push(e);
+                                }
+                            });
+                            break;
+                        }
+                    }
+                } catch (e) {}
+            }
+
+            markers.forEach(m => { try { map.removeLayer(m); } catch(e) {} });
             markers = [];
             tableBody.innerHTML = "";
 
-            if (!data.elements || data.elements.length === 0) {
+            if (!data || !data.elements || data.elements.length === 0) {
                 resultsCount.textContent = "No matches found";
-                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:2rem; color:#ef4444;">No hospitals matching "${query}" found across states.</td></tr>`;
+                tableBody.innerHTML = `<tr><td colspan="5" style="text-align:center; padding:2rem; color:#ef4444;">No branches found for "${searchQuery}" in India.</td></tr>`;
                 return;
             }
+
+            resultsCount.textContent = `Audit Complete: Found ${data.elements.length} unique branches nationwide`;
 
             resultsCount.textContent = `Found ${data.elements.length} matches nationwide`;
             tableTitle.textContent = `Global Registry matches for: ${query}`;
             
             const newBounds = L.latLngBounds();
             let sno = 1;
+            const fragment = document.createDocumentFragment();
 
             data.elements.forEach(place => {
                 const pLat = place.lat || (place.center && place.center.lat);
@@ -329,9 +390,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         map.setView([pLat, pLon], 16);
                         marker.openPopup();
                     };
-                    tableBody.appendChild(row);
+                    fragment.appendChild(row);
                 }
             });
+            tableBody.appendChild(fragment);
             if (markers.length > 0) map.fitBounds(newBounds.pad(0.1));
         } catch (e) {
             console.error("Global search error:", e);
@@ -395,44 +457,59 @@ document.addEventListener('DOMContentLoaded', () => {
         interestModal.classList.add("hidden");
 
         try {
-            // Build filtered query based on selected type
+            // Build exhaustive filters using 'nwr' for better coverage
             let filter = '';
             if (selectedType === 'all') {
                 filter = `
-                  node["amenity"="hospital"](area.a);
-                  node["amenity"="blood_bank"](area.a);
-                  node["healthcare"="centre"](area.a);
-                  node["amenity"="pharmacy"](area.a);
-                  way["amenity"="hospital"](area.a);
-                  way["healthcare"="centre"](area.a);
-                  way["amenity"="pharmacy"](area.a);
+                  nwr["amenity"~"hospital|blood_bank|pharmacy",i](area.a);
+                  nwr["healthcare"~"centre|hospital|clinic",i](area.a);
                 `;
             } else if (selectedType === 'hospital') {
-                filter = `node["amenity"="hospital"](area.a); way["amenity"="hospital"](area.a);`;
+                filter = `nwr["amenity"="hospital"](area.a); nwr["healthcare"="hospital"](area.a);`;
             } else if (selectedType === 'blood') {
-                filter = `node["amenity"="blood_bank"](area.a); node["healthcare"="blood_bank"](area.a);`;
+                filter = `nwr["amenity"="blood_bank"](area.a); nwr["healthcare"="blood_bank"](area.a);`;
             } else if (selectedType === 'pharmacy') {
-                filter = `node["amenity"="pharmacy"](area.a); way["amenity"="pharmacy"](area.a);`;
+                filter = `nwr["amenity"="pharmacy"](area.a);`;
             } else if (selectedType === 'healthcare') {
-                filter = `node["healthcare"="centre"](area.a); way["healthcare"="centre"](area.a);`;
+                filter = `nwr["healthcare"~"centre|clinic",i](area.a);`;
             }
 
-            const query = `[out:json][timeout:90];
+            const query = `[out:json][timeout:120];
                 area["name"="${stateName}"]["admin_level"~"3|4"]->.a;
                 (
                   ${filter}
                 );
-                out center 100;`;
+                out center;`;
             
-            const url = "https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query);
-            const res = await fetch(url, { 
-                method: 'GET',
-                headers: { 'Accept': 'application/json' }
-            });
+            const servers = [
+                "https://overpass-api.de/api/interpreter",
+                "https://lz4.overpass-api.de/api/interpreter",
+                "https://overpass.kumi.systems/api/interpreter"
+            ];
             
-            if (!res.ok) throw new Error(`API Status: ${res.status}`);
-            
-            const data = await res.json();
+            let data = null;
+            for (const server of servers) {
+                try {
+                    const controller = new AbortController();
+                    const timeoutId = setTimeout(() => controller.abort(), 35000); // 35s per server for large state data
+                    const res = await fetch(`${server}?data=${encodeURIComponent(query)}`, { 
+                        signal: controller.signal,
+                        method: 'GET',
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    clearTimeout(timeoutId);
+                    
+                    if (res.ok) {
+                        const json = await res.json();
+                        if (json.elements && json.elements.length > 0) {
+                            data = json;
+                            break;
+                        }
+                    }
+                } catch (e) {
+                    console.warn(`State search failed on ${server}, trying next...`);
+                }
+            }
 
             // Clear previous markers safely
             if (markers && markers.length > 0) {
